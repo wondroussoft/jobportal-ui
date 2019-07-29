@@ -149,9 +149,23 @@ public class HomeController {
 	public String Gethrsolutions(Model model) {
 		return "hrsolutions";
 	}
+	@GetMapping("/post_job")
+	public String Getpostjob(Model model) {
+		return "post_job";
+	}
+	
+	@GetMapping("/post_newjob")
+	public String Getpostnewjob(Model model) {
+		return "postnewjob";
+	}
+	
 	@GetMapping("/starthiring")
 	public String Getstarthiring(Model model) {
 		return "starthiring";
+	}
+	@GetMapping("/loginemploye")
+	public String Getloginemploye(Model model) {
+		return "signup2";
 	}
 	
 }
