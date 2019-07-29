@@ -10,7 +10,7 @@ public class HomeController {
 
 	@GetMapping("/")
 	public String GetHomepage(Model model) {
-		return "home";
+		return "signup2";
 	}
 
 	@GetMapping("/login")
@@ -149,7 +149,17 @@ public class HomeController {
 	public String Gethrsolutions(Model model) {
 		return "hrsolutions";
 	}
-	@GetMapping("/starthiring")
+	@GetMapping("/post_job")
+	public String Getpostjob(Model model) {
+		return "post_job";
+	}
+	
+	@GetMapping("/post_newjob")
+	public String Getpostnewjob(Model model) {
+		return "postnewjob";
+	}
+	
+	@GetMapping("/postjob")
 	public String Getstarthiring(Model model) {
 		return "starthiring";
 	}
