@@ -1,0 +1,745 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="../fragments/header :: header"></div>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<meta name="copyright" content="Copyright 2000-2019 Bayt.com, Inc."/>
+		<link rel="shortcut icon" href="//img0cf.b8cdn.com/images/templates/bayt/favicon_new.ico" type="image/x-icon"/>
+		<link hreflang="x-default" rel="alternate" href="https://www.bayt.com/en/company/bayt-com-1480348/" />
+<link hreflang="en" rel="alternate" href="https://www.bayt.com/en/company/bayt-com-1480348/" />
+<link hreflang="ar" rel="alternate" href="https://www.bayt.com/ar/company/bayt-com-1480348/" />
+<link hreflang="fr" rel="alternate" href="https://www.bayt.com/fr/company/bayt-com-1480348/" />
+<style >
+/*<![CDATA[*/
+@media screen{.print-only{display:none!important}}@media screen and (min-width:1024px){.search-bar:not(.is-active).is-compact>.input-pack,.search-bar:not(.is-active)>.b-close,.search-bar:not(.is-compact)>.b-search{display:none}}.icon{min-width:18px}.slider{position:relative}.slider-arrow{color:transparent}.slider-arrows{position:absolute}.t-danger{color:#ff3b30}@font-face{font-family:icons;src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot);src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot#iefix) format("embedded-opentype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-c1e03ae2bb370c07ec80e233666a3bdd.woff) format("woff"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-ed5fc7e449ef107102dbd0a9e51fc9c5.ttf) format("truetype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-d15b23562c07294e75a74e206d443995.svg#test) format("svg");font-display:optional;font-weight:400;font-style:normal}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.ttf) format('truetype');font-display:optional}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.ttf) format('truetype');font-display:optional}.h1,.h3,h1,h2,h4,h6{line-height:1.2;margin:0 0 .5em;color:#000}.list.is-basic,.list.is-basic>li{padding-left:0}.popover,.popover-owner,button,hr,input{overflow:visible}.btn.is-outline,a{color:#2784fc}.dropdown>li>a,a{text-decoration:none}.popover,nav>.nav{text-align:left}.btn,.dropdown>li>a,.nav>li>a,.t-nowrap{white-space:nowrap}html{box-sizing:border-box;font-family:Lato,Noto Kufi Arabic,sans-serif;font-size:16px;line-height:1.67}footer,nav,section{display:block}hr{box-sizing:content-box;height:0;width:100%;padding:.5px 0;background-color:#e7e9ed;border:0}.btn.is-inverse.is-outline,.btn.is-outline,a{background-color:transparent}b{font-weight:bolder}img{border-style:none}button,input,select{margin:0;font-family:inherit}button,input{font-family:inherit}button,select{text-transform:none}*,:after,:before{box-sizing:inherit}body,html{padding:0;margin:0;background:#f4f4f4;color:#3b3b3b}.popover,footer{background-color:#fff}footer{margin-top:16px}.h1,h1{font-size:2.875rem}.cover>.box>.h1,h2{font-size:2.25rem}.h3{font-size:1.75rem}h4{font-size:1.5rem}h6{font-size:1rem}.list{font-size:16px;padding-left:1em}.box,.col{padding:10px}.list>li{padding-left:1.375em;font-size:1em;line-height:1.625}.list.is-basic{list-style:none}.list.is-basic.is-spaced>li{padding:6px 0}.list.is-tabular{list-style:none;padding:0;margin:0;display:table;table-layout:fixed;width:100%}.box,.cover{margin:0 auto}.cover,.row{display:flex}.list.is-tabular>li{display:table-cell;padding-left:0;float:left;width:100%}.list.is-tabular.of-6>li{width:16.66667%;padding-right:10px}.list.t-mute>li>a,.t-mute{color:#a6afb9}.box{max-width:1000px}.cover{align-items:center;height:460px;background-position:50% 0;background-repeat:no-repeat;background-size:cover}.cover>.box{text-align:center;width:100%}.cover>.box>.h1{line-height:1.19444;margin-bottom:20px}.row{flex-flow:row wrap;flex:1 0 auto}.row.h-align-right{justify-content:flex-end}.col{display:block;flex:1 1 auto}.col.is-4{flex:0 0 auto;width:33.33333%}.col.is-8{flex:0 0 auto;width:66.66667%}.col.is-12{flex:0 0 auto;width:100%}.dropdown>li,.dropdown>li>a,.has-attachments{position:relative}.is-attached{position:absolute;z-index:1}.is-attached[data-position=bc]{bottom:0;left:50%;transform:translate(-50%,50%)}.is-attached.is-fluid{max-width:750px;height:auto;width:70%;margin:0 auto}.popover{position:absolute;display:none;min-width:270px;border:1px solid #e7e9ed;border-radius:5px;z-index:10000;outline:0}.list-menu-group,.list-menu-title,.popover-owner,.select,nav>.nav{position:relative}.b-close,.btn,.icon{text-align:center;vertical-align:middle}.nav,nav{z-index:5010}.btn{font-size:1rem;line-height:1;font-weight:700;padding:13px 27px;background-color:#2784fc;border:1px solid #2784fc;display:inline-block;overflow:hidden;color:#fff;border-radius:4px}.btn.is-small,.dropdown{font-size:.875rem;line-height:1}.btn.is-inverse{color:#828a93;background-color:#fff;border-color:#fff}.btn.is-small{font-weight:700;padding:11px 23px}.btn.is-secondary{background-color:#828a93;border-color:#828a93}.card,.select,.select>.input{background-color:#fff}.btn.is-inverse.is-outline{color:#fff}.btn+.btn{margin-left:10px}.card{padding:20px;border-radius:4px}.card:only-child{display:flex;flex-direction:column;justify-content:space-between;height:100%}.card-head{padding-bottom:10px}.card-foot{padding:20px 0 0}.dropdown{list-style:none;padding:10px 0;margin:0;color:#3b3b3b;overflow:visible}.dropdown>li>a{display:block;padding:10px 20px;color:inherit;font-weight:400}.b-close,.icon,.nav>li>a,.select,.select>.input{display:inline-block}.b-close.is-inverse:after,.nav>li>a,.t-inverse{color:#fff}.dropdown>li.is-title{padding:12px 20px;font-size:14px;font-weight:700;text-transform:uppercase}.b-close,.icon{font-family:icons;font-style:normal;font-weight:400;line-height:.8125}.icon{margin:0 10px 0 0}.icon.is-48{font-size:48px;padding:8px}.icon.is-smartphone:before{content:"\E8D9"}.icon.is-tie:before{content:"\E9AD"}.icon.is-apps:before{content:"\EB30"}.icon.is-bars:before{content:"\EB32"}.icon.is-search:before{content:"\EB4A"}.b-close:after{content:"\EB0C";color:#a6afb9}.b-close.is-large{font-size:18px}.img-apps{width:40px;height:40px}.img-apps.is-b{background-position:-40px 0}.img-apps.is-specialties{background-position:-80px 0}.img-apps.is-learning{background-position:0 -43px}.img-apps.is-people{background-position:-40px -43px}.img-apps.is-companies{background-position:-80px -43px}.img-apps.is-salaries{background-position:-120px 0}.img-apps.is-articles{background-position:-120px -40px}.img-apps.is-researches{background-position:0 -83px}.img-apps.is-podcast{background-position:-40px -83px}.img-apps.is-blog{background-position:-80px -83px}.img-apps.is-shagheel{background-position:0 0}.img-logo.is-logo-inverse{background-position:-187px -66px;width:101px;height:22px}.img-logo.is-logo{background-position:-187px 0;width:101px;height:22px}.input{width:auto;font-size:1rem;line-height:1;height:44px;padding:14px;border:1px solid #a6afb8;border-radius:2px;outline:0;vertical-align:middle;background-image:none}.input.is-small,.list-menu,.nav{font-size:.875rem}.input.is-small:not(textarea),.input:not(textarea){padding-top:0;padding-bottom:0}.input.is-small{line-height:1;height:38px;padding:12px}select.input{padding:0 12px;line-height:2}.select{width:100%;overflow:visible}.select:before{background:#fff;width:35px;top:3px;bottom:3px;right:3px;border-radius:0 2px 2px 0}.select:after,.select:before{content:"";position:absolute}.select:after{right:17.5px;top:calc(50% - 2px);width:10px;height:10px;border:1px solid #b9bfcb;border-width:0 1px 1px 0;transform:translate(-50%,-50%) rotate(45deg);z-index:2}.select>.input{width:100%;line-height:1.5;appearance:none;padding-right:36px}.list-menu{line-height:1.64285;width:360px;color:#a6afb9}.list-menu-title{color:#3b3b3b;padding:16px}.list-menu-group,.nav{list-style:none;padding:0;margin:0}.list-menu-title:first-child{border-bottom:1px solid #e7e9ed}.list-menu-group{overflow:auto;min-height:270px;max-height:480px;border-top:1px solid #e7e9ed}.list-menu-title+.list-menu-group{border-top:0}.nav{line-height:1.07357;display:flex;background-color:#2784fc}.nav>li{flex:0 0 auto;order:50;align-self:center;padding-bottom:1px}.nav>li>a{padding:28px 10px;line-height:1.14286}.nav>li>a>.icon{margin:0;font-size:inherit;color:#a6afb9;vertical-align:middle}.nav>li.is-group{margin:0 20px}.nav.is-aux{font-size:1.125rem;line-height:1.02056;justify-content:center}.nav.is-aux>li{padding-bottom:0}.nav.is-aux>li>a{padding:14px 15px 18px 5px}.nav.is-aux.is-small>li>a{font-size:14px}.dark-links>a{color:#3b3b3b}.b-search{width:44px;height:44px;margin-left:10px;background:#fff;font-size:16px;border:none;border-radius:100%}.b-search>.icon,.t-primary{color:#2784fc}.m0{margin:0!important}.m10y{margin-bottom:10px!important}.m10t,.m10y{margin-top:10px!important}.p10y{padding-bottom:10px!important}.p10t,.p10y{padding-top:10px!important}.m20b,.m20y{margin-bottom:20px!important}.m20t,.m20y{margin-top:20px!important}.p40{padding:40px!important}.u-abs{position:absolute!important}.u-right{float:right!important}.u-none{display:none!important}.t-center{text-align:center!important}.t-nowrap{overflow:hidden;text-overflow:ellipsis}.t-small{font-size:.875rem;line-height:1.67}.t-large{font-size:1.125rem;line-height:1.67}.bg-inverse{background-color:#fff}@media screen and (max-width:1023px){.h1,.h3,h1,h2,h4,h6{line-height:1.2}.nav,.nav.can-toggle{background-color:#fff}.h1,h1{font-size:2.75rem}h2{font-size:2.125rem}.h3{font-size:1.625rem}h4{font-size:1.375rem}h6{font-size:.875rem}.cover>.box>.h1{font-size:1.75rem;line-height:1.17857}.cover{padding:30px 0;height:auto}.row{flex-flow:column nowrap}.row.is-m{flex-flow:row wrap}.is-attached[data-position-m=tc]{top:0;left:50%;transform:translate(-50%,-50%)}.popover-owner.has-pointer:before{content:"";position:absolute;top:14px;right:20px;width:10px;height:10px;border:1px solid #3b3b3b;border-width:0 1px 1px 0;transform:rotate(45deg)}.popover{overflow:auto;position:fixed;top:auto;bottom:0;left:0;width:100%;max-height:75vh;border-radius:0;transform:translate3d(0,100%,0)}.popover.is-inline{display:none;position:relative;max-height:none;padding-left:10px;transform:none;border:none;overflow:visible}.popover.is-full{top:0;max-height:none;transform:translate3d(100%,0,0)}.card{padding:16px;border-radius:0}.dropdown>li.is-title,.dropdown>li>a{padding:14px 20px}.dropdown.in-nav{color:#3b3b3b}.dropdown.in-nav>li>a{padding:7px 20px}.img-70-m{width:70px;height:70px}.in-pack,.input-pack{display:block}.in-pack{width:100%}.in-pack:not(:last-child){margin-bottom:16px}.list-menu{display:flex;width:auto;height:100%;flex-direction:column;overflow:hidden}.list-menu-title{flex:0 0 auto}.list-menu-group{overflow:auto;flex:1 1 auto;justify-content:flex-start;max-height:none;min-height:auto}.nav>li.is-wide-m{flex:1}.nav>li{align-self:auto}.nav>li>a{font-size:1.125rem;line-height:1.125;padding:10px 20px;color:#a6afb9}.nav>li>a.is-logo{display:block;margin:0;padding:14px;text-align:center}.nav>li>a.is-toggle{padding:16px 20px}.nav>li.is-group{margin-top:10px;padding:10px 0;border-top:1px solid #e7e9ed}.nav>li.is-first{order:0;align-self:flex-end;width:100%}.nav.is-aux>li>a{padding:16px}.nav.can-toggle{flex-direction:column;position:fixed;top:0;right:0;bottom:0;left:0;padding:0;transform:translate3d(-100%,0,0)}.nav.can-toggle>li>a{display:block;color:#000}.nav.can-toggle>li>a.is-toggle{display:inline-block}.nav.can-toggle.from-right{transform:translate3d(200%,0,0)}.p0-m{padding:0!important}.p0y-m{padding-bottom:0!important;padding-top:0!important}.m20t-m{margin-top:20px!important}.p20-m{padding:20px!important}.m40-m{margin:40px!important}.m40b-m{margin-bottom:40px!important}.p40-m{padding:40px!important}.p40b-m{padding-bottom:40px!important}.u-expanded-m{width:100%!important;display:block!important}.d{display:none!important}.t-center-m{text-align:center!important}.t-regular-m{font-size:1rem;line-height:1.67}}@media screen and (min-width:1024px){.popover.is-pointing:after,.popover:before{content:"";display:block;z-index:-1;position:absolute}.list.is-inline{margin:0}.list.is-inline>li{display:inline-block;padding-left:0}.list.is-inline>li:not(:first-child){padding-left:23px}.col.is-2-d{flex:0 0 auto;width:16.66667%}.col.is-3-d{flex:0 0 auto;width:25%}.col.is-7-d{flex:0 0 auto;width:58.33333%}.is-attached[data-position-d=tl]{top:0;left:0;transform:translate(-50%,-50%)}.popover:before{top:-6px;right:-6px;bottom:-6px;left:-6px}.popover[data-placement=bl],.popover[data-placement=br]{bottom:-4px;transform:translateX(0) translateY(100%) translateZ(2px)}.popover.is-pointing:before{top:-19px;right:-19px;bottom:-19px;left:-19px}.popover.is-pointing:after{border:0 transparent;background:#fff;width:14px;height:14px;backface-visibility:hidden}.popover[data-placement=bl]{left:0}.popover[data-placement=bl]:after{top:0;left:0;transform:translate(100%,-50%) rotate(-135deg)}.popover[data-placement=br]{right:0}.popover[data-placement=br].is-pointing{bottom:-14px}.popover[data-placement=br]:after{top:0;right:0;transform:translate(-100%,-50%) rotate(-135deg)}.btn.in-pack{flex:none;min-width:auto;height:44px;padding:13px;border:1px solid #a6afb8;outline:0}.btn.in-pack.is-small{height:38px;padding:11px}.img-120-d{width:120px;height:120px}.in-pack.is-borderless-d,.in-pack>.input.is-borderless-d,.input.is-borderless-d{border-color:#f7f8fa}.input-pack{display:flex}.in-pack{flex:1;vertical-align:top}.in-pack,.in-pack>.input{border-radius:0;min-width:150px}.in-pack:first-child{border-radius:2px 0 0 2px}.in-pack:last-child{border-radius:0 2px 2px 0}.in-pack:not(:first-child):not(:last-child){margin-left:-1px;margin-right:-1px}.nav>li.is-wide-d{flex:1}.nav>li.can-grow-d{flex:1 1 auto;max-width:500px}.nav>li>a.is-logo{margin:0 75px 0 26px;padding:24px 0}.nav.is-aux>li>a>.icon{color:#fff}.search-bar{z-index:5001}.search-bar:not(.is-active)>.b-close,.search-bar:not(.is-compact)>.b-search{display:none}.search-bar>.b-close{position:absolute;top:0;right:0;padding:28px 32px;font-size:20px}.p10r-d{padding-right:10px!important}.m40l-d{margin-left:40px!important}.p40l-d{padding-left:40px!important}.m{display:none!important}.t-right-d{text-align:right!important}.t-small-d{font-size:.875rem;line-height:1.67}}@media screen{.print-only{display:none!important}}
+/*]]>*/
+</style>
+<script>
+/*<![CDATA[*/
+!function(n){var a=[],e=setInterval(function(){if(B8.v){for(var n;n=a.pop();)B8.ready(n);clearInterval(e)}},100);n.B8=n.B8||{ready:function(n){a.push(n)}}}(window);
+/*]]>*/
+</script>
+<title>Bayt.com Careers (2019)  - Bayt.com</title><meta name="description" content="Founded in 2000, Bayt.com has become one of the most trusted and respected brands in the region. Over the years, we have won numerous awards of recognition, including the &amp;quot;Leading E-Commerce Website i..." />
+<link rel="canonical" href="https://www.bayt.com/en/company/bayt-com-1480348/" />
+<meta property="fb:app_id" content="116830345011417" />
+<meta property="og:site_name" content="Bayt.com" />
+<meta property="og:title" content="Bayt.com Careers (2019)  - Bayt.com" />
+<meta property="og:image:secure_url" content="https://img0cf.b8cdn.com/images/logo/48/1480348_logo_1547108458_n.png" />
+<meta property="og:image" content="http://img0cf.b8cdn.com/images/logo/48/1480348_logo_1547108458_n.png" />
+<meta property="og:description" content="Founded in 2000, Bayt.com has become one of the most trusted and respected brands in the region. Over the years, we have won numerous awards of recognition, including the &amp;quot;Leading E-Commerce Website i..." />
+<meta property="og:url" content="https://www.bayt.com/en/company/bayt-com-1480348/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Baytcom" />
+	</head>
+	<body>
+		
+
+<div class="t-center print-only"><img src="//img1cf.b8cdn.com/bayt/assets/b8static/svg/bayt-logo.svg" alt="Bayt.com"></div>						
+<div class="bg-inverse">
+			<section class="cover has-attachments" style="background-image:url(//img0cf.b8cdn.com/images/cover/48/1480348_cover_1519918477.jpg);" data-viewsize='{ "m":{ "height": { "min": 0.25}}, "d":{ "height": { "min": 0.25}} }'>
+			<div class="box p40b-m m40b-m">
+			<h2 class="h1 t-inverse m40-m p40-m">
+			We&#039;re helping others reach new heights with a career they love			</h2>
+		</div>
+		<div class="card u-shadow has-attachments is-attached is-fluid" data-position="bc" data-js-aid="companyBanner">
+			<div class="is-attached m40l-d p40l-d" data-position-d="tl" data-position-m="tc">
+									<div class="card-head">
+									<img class="img-120-d img-70-m m40l-d u-shadow bg-inverse" id="companyLogo" src="//img0cf.b8cdn.com/120x120/images/logo/48/1480348_logo_1547108458_n.png" alt="Bayt.com  logo" title="Bayt.com  logo" />
+					</div>
+			</div>
+
+			<div class="card-content">
+				<div class="row h-align-right t-center-m">
+					<div class="col is-7-d m20t-m">
+						<h1 class="h3">Bayt.com </h1>
+						<p>Internet/E-commerce</p>													<p class="d">United Arab Emirates - Dubai</p>
+						
+													<a href='http://www.bayt.com'  ><p class='t-nowrap'>http://www.bayt.com</p></a>
+													<p>Is this your business? <a href="/en/employers/new/?company_id=94529"><u class="t-mute">Claim your company profile now</u></a></p>
+<script src="//jscf.b8cdn.com/bayt/assets/company-121/js/companyViewB8.js" defer="defer" id="3438738334"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/highmaps.js" defer="defer" id="976801108"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/data.js" defer="defer" id="1908610261"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/world.js" defer="defer" id="2034136096"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/company-121/js/employeeInsightsMap.js" defer="defer" id="188531342"></script>
+<script>
+/*<![CDATA[*/
+B8.ready(function(){BaytNavigation.ajax.defaultAjaxSetup()});
+/*]]>*/
+</script>
+					</div>
+					<div class="col is-3-d t-right-d ">
+													<button class="btn is-small " onclick='followCompany(94529,this,0)' id="followCompany_94529">Follow</button>
+							<button class="btn is-small  u-none is-secondary" onclick='unFollowCompany(94529,this,0)' id="unfollowCompany_94529">Following</button>
+												<div>31K+ Followers</div>
+											</div>
+				</div>
+			</div>
+		</div>
+		<br />
+			</section>
+</div>
+
+<section data-viewsize='{ "m":{ "height": { "min": 0.5}}, "d":{ "height": { "min": 0.5}}}'>
+	<div class='p40 bg-inverse'><br /></div><div class="bg-inverse p20t">
+	<div class="box">
+		<h2 class=" h1 t-center m20 p40x">
+			Join Our Team Today					</h2>
+
+		<div class="row m20y p20y" data-swiper>
+								<div class="col is-4-d is-12-m">
+						<div class="card is-stretched u-shadow">
+							<div class="card-head">
+								<h5 class="t-nowrap t-primary"><a class=" t-wrap" data-js-aid="jobTitle" target="_blank" href="/en/uae/jobs/ceo-3999751/">
+									CEO								</a></h5>
+								</div>
+							<div class="card-content">
+								<p>Jul 25, 2019</p>
+								<p class="m0"> Dubai, United Arab Emirates</p>
+							</div>
+						</div>
+					</div>
+									<div class="col is-4-d is-12-m">
+						<div class="card is-stretched u-shadow">
+							<div class="card-head">
+								<h5 class="t-nowrap t-primary"><a class=" t-wrap" data-js-aid="jobTitle" target="_blank" href="/en/kuwait/jobs/relationship-manager-sme-hunter-3995879/">
+									Relationship Manager- SME Hunter								</a></h5>
+								</div>
+							<div class="card-content">
+								<p>Jul 23, 2019</p>
+								<p class="m0"> Al Kuwait, Kuwait</p>
+							</div>
+						</div>
+					</div>
+									<div class="col is-4-d is-12-m">
+						<div class="card is-stretched u-shadow">
+							<div class="card-head">
+								<h5 class="t-nowrap t-primary"><a class=" t-wrap" data-js-aid="jobTitle" target="_blank" href="/en/qatar/jobs/internship-volunteer-recruiter-3994124/">
+									Internship/Volunteer - Recruiter								</a></h5>
+								</div>
+							<div class="card-content">
+								<p>Jul 22, 2019</p>
+								<p class="m0"> Doha, Qatar</p>
+							</div>
+						</div>
+					</div>
+									<div class="col is-4-d is-12-m">
+						<div class="card is-stretched u-shadow">
+							<div class="card-head">
+								<h5 class="t-nowrap t-primary"><a class=" t-wrap" data-js-aid="jobTitle" target="_blank" href="/en/kuwait/jobs/researcher-3993061/">
+									Researcher								</a></h5>
+								</div>
+							<div class="card-content">
+								<p>Jul 22, 2019</p>
+								<p class="m0"> Al Kuwait, Kuwait</p>
+							</div>
+						</div>
+					</div>
+									<div class="col is-4-d is-12-m">
+						<div class="card is-stretched u-shadow">
+							<div class="card-head">
+								<h5 class="t-nowrap t-primary"><a class=" t-wrap" data-js-aid="jobTitle" target="_blank" href="/en/egypt/jobs/ent-relationship-manager-3981367/">
+									ENT Relationship Manager								</a></h5>
+								</div>
+							<div class="card-content">
+								<p>Jul 16, 2019</p>
+								<p class="m0"> Cairo, Egypt</p>
+							</div>
+						</div>
+					</div>
+								<div class="col is-4-d is-12-m">
+					<div class="card bg-primary u-shadow">
+						<div class="card-content is-stretched m20y has-attachments">
+							<a class="is-inverse h5 m0 is-attached u-expanded"  href="/en/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1480348&amp;filters%5Bemployer_group_id%5D%5B%5D=1888186&amp;filters%5Bemployer_profile_id%5D%5B%5D=0" data-position="c" target="_blank">
+								<span class="u-left-d p20x">View All Jobs</span>
+								<i class ="icon is-forward m0 is-24 u-right p20x"> </i>
+							</a>
+						</div>
+					</div>
+				</div>
+					</div>
+	</div>
+</div>
+
+<div id="similarIndustries"></div>
+	<div class="p40-d">
+		<div class="box is-large t-center">
+			<h2 class=" h1 t-center p40x">
+				Salaries at Bayt.com							</h2>
+			<p class="t-large">Company Salary Range</p>
+					</div>
+		<div class="row box t-center p0">
+			<div class="col">
+				<div class="row m40b-d">
+					<div class="col is-4-d is-12-m">
+						<div class="card u-shadow">
+							<div class="card-content t-center-d p40y-d m40t-d">
+								<p class="h4 u-center-m m0-m"><b>Monthly Salary Range </b></p>
+								<a class="t-xlarge p10y u-block" href="/en/uae/salaries/companies/bayt-com/"><b>$1,437-4,192</b> </a>
+							</div>
+						</div>
+					</div>
+					<div class="col is-8-d is-12-m p0">
+												<div class="row">
+														<div class="col is-6-d is-12-m">
+								<div class="card u-shadow">
+									<div class="card-content t-center-d">
+										<a class="t-large p10y u-block" href="/en/uae/salaries/companies/bayt-com/"><b>Business Manager</b></a>
+										<p class="h4 u-center-m m0-m"><b> $5,635-6,887</b></p>
+									</div>
+								</div>
+							</div>
+														<div class="col is-6-d is-12-m">
+								<div class="card u-shadow">
+									<div class="card-content t-center-d">
+										<a class="t-large p10y u-block" href="/en/uae/salaries/companies/bayt-com/"><b>Graphic Designer</b></a>
+										<p class="h4 u-center-m m0-m"><b> $4,226-5,165</b></p>
+									</div>
+								</div>
+							</div>
+													</div>
+											<div class="row">
+														<div class="col is-6-d is-12-m">
+								<div class="card u-shadow">
+									<div class="card-content t-center-d">
+										<a class="t-large p10y u-block" href="/en/uae/salaries/companies/bayt-com/"><b>Senior Enterprise Relationship Manager</b></a>
+										<p class="h4 u-center-m m0-m"><b> $3,920-4,791</b></p>
+									</div>
+								</div>
+							</div>
+														<div class="col is-6-d is-12-m">
+								<div class="card u-shadow">
+									<div class="card-content t-center-d">
+										<a class="t-large p10y u-block" href="/en/uae/salaries/companies/bayt-com/"><b>Senior Relationship Manager</b></a>
+										<p class="h4 u-center-m m0-m"><b> $3,797-4,641</b></p>
+									</div>
+								</div>
+							</div>
+													</div>
+										</div>
+				</div>
+				<div class="t-center">
+					<a href="/en/uae/salaries/companies/bayt-com/" class="btn is-round is-outline"><i class="icon is-lock"></i> See more </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<div class="p40-d">
+	<div class="box is-large t-center">
+		<h2 class="h1 t-center p40x">
+			Employee Insights		</h2>
+		<p><i class="icon is-arrow-up t-hilight t-large"></i>Intelligence Generated by Bayt.com</p>
+			</div>
+	<div class="row box p0">
+		<div class="col is-8 is-12-m">
+			<div class="card">
+				<div class="card-content">
+					<h4>Currently employed at this company: <a href="https://www.bayt.com/en/company/bayt-com-1480348/employees/">1055</a></h4>
+											<p><b>Bayt.com hires employees from the below companies often:</b></p>
+						<div class="row is-m v-align-top">
+														<div class="col is-3-d is-6-m">
+								<div class="card">
+									<div>
+																					<a href="/en/company/bayt-com-1726066/"><img src="//img0cf.b8cdn.com/images/people/emp-no-logo120X120.png" class="img-120 img-70-m u-left-m"></a>
+																			</div>
+									 <div class="card-head">
+										<a class="is-black p10y-d u-block-d" href="/en/company/bayt-com-1726066/">Bayt.com</a>
+									</div>
+								</div>
+							</div>
+														<div class="col is-3-d is-6-m">
+								<div class="card">
+									<div>
+																					<a href="/en/company/%D8%A8%D9%8A%D8%AA-%D9%83%D9%88%D9%85-1698751/"><img src="//img0cf.b8cdn.com/images/people/emp-no-logo120X120.png" class="img-120 img-70-m u-left-m"></a>
+																			</div>
+									 <div class="card-head">
+										<a class="is-black p10y-d u-block-d" href="/en/company/%D8%A8%D9%8A%D8%AA-%D9%83%D9%88%D9%85-1698751/">بيت كوم</a>
+									</div>
+								</div>
+							</div>
+													</div>
+										<div class="row">
+													<p class="m0b"><b>Many of Bayt.com's employees come from the below universities and educational backgrounds:</b></p>
+							<div class="col is-6 is-12-m p0">
+								<p>
+									<b>Top Universities </b>
+								</p>
+								<ul class="list is-basic">
+																	<li>University of jordan</li>
+																	<li>Software technology institute dalian jiaotong university (railway institute)</li>
+																	<li>Software engineer</li>
+																	<li>Hashemite university</li>
+																</ul>
+							</div>
+																			<div class="col is-6 is-12-m p0">
+								<p>
+									<b>Top Educational Backgrounds</b>
+								</p>
+								<ul class="list is-basic">
+																	<li>Software Engineering</li>
+																	<li>Business Administration</li>
+																	<li>IT</li>
+																	<li>Computer Science</li>
+																</ul>
+							</div>
+											</div>
+				</div>
+			</div>
+			<div class="card d">
+				<div class="card-content">
+					<p class="t-large m0t">Many of Bayt.com’s employees are residing in the following locations:</p>
+					<div class="card-content" id="container" data-js-chart='{"lang":"en","data":[{"code":"AE","value":173},{"code":"JO","value":355},{"code":"SA","value":122},{"code":"US","value":3},{"code":"KW","value":24},{"code":"LB","value":17},{"code":"QA","value":19},{"code":"EG","value":92},{"code":"BH","value":6},{"code":"UK","value":5},{"code":"FR","value":2},{"code":"PK","value":48},{"code":"MA","value":28},{"code":"DZ","value":44},{"code":"SY","value":4},{"code":"PX","value":7},{"code":"LK","value":2},{"code":"YE","value":14},{"code":"ZA","value":1},{"code":"BD","value":5},{"code":"EH","value":1},{"code":"GH","value":2},{"code":"IQ","value":22},{"code":"AZ","value":1},{"code":"IN","value":3},{"code":"UG","value":2},{"code":"AF","value":3},{"code":"SD","value":10},{"code":"TN","value":6},{"code":"SO","value":1},{"code":"CN","value":1},{"code":"LY","value":1},{"code":"ZW","value":1},{"code":"XX","value":3},{"code":"CA","value":2},{"code":"AU","value":1},{"code":"TD","value":1},{"code":"OM","value":2},{"code":"TR","value":2},{"code":"ES","value":1},{"code":"PS","value":1},{"code":"TZ","value":1},{"code":"PH","value":1},{"code":"CM","value":1},{"code":"JM","value":1},{"code":"KP","value":1},{"code":"KR","value":1},{"code":"NG","value":1}]}'></div>
+				</div>
+			</div>
+		</div>
+		<div class="col is-4 is-12-m">
+							<div class="card">
+					<div class="card-head">
+						<h5><i class="icon is-bar-chart"></i>Top Skills in:</h5>
+					</div>
+					<div class="card-content is-stretched">
+						<div class="select">
+							<select class="input" onChange="updateJobRoles()" name="insight_role" id="insight_role">
+<option value="">Job Role</option>
+<option value="6">Accounting and Auditing</option>
+<option value="1">Administration</option>
+<option value="540">Architecture</option>
+<option value="534">Banking</option>
+<option value="535">Beauty and Fashion</option>
+<option value="541">Chemical Engineering</option>
+<option value="542">Civil Engineering</option>
+<option value="536">Cleaning Services</option>
+<option value="537">Community Services</option>
+<option value="538">Construction and Building</option>
+<option value="539">Consulting</option>
+<option value="3">Customer Service and Call Center</option>
+<option value="2">Design, Creative, and Arts</option>
+<option value="543">Electrical Engineering</option>
+<option value="5">Engineering</option>
+<option value="545">Farming and Agriculture</option>
+<option value="546">Finance and Investment</option>
+<option value="547">Hospitality and Tourism</option>
+<option value="7">Human Resources and Recruitment</option>
+<option value="21">Information Technology</option>
+<option value="8">Legal</option>
+<option value="9">Logistics and Transportation</option>
+<option value="548">Maintenance, Repair, and Technician</option>
+<option value="10">Management</option>
+<option value="549">Manufacturing</option>
+<option value="11">Marketing and PR</option>
+<option value="544">Mechanical Engineering</option>
+<option value="12">Medical, Healthcare, and Nursing</option>
+<option value="550">Oil and Gas</option>
+<option value="14">Purchasing and Procurement</option>
+<option value="15">Quality Control</option>
+<option value="16">Research and Development</option>
+<option value="17">Safety</option>
+<option value="18">Sales</option>
+<option value="19">Secretarial</option>
+<option value="551">Security</option>
+<option value="20">Support Services</option>
+<option value="4">Teaching and Academics</option>
+<option value="552">Training and Development</option>
+<option value="553">Translation</option>
+<option value="80">Writing and Journalism</option>
+</select>						</div>
+						<span id="specialitiesText"><p>Most common skills at Bayt.com for this job role are: </p></span>
+						<div class="m10b" id="specialities"> </div>
+						<p> Do you have these skills? <b><a href="https://www.bayt.com/en/mycvs/"><u>Update your CV!</u></a></b></p>
+					</div>
+				</div>
+						<div class="card">
+				<div class="card-head">
+					<h5><i class="icon is-briefcase"></i>Top Entry Level Jobs</h5>
+					<p>Most entry-level professionals at Bayt.com have the below job roles:</p>
+				</div>
+				<div class="card-content is-stretched">
+					<div class="m10b">
+														<span class="label t-small">Sales</span>
+														<span class="label t-small">Information Technology</span>
+														<span class="label t-small">Quality Control</span>
+														<span class="label t-small">Marketing and PR</span>
+														<span class="label t-small">Human Resources and Recruitment</span>
+														<span class="label t-small">Customer Service and Call Center</span>
+											</div>
+					<a href="https://www.bayt.com/en/international/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=0&amp;filters%5Bjb_career_level_id_original%5D%5B%5D=6&amp;filters%5Bjb_career_level_id_original%5D%5B%5D=1" class="t-small"><b>Find entry level jobs</b></a>
+				</div>
+			</div>
+			<div class="card">
+				<div class="card-head">
+					<h5><i class="icon is-people"></i>Gender and Age</h5>
+				</div>
+				<div class="card-content is-stretched">
+					<div class="row is-m is-compact">
+													<div class="col is-6">
+								<p class="t-xlarge">
+									<b>41.81%</b>
+									<br>
+									<span class="t-small t-wrap">Females</span>
+								</p>
+							</div>
+																			<div class="col is-6">
+								<p class="t-xlarge">
+									<b>58.19%</b>
+									<br>
+									<span class="t-small t-wrap">Males</span>
+								</p>
+							</div>
+											</div>
+					<div class="row is-m is-compact">
+													<div class="col is-6">
+								<p class="t-xlarge">
+									<b>73.65%</b>
+									<br>
+									<span class="t-small t-wrap">Under the age of 35</span>
+								</p>
+							</div>
+																			<div class="col is-6">
+								<p class="t-xlarge">
+									<b>3.51%</b>
+									<br>
+									<span class="t-small t-wrap">Above the age of 50</span>
+								</p>
+							</div>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="p20t bg-inverse">
+		<div class="box is-large t-center">
+			<h2 class="h1" data-js-aid="compNews">
+				Bayt.com Updates 							</h2>
+			<p class="t-large"> Find blogs, news, tips, and more here!</p>
+					</div>
+		<div class="row box t-center">
+			<div class="col">
+				<div class="row h-align-center v-align-stretch m20y t-left is-m">
+											<div class="col is-4-d is-12-m">
+							<div class="card u-shadow" data-js-aid="newsCard">
+																	<div class="card-banner">
+																															<a href="https://www.bayt.com/en/blog/7340/meet-rabea-ataya-ceo-of-bayt-com/">
+												<img src="//img0cf.b8cdn.com/images/resources/29/94529_news_sm_351305007.jpg" alt="Meet Rabea Ataya: CEO of Bayt.com">
+											</a>
+																			</div>
+																<div class="card-head">
+																			<a href="https://www.bayt.com/en/blog/7340/meet-rabea-ataya-ceo-of-bayt-com/" class="t-xlarge"><b>Meet Rabea Ataya: CEO of Bayt.com</b></a>
+																	</div>
+								<div class="card-content is-stretched">
+									Founder and CEO of Bayt.com, Rabea Ataya talks about the challenges that his family overcame&#8230;								</div>
+								<div class="card-foot t-right">
+																			<a href="https://www.bayt.com/en/blog/7340/meet-rabea-ataya-ceo-of-bayt-com/" rel="nofollow">Read Full Story</a>
+																	</div>
+
+							</div>
+						</div>
+											<div class="col is-4-d is-12-m">
+							<div class="card u-shadow" data-js-aid="newsCard">
+																	<div class="card-banner">
+																															<a href="https://www.bayt.com/en/blog/9905/should-you-add-a-photo-on-your-cv/">
+												<img src="//img0cf.b8cdn.com/images/resources/29/94529_news_sm_1335104634.jpg" alt="Should You Add a Photo on Your CV?">
+											</a>
+																			</div>
+																<div class="card-head">
+																			<a href="https://www.bayt.com/en/blog/9905/should-you-add-a-photo-on-your-cv/" class="t-xlarge"><b>Should You Add a Photo on Your CV?</b></a>
+																	</div>
+								<div class="card-content is-stretched">
+									Let us tell you why you should consider adding a photo to your CV and&#8230;								</div>
+								<div class="card-foot t-right">
+																			<a href="https://www.bayt.com/en/blog/9905/should-you-add-a-photo-on-your-cv/" rel="nofollow">Read Full Story</a>
+																	</div>
+
+							</div>
+						</div>
+											<div class="col is-4-d is-12-m">
+							<div class="card u-shadow" data-js-aid="newsCard">
+																	<div class="card-banner">
+																															<a href="https://www.bayt.com/en/blog/8833/the-seven-sins-of-workplace-communication/?utm_source=Facebook&amp;utm_medium=SM&amp;utm_campaign=Facebook">
+												<img src="//img0cf.b8cdn.com/images/resources/29/94529_news_sm_768925547.jpg" alt="The Seven Sins of Workplace Communication">
+											</a>
+																			</div>
+																<div class="card-head">
+																			<a href="https://www.bayt.com/en/blog/8833/the-seven-sins-of-workplace-communication/?utm_source=Facebook&amp;utm_medium=SM&amp;utm_campaign=Facebook" class="t-xlarge"><b>The Seven Sins of Workplace Communication</b></a>
+																	</div>
+								<div class="card-content is-stretched">
+									Find out how you can improve your communication skills at work!								</div>
+								<div class="card-foot t-right">
+																			<a href="https://www.bayt.com/en/blog/8833/the-seven-sins-of-workplace-communication/?utm_source=Facebook&amp;utm_medium=SM&amp;utm_campaign=Facebook" rel="nofollow">Read Full Story</a>
+																	</div>
+
+							</div>
+						</div>
+									</div>
+							<div class="row h-align-center">
+					<div class="col">
+						<a href="/en/company/bayt-com-1480348/news/" class="btn is-round is-outline"> View More </a>
+					</div>
+				</div>
+						</div>
+		</div>
+	</div>
+			<div class="p20t bg-inverse">
+			<div class="box is-large">
+				<div class="t-center">
+					<h2 class="h1" data-js-aid="section1">
+					Life at Bayt.com										</h2>
+					<p class="t-large"> Get a peek into what it&#039;s like to be a part of our team.</p>
+									</div>
+			</div>
+			<div class="row box is-wide">
+				<div class="col t-center h-align-center m20y">
+											<div class="box is-wide">
+							<div class="row h-align-center">
+								<div class="col is-12-d ">
+									<div class="row v-align-stretch h-align-center" data-lightbox>
+																																		<div class="col is-3-d ">
+																											<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_64628565.JPG" alt="">
+														<p></p>
+													</div>
+																																													<div class="col is-3-d ">
+																											<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_680138684.JPG" alt="">
+														<p></p>
+													</div>
+																																													<div class="col is-3-d ">
+																											<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_506662605.jpg" alt="">
+														<p></p>
+													</div>
+																																													<div class="col is-3-d ">
+																											<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_896038021.jpg" alt="">
+														<p></p>
+													</div>
+																																																			</div>
+								</div>
+							</div>
+						</div>
+
+															</div>
+			</div>
+
+		</div>
+			<div class="p20t bg-inverse">
+		<div class="box is-large">
+			<div class="t-center">
+				<h2 class="h1" data-js-aid="section2">
+					Our Offices									</h2>
+				<p class="t-large">Get a look into what makes our offices fun. </p>
+			</div>
+					</div>
+		<div class="row box is-wide">
+			<div class="col t-center h-align-center m20y">
+							<div class="row h-align-center">
+					<div class="col is-12-d ">
+						<div class="row v-align-stretch h-align-center" data-lightbox>
+																								<div class="col is-3-d ">
+																			<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_1362001374.JPG" alt="">
+										<p></p>
+									</div>
+																																<div class="col is-3-d ">
+																			<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_615725753.JPG" alt="">
+										<p></p>
+									</div>
+																																<div class="col is-3-d ">
+																			<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_260808917.jpg" alt="">
+										<p></p>
+									</div>
+																																<div class="col is-3-d ">
+																			<img class="u-stretch" src="//img0cf.b8cdn.com/images/gallery/29/94529_gallery_thumb_918786358.jpg" alt="">
+										<p></p>
+									</div>
+																																				</div>
+					</div>
+				</div>
+										</div>
+		</div>
+	</div>
+
+	<section class="p20 t-center bg-mute">
+	<div class="box">
+		<h2 class="h1 m20y p20y" data-js-aid="about">
+			Get to Know Bayt.com					</h2>
+		<div class=" m20y p20y t-left">
+							<h3>
+				About Bayt.com								</h3>
+				<p class="t-preline">Founded in 2000, Bayt.com has become one of the most trusted and respected brands in the region. Over the years, we have won numerous awards of recognition, including the &quot;Leading E-Commerce Website in the Pan Arab Region&quot; by the Pan Arab Web Awards (2007), the &quot;Company of the Year&quot; award by the TECOM Investments Pearl Awards (2009), and the &quot;Top Companies to Work For in the UAE&quot; award by the Great Places to Work Institute (2011, 2012, &amp; 2013),and Best Workplaces in Asia 2015 award. Bayt.com is firmly committed to the region and has an excellent and thorough understanding of the Middle East and North Africa recruitment market and business landscape. This is evidenced by Bayt.com&#039;s fully trilingual recruitment platform, which is the first and only such platform in the region, as well as its 12 regional offices in Abu Dhabi, Al Kuwait, Amman, Beirut, Cairo, Doha, Dubai, Eastern Province, Jeddah, Manama, Muscat and Riyadh. Bayt.com maintains an ongoing, dedicated customer support staff that is able to work directly with our customers to ensure their goals are achieved most efficiently and cost-effectively, it is also evidenced by Bayt.com&#039;s leading track record of continued success serving the region&#039;s jobseekers and employers in finding top jobs and top talent respectively. With over 35,200,000 professionals and over 40,000 leading organizations using Bayt.com&#039;s recruitment platform across all industry categories and career levels, Bayt.com is today the single largest marketplace of professionals and companies in the region.</p>
+										<h3 class="p20t">Vision								</h3>
+				<p class="t-preline">To be a Middle Eastern institution that is a globally recognized, respected and admired indispensable extension of people&#039;s lives.</p>
+										<h3 class="p20t">Mission								</h3>
+				<p class="t-preline">Lifestyle Engineering: To empower people with the tools and knowledge to build their lifestyles of choice.</p>
+					</div>
+	</div>
+</section>
+<div class="bg-inverse p20t">
+	<div class="box t-center p40 is-large">
+		<h2 class="h1 m20y p20y">
+			Our Achievements 					</h2>
+		<p class="t-large"> We&#039;re not the only ones who think we&#039;re the best place to work!</p>
+				<div class="row v-align-stretch h-align-center  m20y is-m">
+							<div class="col is-3-d is-12-m">
+					<div class="card u-shadow t-left">
+												<div class="card-banner">
+							<img src="//img0cf.b8cdn.com/images/awards/29/94529_award_1532851069.png" alt="Recognized at the World Economic Forum 2014">
+						</div>
+												<div class="card-head">
+							<p class="h5"> Recognized at the World Economic Forum 2014 </p>
+						</div>
+						<div class="card-content t-small">
+							WEF recognized us as one of the most dynamic &amp; fastest growing companies in the world.						</div>
+					
+					</div>
+				</div>
+							<div class="col is-3-d is-12-m">
+					<div class="card u-shadow t-left">
+												<div class="card-banner">
+							<img src="//img0cf.b8cdn.com/images/awards/29/94529_award_1532851215.jpg" alt=" Best Workplaces in Asia Awards, 2015">
+						</div>
+												<div class="card-head">
+							<p class="h5">  Best Workplaces in Asia Awards, 2015 </p>
+						</div>
+						<div class="card-content t-small">
+							Bayt.com has been named among the top 10 Best Workplaces in the Asia.						</div>
+					
+					</div>
+				</div>
+							<div class="col is-3-d is-12-m">
+					<div class="card u-shadow t-left">
+												<div class="card-banner">
+							<img src="//img0cf.b8cdn.com/images/awards/29/94529_award_1532851331.jpg" alt="Business of the Year 2012">
+						</div>
+												<div class="card-head">
+							<p class="h5"> Business of the Year 2012 </p>
+						</div>
+						<div class="card-content t-small">
+							Bayt.com won the prestigious Gulf Capital Business of the Year at SMEInfo Awards.						</div>
+					
+					</div>
+				</div>
+							<div class="col is-3-d is-12-m">
+					<div class="card u-shadow t-left">
+												<div class="card-banner">
+							<img src="//img0cf.b8cdn.com/images/awards/29/94529_award_1532851379.png" alt="Business Start of the Year">
+						</div>
+												<div class="card-head">
+							<p class="h5"> Business Start of the Year </p>
+						</div>
+						<div class="card-content t-small">
+							Bayt.com was named “Business Star of the Year” at the prestigious SME Advisor Awards.						</div>
+					
+					</div>
+				</div>
+					</div>
+			</div>
+</div>
+<div class="t-center bg-inverse p20t"  data-viewsize='{ "m":{ "height": { "min": 0.5}}, "d":{ "height": { "min": 0.5}} }'>
+	<div class="box is-large">
+		<h2 class="h1" data-js-aid="social">
+			We&#039;re Social						</h2>
+		<p class="t-large"> Follow to stay updated on all of our events, tips, news, and blogs. </p>
+			</div>
+	<div class="box">
+		<ul class="list is-basic is-inline is-spaced">
+							<li>
+					<a class="btn u-expanded-m is-large is-facebook" target="_blank" href="https://www.facebook.com/Baytcom/" ><i class="icon is-facebook"></i>Facebook </a>
+				</li>
+													<li>
+					<a class="btn u-expanded-m is-large is-twitter" target="_blank" href="https://twitter.com/Baytcom?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" ><i class="icon is-twitter"></i>Twitter</a>
+				</li>
+											</ul>
+	</div>
+</div>
+</section>
+		<footer>
+	<div class="box">
+							<div class="row d">
+				<div class="col">
+					<p class="t-mute t-large">Find Jobs</p>
+					<ul class="list is-tabular of-6 t-small t-mute" id="yw1">
+<li><a href="https://www.bayt.com/en/uae/jobs/locations/abu-dhabi/">  Jobs in Abu Dhabi</a></li>
+<li><a href="https://www.bayt.com/en/uae/jobs/locations/dubai/">  Jobs in Dubai</a></li>
+<li><a href="https://www.bayt.com/en/algeria/jobs/">  Jobs in Algeria</a></li>
+<li><a href="https://www.bayt.com/en/bahrain/jobs/">  Jobs in Bahrain</a></li>
+<li><a href="https://www.bayt.com/en/egypt/jobs/">  Jobs in Egypt</a></li>
+<li><a href="https://www.bayt.com/en/india/jobs/">  Jobs in India</a></li>
+<li><a href="https://www.bayt.com/en/iraq/jobs/">  Jobs in Iraq</a></li>
+<li><a href="https://www.bayt.com/en/jordan/jobs/">  Jobs in Jordan</a></li>
+<li><a href="https://www.bayt.com/en/kuwait/jobs/">  Jobs in Kuwait</a></li>
+<li><a href="https://www.bayt.com/en/lebanon/jobs/">  Jobs in Lebanon</a></li>
+<li><a href="https://www.bayt.com/en/libya/jobs/">  Jobs in Libya</a></li>
+<li><a href="https://www.bayt.com/en/morocco/jobs/">  Jobs in Morocco</a></li>
+<li><a href="https://www.bayt.com/en/oman/jobs/">  Jobs in Oman</a></li>
+<li><a href="https://www.bayt.com/en/pakistan/jobs/">  Jobs in Pakistan</a></li>
+<li><a href="https://www.bayt.com/en/qatar/jobs/">  Jobs in Qatar</a></li>
+<li><a href="https://www.bayt.com/en/saudi-arabia/jobs/">  Jobs in Saudi Arabia</a></li>
+<li><a href="https://www.bayt.com/en/sri-lanka/jobs/">  Jobs in Sri Lanka</a></li>
+<li><a href="https://www.bayt.com/en/tunisia/jobs/">  Jobs in Tunisia</a></li>
+<li><a href="https://www.bayt.com/en/uae/jobs/">  Jobs in UAE</a></li>
+<li><a href="https://www.bayt.com/en/yemen/jobs/">  Jobs in Yemen</a></li>
+</ul>				</div>
+			</div>
+			<hr class="m20y d">
+				<div class="row is-m">
+			<div class="col is-8 d">
+				<p class="t-mute t-large m0">About Bayt.com</p>
+				<p class="t-mute t-small">Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.</p>
+									<p class="t-mute t-large">Follow Bayt.com</p>
+					<ul class="list is-basic is-inline is-compact t-mute" id="yw2">
+<li><a class="m0 icon is-18 is-facebook" href="https://www.facebook.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-twitter" href="https://twitter.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-linkedin" href="https://www.linkedin.com/company/bayt.com"></a></li>
+<li><a class="m0 icon is-18 is-youtube" href="https://www.youtube.com/user/baytTV"></a></li>
+<li><a class="m0 icon is-18 is-instagram" href="https://www.instagram.com/baytcom/"></a></li>
+<li><a class="m0 icon is-18 is-pinterest" href="https://www.pinterest.com/baytcom/"></a></li>
+</ul>							</div>
+							<div class="col is-2-d">
+					<p class="t-mute t-large m0">Company</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw3">
+<li><a href="https://www.bayt.com/en/pages/about-us/">About Us</a></li>
+<li><a href="https://www.bayt.com/en/pages/contact-us/">Contact Us</a></li>
+<li><a href="https://www.bayt.com/en/careers/">Careers</a></li>
+<li><a href="https://www.bayt.com/en/press-corner/">Press Corner</a></li>
+<li><a href="https://www.bayt.com/en/advertise/">Advertise With Us</a></li>
+<li><a href="https://www.bayt.com/en/pages/charity/">Community Service</a></li>
+</ul>				</div>
+										<div class="col is-2-d">
+					<p class="t-mute t-large m0">Quick Links</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw4">
+<li><a href="https://www.bayt.com/en/blog/">Blog</a></li>
+<li><a href="https://www.bayt.com/en/feedback/">Help</a></li>
+<li><a href="https://www.bayt.com/en/affiliates/">Affiliate Program</a></li>
+<li><a href="https://www.bayt.com/en/pages/never-miss-an-email/">Never Miss an Email</a></li>
+</ul>				</div>
+					</div>
+		<hr class="m20y">
+		<div class="row">
+			<div class="col p0">
+				<div class="u-right-d t-small">
+											<a href="/fr/company/bayt-com-1480348/" class="t-mute p10r"> Français </a>
+											<a href="/ar/company/bayt-com-1480348/" class="t-mute p10r"> العربية </a>
+									</div>
+				<p class="t-mute t-small m0-d">
+					&copy; <b>2000-2019 Bayt.com, Inc.</b> All Rights Reserved.					<a class="is-gray t-small" href="https://www.bayt.com/en/pages/terms/">Terms of Use</a> -
+					<a href="https://www.bayt.com/en/pages/privacy-statement/" class="is-gray t-small"> Privacy Statement </a> -
+					<a href="https://www.bayt.com/en/pages/cookie-policy/" class="is-gray t-small"> Cookie Policy </a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer><noscript data-deferred-styles><link rel="stylesheet" type="text/css" href="//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/B8.css" media="all" /></noscript>	<script src="//jscf.b8cdn.com/bayt/assets/company-121/js/companyViewB8.js" defer="defer" id="3438738334"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/highmaps.js" defer="defer" id="976801108"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/data.js" defer="defer" id="1908610261"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/b8static/js/world.js" defer="defer" id="2034136096"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/company-121/js/employeeInsightsMap.js" defer="defer" id="188531342"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/js/B8com.js" defer="defer" id="4072084034"></script>
+<script src="https://www.googletagmanager.com/gtm.js?id=GTM-NW36N4" async="async" id="3804486059"></script>
+<script>
+/*<![CDATA[*/
+B8.ready(function(){BaytNavigation.ajax.defaultAjaxSetup()});
+var dataLayer = dataLayer || [];dataLayer.push({"pageLang":"en","pageName":"company_profile","pageSection":"Job Seeker","pageProtected":false});dataLayer.push({"gtm.start":new Date().getTime(),"event":"gtm.js"});
+B8v={"domainType":"jobs","cookiesDomain":".bayt.com","devProjects":{"baytUI":1,"generic":0,"yiiBetaAndDev":0,"new_email_confirmation_considration":1,"hr_communities_new":1,"baytUIProfile":1,"cv_refreshness_project":1,"shagheel_domain":1,"job_post_baytui":1},"pageCached":true,"saveNav":true,"salaries":{"toggleURL":"\/ajax\/company\/company\/toggle-section"},"employees_insights":{"toggleURL":"\/ajax\/company\/company\/toggle-section"},"specialities":{"specialitiesURL":"\/ajax\/company\/company\/update-specialities","companyId":94529},"companyVideoFormUrl":"\/en\/company\/company-video-form\/","deleteCompanyVideo":"\/ajax\/company\/company\/delete-company-video","companyIdVideoSection":94529,"csrf":{"token":"3789b547bed42d52d46ce59b0000fa4e505b2198"},"loginUrl":{"returnUrl":"\/en\/login"},"errors":{"followError":"error"},"counts":{"countOfCompanyFollowers":"31K+"},"generalError":{"generalError":"<strong>Error:<\/strong> Sorry, an error occurred."},"companyId":{"companyId":94529},"isBranded":{"isBranded":true},"popCompanyData":{"image":"","popHeaderCompany":"WELCOME TO YOUR COMPANY PROFILE!","popSubheaderCompany":"Here you are some action you can take now","popList1Company":"Update your cover photo and company information","popList2Company":"Edit your company bio,mission,and vision","popList3Company":"Take aLook at your current job postings and employess","popButtonCompany":"Start editing now","ownCompanyView":false},"baytUiNavigation":{"mode":"jsLogout","list":"jobsLoggedOut","links":{"upg":"https:\/\/www.bayt.com\/en\/ecommerce\/upgrade\/?native_source=Top-bar","prm":"https:\/\/www.bayt.com\/en\/myworkspace-j\/elite-premium-account\/"},"confirmationMsgs":{"undeliverable":"<h5>Employers Can't Contact You!<\/h5> We tried to send you an email but it seems that your email address is incorrect. Change your email address by <a href=\"https:\/\/www.bayt.com\/en\/mycvs\/#contact\">clicking here<\/a>.","risky":"<h5>Employers Can't Contact You!<\/h5> You need to confirm your email address before you can appear in the employer search. <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\">Click here<\/a> to send the confirmation email.","unknown":"<h5>Employers Can't Contact You!<\/h5> We've sent you a confirmation email. Log in to your email and follow the instructions to confirm. Didn't get the email? <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\"> Send it again. <\/a>"}}};
+/*]]>*/
+</script>
+</body>
+</html>
+

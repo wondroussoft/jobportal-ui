@@ -1,0 +1,1537 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="../fragments/header :: header"></div>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<meta name="copyright" content="Copyright 2000-2019 Bayt.com, Inc."/>
+		<link rel="shortcut icon" href="//img0cf.b8cdn.com/images/templates/bayt/favicon_new.ico" type="image/x-icon"/>
+		<link rel="next" href="https://www.bayt.com/en/india/jobs/?page=2" />
+<link rel="manifest" href="/push-notifications/app/manifest.json" />
+<link hreflang="x-default" rel="alternate" href="https://www.bayt.com/en/india/jobs/" />
+<link hreflang="en" rel="alternate" href="https://www.bayt.com/en/india/jobs/" />
+<link hreflang="ar" rel="alternate" href="https://www.bayt.com/ar/india/jobs/" />
+<link hreflang="fr" rel="alternate" href="https://www.bayt.com/fr/india/jobs/" />
+<style >
+/*<![CDATA[*/
+@media screen{.print-only{display:none!important}}@media screen and (min-width:1024px){.search-bar:not(.is-active).is-compact>.input-pack,.search-bar:not(.is-active)>.b-close,.search-bar:not(.is-compact)>.b-search{display:none}}.icon{min-width:18px}.slider{position:relative}.slider-arrow{color:transparent}.slider-arrows{position:absolute}.t-danger{color:#ff3b30}@font-face{font-family:icons;src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot);src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot#iefix) format("embedded-opentype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-c1e03ae2bb370c07ec80e233666a3bdd.woff) format("woff"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-ed5fc7e449ef107102dbd0a9e51fc9c5.ttf) format("truetype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-d15b23562c07294e75a74e206d443995.svg#test) format("svg");font-display:optional;font-weight:400;font-style:normal}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.ttf) format('truetype');font-display:optional}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.ttf) format('truetype');font-display:optional}[type=checkbox],html{box-sizing:border-box}.h5,h1,h2,h4,h6{line-height:1.2;margin:0 0 .5em;color:#000}.list.is-basic,.list.is-basic>li{padding-left:0}.popover,.popover-owner,button,hr,input{overflow:visible}.accordion-title,.dropdown>li>a,a{text-decoration:none}.accordion-toggle:checked+.accordion-title,.btn,.dropdown>li.is-title{font-weight:700}.popover,nav>.nav{text-align:left}.dropdown,.list-menu-group,.list.is-basic,.media-list,.nav{list-style:none}.btn,.input,.nav>li>a>.icon{vertical-align:middle}html{font-family:Lato,Noto Kufi Arabic,sans-serif;font-size:16px;line-height:1.67}.accordion-animate>.accordion-content,aside,nav,section{display:block}h1{font-size:2.875rem}hr{box-sizing:content-box;height:0;width:100%;padding:.5px 0;background-color:#e7e9ed;border:0}.btn.is-outline,a{color:#2784fc;background-color:transparent}b{font-weight:bolder}img{border-style:none}button,input,select{margin:0;font-family:inherit}button,input{font-family:inherit}button,select{text-transform:none}[type=checkbox]{padding:0}[type=search]{outline-offset:-2px}*,:after,:before{box-sizing:inherit}body,html{padding:0;margin:0;background:#f4f4f4;color:#3b3b3b}.btn,.dropdown,.mobile-logo{line-height:1}h2{font-size:2.25rem}h4{font-size:1.5rem}.h5{font-size:1.25rem}h6{font-size:1rem}.list{font-size:16px;padding-left:1em}.accordion,.accordion-title,.nav.is-aux.is-small>li>a{font-size:14px}.box,.col{padding:10px}.list>li{padding-left:1.375em;font-size:1em;line-height:1.625}.list.is-basic.is-spaced>li{padding:6px 0}.list.is-basic.is-spaced.is-compact>li{padding:0 0 8px}.list.is-tabular{list-style:none;padding:0;margin:0;display:table;table-layout:fixed;width:100%}.list.is-tabular>li{display:table-cell;padding-left:0;float:left;width:100%}.box{max-width:1000px;margin:0 auto}.box.is-wide{max-width:1440px}.row{display:flex;flex-flow:row wrap;flex:1 0 auto}.col{display:block;flex:1 1 auto}.popover,.toggler-active>:last-child{display:none}.col.is-4{flex:0 0 auto;width:33.33333%}.col.is-12{flex:0 0 auto;width:100%}.is-attached{position:absolute;z-index:1}.is-attached[data-position=b]{left:0;right:0;bottom:0;transform:translateY(50%)}.is-attached[data-position=b].is-inner{transform:translate(0)}.is-attached.to-screen{position:fixed;height:auto;z-index:5000}.dropdown>li,.dropdown>li>a,.has-icon,.sticky-sense{position:relative}.sticky-sidebar{will-change:min-height}.popover{position:absolute;min-width:270px;background-color:#fff;border:1px solid #e7e9ed;border-radius:5px;z-index:10000;outline:0}.btn,.mobile-banner{background-color:#2784fc}.btn,.tag{text-align:center}.popover-owner{position:relative}.mobile-banner{display:flex;align-items:center;justify-content:space-between;padding:10px;color:#fff}.mobile-content{display:block;flex:1 1 auto}.mobile-logo{flex:0 0 auto;padding:4px;margin:0 10px;border:1px solid #fff;border-radius:10px}.toggle-head{padding:15px 20px}.accordion{border-bottom:1px solid #e7e9ed}.accordion-toggle{position:absolute;width:.1px;height:.1px;opacity:0;overflow:hidden;z-index:-1}.accordion-title,.list-menu-group,.list-menu-title,.media-list>li,.select,nav>.nav{position:relative}.nav,nav{z-index:5010}.accordion-toggle:checked+.accordion-title+.accordion-animate{max-height:1000px;opacity:1}.accordion-toggle:checked+.accordion-title:after{transform:translateY(-50%) rotate(180deg)}.accordion-toggle+.accordion-title:after{content:"\E804";position:absolute;top:50%;right:20px;color:#b9bfcb;transform-origin:50%;transform:translateY(-50%)}.accordion-title{display:block;padding:5px 20px;margin:0;border-top:1px solid #e7e9ed;color:#3b3b3b}.accordion-animate{max-height:0;opacity:.5;overflow:hidden}.accordion-content{position:relative;display:none;padding:10px 20px;border-top:1px solid #e7e9ed}.btn{font-size:1rem;padding:13px 27px;border:1px solid #2784fc;display:inline-block;overflow:hidden;color:#fff;border-radius:4px;white-space:nowrap}.btn.is-inverse{color:#828a93;background-color:#fff;border-color:#fff}.btn.is-clear{color:#3b3b3b;background-color:transparent;border-color:transparent}.card,.select,.select>.input{background-color:#fff}.btn.is-xsmall{font-size:.75rem;padding:9px 19px}.btn.is-small,.btn.is-xsmall{line-height:1;font-weight:700}.btn.is-small{font-size:.875rem;padding:11px 23px}.btn.is-inverse.is-outline{color:#fff;background-color:transparent}.btn.is-round{border-radius:100px}.btn+.btn{margin-left:10px}.card{padding:20px;border-radius:4px}.card:only-child{display:flex;flex-direction:column;justify-content:space-between;height:100%}.card.is-compact{padding:10px}.card-head{padding-bottom:10px}.card-foot{padding:20px 0 0}.dropdown{padding:10px 0;margin:0;font-size:.875rem;color:#3b3b3b;overflow:visible}.dropdown>li>a{display:block;padding:10px 20px;color:inherit;white-space:nowrap;font-weight:400}.b-close.is-inverse:after,.nav>li>a{color:#fff}.dropdown>li.is-title{padding:12px 20px;font-size:14px;text-transform:uppercase}.accordion-toggle+.accordion-title:after,.b-close,.icon{display:inline-block;text-align:center;font-family:icons;font-style:normal;font-weight:400;line-height:.8125;vertical-align:middle}.icon{margin:0 10px 0 0}.list-menu-group,.media-list,.nav{margin:0;padding:0}.icon.is-48{font-size:48px;padding:8px}.icon.is-smartphone:before{content:"\E8D9"}.icon.is-briefcase:before{content:"\E937"}.icon.is-salary:before{content:"\E989"}.icon.is-tie:before{content:"\E9AD"}.icon.is-apps:before{content:"\EB30"}.icon.is-bars:before{content:"\EB32"}.icon.is-search:before{content:"\EB4A"}.icon.is-filter:before{content:"\EC51"}.b-close:after{content:"\EB0C";color:#a6afb9}.b-close.is-large{font-size:18px}.b-close.is-tiny{font-size:10px}.has-icon>.icon{position:absolute;top:50%;right:12px;margin:auto;color:#a6afb9;transform:translateY(-50%)}.img-70{width:70px;height:70px}.img-apps{width:40px;height:40px}.img-apps.is-b{background-position:-40px 0}.img-apps.is-b-inverse{background-position:-120px -123px}.img-apps.is-specialties{background-position:-80px 0}.img-apps.is-learning{background-position:0 -43px}.img-apps.is-people{background-position:-40px -43px}.img-apps.is-companies{background-position:-80px -43px}.img-apps.is-salaries{background-position:-120px 0}.img-apps.is-articles{background-position:-120px -40px}.img-apps.is-researches{background-position:0 -83px}.img-apps.is-podcast{background-position:-40px -83px}.img-apps.is-blog{background-position:-80px -83px}.img-apps.is-shagheel{background-position:0 0}.img-logo.is-logo-inverse{background-position:-187px -66px;width:101px;height:22px}.img-logo.is-logo{background-position:-187px 0;width:101px;height:22px}.input{width:auto;font-size:1rem;line-height:1;height:44px;padding:14px;border:1px solid #a6afb8;border-radius:2px;outline:0;background-image:none}.input.is-small,.list-menu,.nav{font-size:.875rem}.input.is-small:not(textarea),.input:not(textarea){padding-top:0;padding-bottom:0}.input.is-small{line-height:1;height:38px;padding:12px}select.input{padding:0 12px;line-height:2}.select{display:inline-block;width:100%;overflow:visible}.select:before{background:#fff;width:35px;top:3px;bottom:3px;right:3px;border-radius:0 2px 2px 0}.select:after,.select:before{content:"";position:absolute}.select:after{right:17.5px;top:calc(50% - 2px);width:10px;height:10px;border:1px solid #b9bfcb;border-width:0 1px 1px 0;transform:translate(-50%,-50%) rotate(45deg);z-index:2}.bt,.list-menu-group,.media-list.in-card.is-divided,.media-list.is-divided>li:not(:first-child){border-top:1px solid #e7e9ed}.select>.input{display:inline-block;width:100%;line-height:1.5;appearance:none;padding-right:36px}.nav,.tag:not(.is-outline){background-color:#2784fc}.has-icon>.input{padding-right:39px}.list-menu{line-height:1.64285;width:360px;color:#a6afb9}.list-menu-title{color:#3b3b3b;padding:16px}.bb,.list-menu-title:first-child{border-bottom:1px solid #e7e9ed}.list-menu-group{overflow:auto;min-height:270px;max-height:480px}.media-list>li>div,.t-nowrap{overflow:hidden}.list-menu-title+.list-menu-group{border-top:0}.media-list>li{padding:0;white-space:normal;word-break:break-word}.media-list.is-spaced>li{padding:10px 0}.nav{line-height:1.07357;display:flex}.nav>li>a,.tag{display:inline-block;white-space:nowrap}.nav>li{flex:0 0 auto;order:50;align-self:center;padding-bottom:1px}.nav>li>a{padding:28px 10px;line-height:1.14286}.nav>li>a>.icon{margin:0;font-size:inherit;color:#a6afb9}.nav>li.is-group{margin:0 20px}.nav.is-aux{font-size:1.125rem;line-height:1.02056;justify-content:center}.nav.is-aux>li{padding-bottom:0}.nav.is-aux>li>a{padding:14px 15px 18px 5px}.dark-links>a{color:#3b3b3b}.b-search{width:44px;height:44px;margin-left:10px;background:#fff;font-size:16px;border:none;border-radius:100%}.b-search>.icon,.t-primary{color:#2784fc}.tag{font-size:.625rem;line-height:14px;margin-right:5px;padding:5px 10px;border:1px solid #2784fc;border-radius:4px;color:#fff}.t-large,.t-regular,.t-small,.t-xsmall{line-height:1.67}.tag.is-round{border-radius:13px}.tag.is-success{border-color:#4cd964}.tag.is-success:not(.is-outline){background-color:#4cd964}.m0{margin:0!important}.p0{padding:0!important}.p0r{padding-right:0!important}.p0b{padding-bottom:0!important}.m10x{margin-right:10px!important}.m10l,.m10x{margin-left:10px!important}.m10y{margin-bottom:10px!important}.m10t,.m10y{margin-top:10px!important}.p10l{padding-left:10px!important}.p10r{padding-right:10px!important}.p10y{padding-bottom:10px!important}.p10t,.p10y{padding-top:10px!important}.m20t{margin-top:20px!important}.m20b{margin-bottom:20px!important}.p20x{padding-right:20px!important;padding-left:20px!important}.u-abs{position:absolute!important}.u-expanded{width:100%!important;display:block!important}.u-left{float:left!important}.u-right{float:right!important}.u-none{display:none!important}.t-right{text-align:right!important}.t-center{text-align:center!important}.t-nowrap{white-space:nowrap;text-overflow:ellipsis}.t-xsmall{font-size:.75rem}.t-small{font-size:.875rem}.t-regular{font-size:1rem;color:#3b3b3b}.t-large{font-size:1.125rem}.t-mute{color:#a6afb9}.bg-inverse{background-color:#fff}a:not(.btn):not(.b-close):not(.label).is-gray{color:#a6afb9;text-decoration:underline}a:not(.btn):not(.b-close):not(.label).is-inverse{color:#fff;text-decoration:underline}@media screen and (max-width:1023px){.h5,h1,h2,h4,h6{line-height:1.2}.h5,.nav>li>a{font-size:1.125rem}.in-pack,.popover{width:100%}h1{font-size:2.75rem}h2{font-size:2.125rem}h4{font-size:1.375rem}h6{font-size:.875rem}.row.is-collapsed-m{padding:0}.row.is-collapsed-m>.col{padding:0 0 20px}.row{flex-flow:column nowrap}.row.is-m{flex-flow:row wrap}.popover-owner.has-pointer:before{content:"";position:absolute;top:14px;right:20px;width:10px;height:10px;border:1px solid #3b3b3b;border-width:0 1px 1px 0;transform:rotate(45deg)}.popover{overflow:auto;position:fixed;top:auto;bottom:0;left:0;max-height:75vh;border-radius:0;transform:translate3d(0,100%,0)}.popover.is-inline{display:none;position:relative;max-height:none;padding-left:10px;transform:none;border:none;overflow:visible}.popover.is-full{top:0;max-height:none;transform:translate3d(100%,0,0)}.can-toggle.is-m,.nav.can-toggle{position:fixed;top:0;right:0;bottom:0;left:0;background-color:#fff;transform:translate3d(-100%,0,0)}.can-toggle.is-m{display:flex;flex-direction:column;padding:0;z-index:5010}.can-toggle.is-m>.toggle-head{flex:0 0 auto;display:flex;justify-content:space-between;align-items:center}.can-toggle.is-m>.toggle-content{overflow:auto;flex:1 1 100%}.can-toggle.is-m>.toggle-content>.accordion{border-bottom:none}.can-toggle.is-m>.toggle-content>.accordion>.accordion-title:first-child{border-top:none}.card{padding:16px;border-radius:0}.card.is-compact{padding:8px}.dropdown>li.is-title,.dropdown>li>a{padding:14px 20px}.dropdown.in-nav{color:#3b3b3b}.dropdown.in-nav>li>a{padding:7px 20px}.in-pack,.input-pack{display:block}.in-pack:not(:last-child){margin-bottom:16px}.list-menu{display:flex;width:auto;height:100%;flex-direction:column;overflow:hidden}.list-menu-title{flex:0 0 auto}.list-menu-group{overflow:auto;flex:1 1 auto;justify-content:flex-start;max-height:none;min-height:auto}.media-list.in-card{margin:0 -16px}.media-list.in-card.is-spaced>li{padding:10px 16px}.nav>li.is-wide-m{flex:1}.nav>li{align-self:auto}.nav>li>a{line-height:1.125;padding:10px 20px;color:#a6afb9}.nav>li>a.is-logo{display:block;margin:0;padding:14px;text-align:center}.nav>li>a.is-toggle{padding:16px 20px}.nav{background-color:#fff}.nav>li.is-group{margin-top:10px;padding:10px 0;border-top:1px solid #e7e9ed}.nav>li.is-first{order:0;align-self:flex-end;width:100%}.nav.is-aux>li>a{padding:16px}.nav.can-toggle{flex-direction:column;padding:0}.nav.can-toggle>li>a{display:block;color:#000}.nav.can-toggle>li>a.is-toggle{display:inline-block}.nav.can-toggle.from-right{transform:translate3d(200%,0,0)}.p0-m{padding:0!important}.p0y-m{padding-bottom:0!important;padding-top:0!important}.p20-m{padding:20px!important}.u-expanded-m{width:100%!important;display:block!important}.d{display:none!important}.t-center-m{text-align:center!important}.t-regular-m{font-size:1rem;line-height:1.67}}@media screen and (min-width:1024px){.popover.is-pointing:after,.popover:before{position:absolute;z-index:-1;content:"";display:block}.list.is-inline{margin:0}.list.is-inline>li{display:inline-block;padding-left:0}.list.is-inline>li:not(:first-child){padding-left:23px}.list.is-tabular.of-2-d>li{width:50%;padding-right:10px}.row.is-reversed-d{flex-direction:row-reverse}.col.is-3-d{flex:0 0 auto;width:25%}.col.is-9-d{flex:0 0 auto;width:75%}.col.is-9-d.is-half{width:37.5%}.sticky-content{transform:translateZ(0);will-change:position,transform}.popover:before{top:-6px;right:-6px;bottom:-6px;left:-6px}.popover[data-placement=bl],.popover[data-placement=br]{bottom:-4px;transform:translateX(0) translateY(100%) translateZ(2px)}.popover.is-pointing:before{top:-19px;right:-19px;bottom:-19px;left:-19px}.popover.is-pointing:after{border:0 transparent;background:#fff;width:14px;height:14px;backface-visibility:hidden}.popover[data-placement=bl]{left:0}.popover[data-placement=bl]:after{top:0;left:0;transform:translate(100%,-50%) rotate(-135deg)}.popover[data-placement=br]{right:0}.popover[data-placement=br].is-pointing{bottom:-14px}.popover[data-placement=br]:after{top:0;right:0;transform:translate(-100%,-50%) rotate(-135deg)}.btn.in-pack{flex:none;min-width:auto;height:44px;padding:13px;border:1px solid #a6afb8;outline:0}.btn.in-pack.is-small{height:38px;padding:11px}.card.is-primary-d{position:relative}.card.is-primary-d:before{content:"";position:absolute;top:0;right:0;left:0;display:block;height:5px;background-color:#2784fc;border-radius:4px 4px 0 0}.in-pack.is-borderless-d,.in-pack>.input.is-borderless-d,.input.is-borderless-d{border-color:#f7f8fa}.input-pack{display:flex}.in-pack{flex:1;vertical-align:top}.in-pack,.in-pack>.input{border-radius:0;min-width:150px}.in-pack:first-child{border-radius:2px 0 0 2px}.in-pack:last-child{border-radius:0 2px 2px 0}.in-pack:not(:first-child):not(:last-child){margin-left:-1px;margin-right:-1px}.media-list.in-card{margin:0 -20px}.media-list.in-card.is-spaced>li{padding:10px 20px}.nav>li.is-wide-d{flex:1}.nav>li.can-grow-d{flex:1 1 auto;max-width:500px}.nav>li>a.is-logo{margin:0 75px 0 26px;padding:24px 0}.nav.is-aux>li>a>.icon{color:#fff}.search-bar{z-index:5001}.search-bar:not(.is-active)>.b-close,.search-bar:not(.is-compact)>.b-search{display:none}.search-bar>.b-close{position:absolute;top:0;right:0;padding:28px 32px;font-size:20px}.p10r-d{padding-right:10px!important}.m20x-d{margin-right:20px!important;margin-left:20px!important}.m{display:none!important}.t-right-d{text-align:right!important}.t-center-d{text-align:center!important}.t-small-d{font-size:.875rem;line-height:1.67}}@media screen{.print-only{display:none!important}}
+/*]]>*/
+</style>
+<script>
+/*<![CDATA[*/
+!function(n){var a=[],e=setInterval(function(){if(B8.v){for(var n;n=a.pop();)B8.ready(n);clearInterval(e)}},100);n.B8=n.B8||{ready:function(n){a.push(n)}}}(window);
+/*]]>*/
+</script>
+<title>Jobs in India (2019) - Bayt.com</title><meta name="description" content="Apply for the latest jobs in India on Bayt.com, The Middle East&#039;s #1 Job Site since 2000." />
+<link rel="canonical" href="https://www.bayt.com/en/india/jobs/" />
+<meta property="fb:app_id" content="116830345011417" />
+<meta property="og:site_name" content="Bayt.com" />
+<meta property="og:title" content="Jobs in India (2019) - Bayt.com" />
+<meta property="og:image:secure_url" content="https://img0cf.b8cdn.com/images/logos/fb_bayt_new_en.png" />
+<meta property="og:image" content="http://img0cf.b8cdn.com/images/logos/fb_bayt_new_en.png" />
+<meta property="og:description" content="Apply for the latest jobs in India on Bayt.com, The Middle East's #1 Job Site since 2000." />
+<meta property="og:url" content="https://www.bayt.com/en/india/jobs/" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Baytcom" />
+	</head>
+	<body>
+		
+
+<div class="t-center print-only"><img src="//img1cf.b8cdn.com/bayt/assets/b8static/svg/bayt-logo.svg" alt="Bayt.com"></div>							<div class="box is-wide row is-reversed-d is-collapsed-m">
+		<section id="jsMiniJobView" class="col is-9-d d is-half sticky-sense u-none">
+			<div class="sticky-sidebar" data-sticky-sidebar>
+				<!-- Job Vi	ew-->
+				<div id="view_inner" class="sticky-content">
+										</div>
+			</div>
+		</section>
+		<section id="jsMainListingContainer" class="col is-9-d  sticky-sense">
+			<div class="sticky-sidebar" data-sticky-sidebar>
+				<!-- Job Results-->
+				<div id="results_inner" class="sticky-content">
+					
+<!-- Job Results-->
+
+<div class="card p0b">
+	<div class="card-head">
+				<h1 class="h5">Jobs in India</h1>
+					<span>5208 Jobs Found: Showing 1 - 20</span>
+			<a id="filter" class="m u-right" href="#"> <i class="icon is-filter t-large u-left"></i>
+			<b class="t-large "> Filter </b> </a>
+			</div>
+	<div class="card-content">
+		<ul class="media-list in-card is-spaced is-divided is-reversed has-hover-d has-rects has-free-img bb" data-empty="Nothing available">
+										<li class="p0">
+					<div class="card">
+		<div class="card-content">
+		<ul id="topjob-links" class="t-small list is-tabular of-2-d">
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/bengaluru/" title="Bengaluru (687)">Bengaluru</a> <span class="t-mute">(687)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/chennai/" title="Chennai (265)">Chennai</a> <span class="t-mute">(265)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/mumbai/" title="Mumbai (261)">Mumbai</a> <span class="t-mute">(261)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/pune/" title="Pune (247)">Pune</a> <span class="t-mute">(247)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/gurgaon/" title="Gurgaon (175)">Gurgaon</a> <span class="t-mute">(175)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/delhi/" title="Delhi (152)">Delhi</a> <span class="t-mute">(152)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/hyderabad/" title="Hyderabad (79)">Hyderabad</a> <span class="t-mute">(79)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/kolkata/" title="Kolkata (24)">Kolkata</a> <span class="t-mute">(24)</span>
+			</li>
+						<li class="t-nowrap">
+				<a href="/en/india/jobs/locations/kerala/" title="Kerala (17)">Kerala</a> <span class="t-mute">(17)</span>
+			</li>
+					</ul>
+	</div>
+</div>				</li>
+																															<li data-js-job class="has-pointer-d" data-job-id = "3999235">
+		<div>
+			<img src="//img4cf.b8cdn.com/bayt/assets/b8static/svg/companies_no_logo.svg" class="img-70 u-right m10l" alt="Schotest" title="Schotest">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/hr-executive-3999235/" data-job-id = "3999235">
+											HR Executive									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Schotest						- Delhi									</b> Jul 25									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Fresh Graduate</li>
+																			<li><i class="icon is-salary t-mute m10x">&nbsp;</i>$10,000 - $15,000</li>
+											</ul>
+								<p>Searching Candidates as per the requirement of the company. Posting and sourcing candidates through various - Job sites, portals,&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/communication-written/" data-js-skip title="Communication-written Jobs in India">Communication Written</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3875469">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/09/1747509_logo_1540868711_n.png" class="img-70 u-right m10l" alt="Appen" title="Appen">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/work-from-home-search-engine-evaluator-hindi-speaker-3875469/" data-job-id = "3875469">
+											Work from Home Search Engine Evaluator - Hindi Speaker									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Appen						- Bengaluru									</b> Jul 23									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Entry Level</li>
+																	</ul>
+								<p>This position is restricted to current residents of India. Appen is looking for highly educated individuals for an exciting work from&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/english/" data-js-skip title="English Jobs in India">English</a> &nbsp;
+													<a href="/en/india/jobs/q/hindi/" data-js-skip title="Hindi Jobs in India">Hindi</a> &nbsp;
+													<a href="/en/india/jobs/q/internet/" data-js-skip title="Internet Jobs in India">Internet</a> &nbsp;
+													<a href="/en/india/jobs/q/social-media/" data-js-skip title="Social-media Jobs in India">Social Media</a> &nbsp;
+																			<span class="tag is-success is-round u-right"> Featured </span>
+											</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3984990">
+		<div>
+			<img src="//img4cf.b8cdn.com/bayt/assets/b8static/svg/companies_no_logo.svg" class="img-70 u-right m10l" alt="spingere pvt" title="spingere pvt">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/data-entry-3984990/" data-job-id = "3984990">
+											data entry									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">spingere pvt						- Bengaluru									</b> Jul 21									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Student/Internship</li>
+																	</ul>
+								<p>urgent requirement for data entry jobs, part time and full time</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/data-entry/" data-js-skip title="Data-entry Jobs in India">Data Entry</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3984986">
+		<div>
+			<img src="//img4cf.b8cdn.com/bayt/assets/b8static/svg/companies_no_logo.svg" class="img-70 u-right m10l" alt="Techenoid" title="Techenoid">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/online-tutor-3984986/" data-job-id = "3984986">
+											online tutor									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Techenoid						- Hyderabad									</b> Jul 21									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																			<li><i class="icon is-salary t-mute m10x">&nbsp;</i>$0 - $500</li>
+											</ul>
+								<p>Training Students online For Various Software Courses Using Online Meeting Software with HD Video Conferencin Provided by Techenoid.&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/salesforce-com/" data-js-skip title="Salesforce.com Jobs in India">Salesforce.com</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987955">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/outbound-sale-process-3987955/" data-job-id = "3987955">
+											Outbound Sale Process									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Delhi									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Dear Candidate, We are hiring experienced female candidate for outboud profile.</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+													<a href="/en/india/jobs/q/sales-and-marketing/" data-js-skip title="Sales-and-marketing Jobs in India">Sales and Marketing</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987953">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/ui-ux-developer-for-dun-and-bradsheet-chennao-3987953/" data-job-id = "3987953">
+											Ui/UX Developer For Dun and Bradsheet Chennao									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Chennai									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Web and Mobile Designer and UI/UX Experience Expert Web and Mobile Designer, UIX Expert, Web Page Optimization, CSS, Kendo UI, HTML5&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/it/" data-js-skip title="IT Jobs in India">IT</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987952">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/senior-sales-executive-3987952/" data-job-id = "3987952">
+											Senior Sales Executive									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Delhi									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Responsible for Sheets Business - Sales and Collection on assigned territory and meeting the specified targets - Appointing new Channel&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+													<a href="/en/india/jobs/q/sales-and-marketing/" data-js-skip title="Sales-and-marketing Jobs in India">Sales and Marketing</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987951">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/area-sales-executive-3987951/" data-job-id = "3987951">
+											Area Sales Executive									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Ludhiana									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Responsible for driving secondary value and volume objectives for the General Trade Channel (GT) in the assigned area Key Stakeholders:&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+													<a href="/en/india/jobs/q/sales-and-marketing/" data-js-skip title="Sales-and-marketing Jobs in India">Sales and Marketing</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987950">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/business-development-executive-3987950/" data-job-id = "3987950">
+											Business Development Executive									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Mumbai									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Mapping the market for potential business Generating leads through cold calling , social media etc Acquisition of new accounts and&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/executive-development/" data-js-skip title="Executive-development Jobs in India">Executive Development</a> &nbsp;
+													<a href="/en/india/jobs/q/business/" data-js-skip title="Business Jobs in India">Business</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987949">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/area-sales-manager-kolkata-3987949/" data-job-id = "3987949">
+											Area Sales Manager - Kolkata									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Kolkata									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>1. Deliver topline sales number for the Area/State To plan and achieve the sales targets.To plan and achieve the distribution targets&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+													<a href="/en/india/jobs/q/sales-and-marketing/" data-js-skip title="Sales-and-marketing Jobs in India">Sales and Marketing</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																		<li class="p0x p40y">
+								<div class=" t-center no-print" id="ad_listing_1"></div>							</li>
+																										<li data-js-job class="has-pointer-d" data-job-id = "3987948">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/product-manager-3987948/" data-job-id = "3987948">
+											Product Manager									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Delhi									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Roles and responsibilities Marketing Strategy Developed Annual Marketing plan and Brand Plans for the portfolio Developed both Capex&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/production/" data-js-skip title="Production Jobs in India">Production</a> &nbsp;
+													<a href="/en/india/jobs/q/management/" data-js-skip title="Management Jobs in India">Management</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987946">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/sales-trainer-3987946/" data-job-id = "3987946">
+											Sales Trainer									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Hyderabad									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Currently we are looking for the requirement of Sales Trainer for one of the worlds leading home textile manufacturer.</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+													<a href="/en/india/jobs/q/sales-and-marketing/" data-js-skip title="Sales-and-marketing Jobs in India">Sales and Marketing</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3987945">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/97/1878697_logo_1520945307_n.png" class="img-70 u-right m10l" alt="Spectrum Talent Management" title="Spectrum Talent Management">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/manager-research-development-npd-3987945/" data-job-id = "3987945">
+											Manager- Research Development ( NPD )									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Spectrum Talent Management						- Pune									</b> Jul 19									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Management</li>
+																	</ul>
+								<p>-Responsible for product and process development related to the natural products in nutra field.-Characterization and standardization&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/business-development-manager/" data-js-skip title="Business-development-manager Jobs in India">Business Development Manager</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3979082">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/09/2038509_logo_1561526451_n.png" class="img-70 u-right m10l" alt="Creazione Services Pvt. Ltd." title="Creazione Services Pvt. Ltd.">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/sbi-bank-recruitment-for-freshers-hurry-3979082/" data-job-id = "3979082">
+											SBI Bank Recruitment for Freshers || Hurry!!									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Creazione Services Pvt. Ltd.						- Kolkata									</b> Jul 16									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Entry Level</li>
+																	</ul>
+								<p>Job SummaryImmediate Vacancy for SBI bank for Kolkata,Howrah &amp; Hooghly Location. Should be smart &amp; Presentable. In House banking&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/communication-skills/" data-js-skip title="Communication-skills Jobs in India">Communication Skills</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3979314">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/28/1999428_logo_1513235191_n.png" class="img-70 u-right m10l" alt="Versatile Consultancy" title="Versatile Consultancy">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/senior-back-end-developer-3979314/" data-job-id = "3979314">
+											Senior Back-End Developer									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Versatile Consultancy						- Bengaluru									</b> Jul 15									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																			<li><i class="icon is-salary t-mute m10x">&nbsp;</i>$15,000 - $30,000</li>
+											</ul>
+								<p>Employer: IT, Bangalore, India Package: 14 to 20 Lacs per annum Key Responsibilities: Build Scalable, Highly Available and reliable&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/web-services/" data-js-skip title="Web-services Jobs in India">Web Services</a> &nbsp;
+													<a href="/en/india/jobs/q/e-commerce/" data-js-skip title="E-commerce Jobs in India">E commerce</a> &nbsp;
+													<a href="/en/india/jobs/q/backend/" data-js-skip title="Backend Jobs in India">Backend</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3979192">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/79/1542979_logo_1525012426_n.png" class="img-70 u-right m10l" alt="Client of iQuest Consultants Pvt. Ltd." title="Client of iQuest Consultants Pvt. Ltd.">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/sales-3979192/" data-job-id = "3979192">
+											sales									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Client of iQuest Consultants Pvt. Ltd.						- Agra									</b> Jul 15									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Student/Internship</li>
+																	</ul>
+								<p>sgdhklkljljljlllljllll</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/sales/" data-js-skip title="Sales Jobs in India">Sales</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3978834">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/67/1739167_logo_1527070463_n.png" class="img-70 u-right m10l" alt="TopGear Consultants Pvt Ltd" title="TopGear Consultants Pvt Ltd">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/client-servicing-3978834/" data-job-id = "3978834">
+											CLIENT SERVICING									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">TopGear Consultants Pvt Ltd						- Chennai									</b> Jul 15									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>JOB ROLE: Carry out corporate liaising &amp; follow up activities in reference to post issuance service cycle including client retention&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/insurance/" data-js-skip title="Insurance Jobs in India">Insurance</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3978833">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/67/1739167_logo_1527070463_n.png" class="img-70 u-right m10l" alt="TopGear Consultants Pvt Ltd" title="TopGear Consultants Pvt Ltd">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/client-servicing-3978833/" data-job-id = "3978833">
+											CLIENT SERVICING									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">TopGear Consultants Pvt Ltd						- Hyderabad									</b> Jul 15									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>Carry out corporate liaising &amp; follow up activities in reference to post issuance service cycle including client retention and&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/insurance/" data-js-skip title="Insurance Jobs in India">Insurance</a> &nbsp;
+													<a href="/en/india/jobs/q/client-handling-services/" data-js-skip title="Client-handling-services Jobs in India">Client Handling Services</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3978832">
+		<div>
+			<img src="//img0cf.b8cdn.com/120x120/images/logo/67/1739167_logo_1527070463_n.png" class="img-70 u-right m10l" alt="TopGear Consultants Pvt Ltd" title="TopGear Consultants Pvt Ltd">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/environment-general-manager-3978832/" data-job-id = "3978832">
+											ENVIRONMENT GENERAL MANAGER									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">TopGear Consultants Pvt Ltd						- Mumbai									</b> Jul 15									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Mid Career</li>
+																	</ul>
+								<p>1. Preparation, monitoring and implementation of Environment Policy2. Compliance ManagementFulfilling the statutory requirements pertaining&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/enviromental/" data-js-skip title="Enviromental Jobs in India">Enviromental</a> &nbsp;
+													<a href="/en/india/jobs/q/management/" data-js-skip title="Management Jobs in India">Management</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																				<li data-js-job class="has-pointer-d" data-job-id = "3974545">
+		<div>
+			<img src="//img4cf.b8cdn.com/bayt/assets/b8static/svg/companies_no_logo.svg" class="img-70 u-right m10l" alt="Agile Academy" title="Agile Academy">
+			<!-- TODO #11 :: featured -->
+						<h2 class="m0 t-regular">
+				<a data-js-aid="jobID" data-js-link href="/en/india/jobs/professional-3974545/" data-job-id = "3974545">
+											Professional									</a>
+			</h2>
+			<div class="t-small">
+				<b class="p10r">Agile Academy						- Ahmadabad									</b> Jul 14									<ul class="list is-basic is-inline  t-small m10y">
+													<li><i class="icon is-briefcase t-mute m10x">&nbsp;</i> Fresh Graduate</li>
+																	</ul>
+								<p>Software Engineers to work insoftware application development &amp; designing, Freshers with goodcoding knowledge in software skill&#8230;</p>
+									<div class="is-inline t-mute t-xsmall">
+													<a href="/en/india/jobs/q/web-software/" data-js-skip title="Web-software Jobs in India">Web Software</a> &nbsp;
+																	</div>
+							</div>
+		</div>
+	</li>
+																		<li class="card">
+						<div class="card-content">
+							<div class="row h-align-between v-align-center is-compact">
+								<div class="col">
+									<h5 class="m0-d">Would you like receive more jobs similar to this search?</h5>
+								</div>
+								<div class="col">
+									<button onclick="showRegisterJobAlertPopup();" class="btn is-xsmall is-round d ">Subscribe</button>
+									<button  class="btn is-xsmall is-round subscribe m">Subscribe</button>
+								</div>
+							</div>
+						</div>
+					</li>
+											<li class="p0x p40y">
+							<div class=" t-center no-print" id="ad_listing_2"></div>						</li>
+																		<li class="p0">
+						<div class="card">
+							<div id="adsenseCSA_BTF"></div>						</div>
+					</li>
+									</ul>
+					<div class="p20y">
+				<ul id="pagination" class="pagination"><li class="pagination-prev hidden"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/"></a></li>
+<li class="page pagination-current"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/">1</a></li>
+<li class="page"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/?page=2">2</a></li>
+<li class="page"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/?page=3">3</a></li>
+<li class="page"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/?page=4">4</a></li>
+<li class="pagination-next"><a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="/en/india/jobs/?page=2"></a></li></ul>			</div>
+									<script type="application/ld+json">
+				{"@context":"https:\/\/schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/hr-executive-3999235\/"},{"@type":"ListItem","position":2,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/work-from-home-search-engine-evaluator-hindi-speaker-3875469\/"},{"@type":"ListItem","position":3,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/data-entry-3984990\/"},{"@type":"ListItem","position":4,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/online-tutor-3984986\/"},{"@type":"ListItem","position":5,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/outbound-sale-process-3987955\/"},{"@type":"ListItem","position":6,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/ui-ux-developer-for-dun-and-bradsheet-chennao-3987953\/"},{"@type":"ListItem","position":7,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/senior-sales-executive-3987952\/"},{"@type":"ListItem","position":8,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/area-sales-executive-3987951\/"},{"@type":"ListItem","position":9,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/business-development-executive-3987950\/"},{"@type":"ListItem","position":10,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/area-sales-manager-kolkata-3987949\/"},{"@type":"ListItem","position":11,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/product-manager-3987948\/"},{"@type":"ListItem","position":12,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/sales-trainer-3987946\/"},{"@type":"ListItem","position":13,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/manager-research-development-npd-3987945\/"},{"@type":"ListItem","position":14,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/sbi-bank-recruitment-for-freshers-hurry-3979082\/"},{"@type":"ListItem","position":15,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/senior-back-end-developer-3979314\/"},{"@type":"ListItem","position":16,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/sales-3979192\/"},{"@type":"ListItem","position":17,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/client-servicing-3978834\/"},{"@type":"ListItem","position":18,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/client-servicing-3978833\/"},{"@type":"ListItem","position":19,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/environment-general-manager-3978832\/"},{"@type":"ListItem","position":20,"url":"https:\/\/www.bayt.com\/en\/india\/jobs\/professional-3974545\/"}]}			</script>
+		
+	</div>
+</div>
+				</div>
+			</div>
+		</section>
+		<aside class="col is-3-d sticky-sense" id="jsMainClusterContainer">
+			
+<div class="sticky-sidebar" data-sticky-sidebar>
+	<div class="sticky-content">
+		<div class="card is-primary-d is-compact p0">
+			<form onsubmit="return JobSearch.submitSearchForm()" id="clusterFormId" action="/en/india/jobs/" method="post">
+<input type="hidden" value="3789b547bed42d52d46ce59b0000fa4e505b2198" name="YII_CSRF_TOKEN" />				<div class="card-content">
+					<div class="can-toggle is-m" data-toggle-sheet="#filter">
+						<div class="toggle-head">
+							<a href="javascript:;" class="b-close m" data-close-sheet></a>
+							<div><i class="icon is-filter t-large"></i><b class="t-large ">Filter</b></div>
+							<span class="m"> </span>
+						</div>
+						<div class="toggle-content">
+							<div class="accordion t-small">
+								<div class="accordion-title">
+									<div class="has-icon m10t">
+										<input name="keyword" type="search" class="input is-small u-expanded" placeholder="Search" data-js-search-path = "/en/india/jobs/q/%s/" value="" id="filterSearchInput">
+										<button type="submit" class="btn is-clear icon is-search p10y p10l p0r"></button>
+									</div>
+																			<p class="t-small"><b><a rel="nofollow" href="/en/recommended-jobs/">Recommended Jobs </a><span class="t-mute">(0)</span></b></p>
+																	</div>
+								<div class="p20x bt">
+																				<p>
+																							<a href="/en/india/jobs/?options%5Bhide_external_job%5D%5B%5D=1" class="jsAjaxLoad" data-close-sheet rel="nofollow">
+																											<b>Hide external jobs</b>
+																									</a>
+																						</p>
+																				<p>
+																							<a href="/en/india/jobs/" class="jsAjaxLoad" data-close-sheet >
+																									</a>
+																						</p>
+																	</div>
+																																												<input id="JB_LOCATION_COUNTRY_ISO" class="accordion-toggle" type="checkbox" checked="checked">
+										<label for="JB_LOCATION_COUNTRY_ISO" class="accordion-title">Country</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/international/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																												<li>India																<a data-js-filter="" href="/en/international/jobs/" class=" jsAjaxLoad b-close is-tiny u-right" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  >
+
+																</a>
+															</li>
+																																																																																				<li class="t-small">
+																<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=ae" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  rel="nofollow">
+																	UAE																</a>
+																&nbsp;<span class="t-mute">(6045)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=sa" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  rel="nofollow">
+																	Saudi Arabia																</a>
+																&nbsp;<span class="t-mute">(4525)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=eg" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  rel="nofollow">
+																	Egypt																</a>
+																&nbsp;<span class="t-mute">(2020)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=qa" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  rel="nofollow">
+																	Qatar																</a>
+																&nbsp;<span class="t-mute">(1734)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=kw" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}'  rel="nofollow">
+																	Kuwait																</a>
+																&nbsp;<span class="t-mute">(1203)</span>															</li>
+																																																																																		</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_LOCATION_COUNTRY_ISO" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_LOCATION_COUNTRY_ISO">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=uk" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		UK																	</a>
+																	&nbsp;<span class="t-mute">(4916)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=de" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Germany																	</a>
+																	&nbsp;<span class="t-mute">(2991)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=nl" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Netherlands																	</a>
+																	&nbsp;<span class="t-mute">(643)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=ma" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Morocco																	</a>
+																	&nbsp;<span class="t-mute">(505)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=lk" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Sri Lanka																	</a>
+																	&nbsp;<span class="t-mute">(474)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=jo" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Jordan																	</a>
+																	&nbsp;<span class="t-mute">(325)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=iq" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Iraq																	</a>
+																	&nbsp;<span class="t-mute">(319)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=bh" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Bahrain																	</a>
+																	&nbsp;<span class="t-mute">(293)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=om" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Oman																	</a>
+																	&nbsp;<span class="t-mute">(253)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=lb" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Lebanon																	</a>
+																	&nbsp;<span class="t-mute">(253)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=pk" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Pakistan																	</a>
+																	&nbsp;<span class="t-mute">(198)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=dz" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Algeria																	</a>
+																	&nbsp;<span class="t-mute">(123)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=be" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Belgium																	</a>
+																	&nbsp;<span class="t-mute">(86)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=hu" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Hungary																	</a>
+																	&nbsp;<span class="t-mute">(84)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=fr" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		France																	</a>
+																	&nbsp;<span class="t-mute">(80)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=tn" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Tunisia																	</a>
+																	&nbsp;<span class="t-mute">(74)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=cn" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		China																	</a>
+																	&nbsp;<span class="t-mute">(72)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=th" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Thailand																	</a>
+																	&nbsp;<span class="t-mute">(67)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/jobs/?filters%5Bjb_location_country_iso%5D%5B%5D=in&filters%5Bjb_location_country_iso%5D%5B%5D=np" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_COUNTRY_ISO"}' rel="nofollow">
+																		Nepal																	</a>
+																	&nbsp;<span class="t-mute">(66)</span>																</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_LOCATION_PR_ID" class="accordion-toggle" type="checkbox" checked="checked">
+										<label for="JB_LOCATION_PR_ID" class="accordion-title">City</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/locations/bengaluru/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}'  >
+																	Bengaluru																</a>
+																&nbsp;<span class="t-mute">(687)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/locations/chennai/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}'  >
+																	Chennai																</a>
+																&nbsp;<span class="t-mute">(265)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/locations/mumbai/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}'  >
+																	Mumbai																</a>
+																&nbsp;<span class="t-mute">(261)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/locations/pune/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}'  >
+																	Pune																</a>
+																&nbsp;<span class="t-mute">(247)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/locations/gurgaon/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}'  >
+																	Gurgaon																</a>
+																&nbsp;<span class="t-mute">(175)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_LOCATION_PR_ID" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_LOCATION_PR_ID">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/delhi/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Delhi																	</a>
+																	&nbsp;<span class="t-mute">(152)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/hyderabad/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Hyderabad																	</a>
+																	&nbsp;<span class="t-mute">(79)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/kolkata/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Kolkata																	</a>
+																	&nbsp;<span class="t-mute">(24)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/kerala/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Kerala																	</a>
+																	&nbsp;<span class="t-mute">(17)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/nagpur/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Nagpur																	</a>
+																	&nbsp;<span class="t-mute">(13)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/ahmadabad/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Ahmadabad																	</a>
+																	&nbsp;<span class="t-mute">(13)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/lucknow/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Lucknow																	</a>
+																	&nbsp;<span class="t-mute">(7)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/jaipur/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Jaipur																	</a>
+																	&nbsp;<span class="t-mute">(7)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/ludhiana/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Ludhiana																	</a>
+																	&nbsp;<span class="t-mute">(5)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/vadodara/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Vadodara																	</a>
+																	&nbsp;<span class="t-mute">(4)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/indore/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Indore																	</a>
+																	&nbsp;<span class="t-mute">(4)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/patna/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Patna																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/agra/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Agra																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/kalyan/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Kalyan																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/ghaziabad/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Ghaziabad																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/locations/thana/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LOCATION_PR_ID"}' >
+																		Thana																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																										</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_ROLE_ORIGINAL" class="accordion-toggle" type="checkbox" checked="checked">
+										<label for="JB_ROLE_ORIGINAL" class="accordion-title">Job Role</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/roles/maintenance-repair-technician/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}'  >
+																	Maintenance, Repair, and Technician																</a>
+																&nbsp;<span class="t-mute">(2079)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/roles/marketing-pr/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}'  >
+																	Marketing and PR																</a>
+																&nbsp;<span class="t-mute">(720)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/roles/information-technology/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}'  >
+																	Information Technology																</a>
+																&nbsp;<span class="t-mute">(663)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/roles/engineering/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}'  >
+																	Engineering																</a>
+																&nbsp;<span class="t-mute">(338)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/roles/management/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}'  >
+																	Management																</a>
+																&nbsp;<span class="t-mute">(315)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_ROLE_ORIGINAL" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_ROLE_ORIGINAL">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/sales/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Sales																	</a>
+																	&nbsp;<span class="t-mute">(300)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/hospitality-tourism/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Hospitality and Tourism																	</a>
+																	&nbsp;<span class="t-mute">(193)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/design-creative-arts/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Design, Creative, and Arts																	</a>
+																	&nbsp;<span class="t-mute">(92)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/finance-investment/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Finance and Investment																	</a>
+																	&nbsp;<span class="t-mute">(60)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/human-resources-recruitment/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Human Resources and Recruitment																	</a>
+																	&nbsp;<span class="t-mute">(45)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/accounting-auditing/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Accounting and Auditing																	</a>
+																	&nbsp;<span class="t-mute">(38)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/quality-control/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Quality Control																	</a>
+																	&nbsp;<span class="t-mute">(33)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/customer-service-call-center/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Customer Service and Call Center																	</a>
+																	&nbsp;<span class="t-mute">(32)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/architecture/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Architecture																	</a>
+																	&nbsp;<span class="t-mute">(30)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/medical-healthcare-nursing/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Medical, Healthcare, and Nursing																	</a>
+																	&nbsp;<span class="t-mute">(25)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/purchasing-procurement/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Purchasing and Procurement																	</a>
+																	&nbsp;<span class="t-mute">(19)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/support-services/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Support Services																	</a>
+																	&nbsp;<span class="t-mute">(18)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/administration/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Administration																	</a>
+																	&nbsp;<span class="t-mute">(15)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/logistics-transportation/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Logistics and Transportation																	</a>
+																	&nbsp;<span class="t-mute">(14)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/secretarial/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Secretarial																	</a>
+																	&nbsp;<span class="t-mute">(11)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/research-development/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Research and Development																	</a>
+																	&nbsp;<span class="t-mute">(9)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/banking/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Banking																	</a>
+																	&nbsp;<span class="t-mute">(8)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/security/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Security																	</a>
+																	&nbsp;<span class="t-mute">(8)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/teaching-academics/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Teaching and Academics																	</a>
+																	&nbsp;<span class="t-mute">(8)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/roles/writing-journalism/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_ROLE_ORIGINAL"}' >
+																		Writing and Journalism																	</a>
+																	&nbsp;<span class="t-mute">(7)</span>																</li>
+																																																																																																																																																																																																																																																																																																																																																																																									</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_SOCIAL_TAGS" class="accordion-toggle" type="checkbox" checked="checked">
+										<label for="JB_SOCIAL_TAGS" class="accordion-title">Specialty</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=1206568" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}'  rel="nofollow">
+																	Management																</a>
+																&nbsp;<span class="t-mute">(30)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=1232764" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}'  rel="nofollow">
+																	Sales and Marketing																</a>
+																&nbsp;<span class="t-mute">(28)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=15458" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}'  rel="nofollow">
+																	Sales																</a>
+																&nbsp;<span class="t-mute">(28)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=15930" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}'  rel="nofollow">
+																	IT																</a>
+																&nbsp;<span class="t-mute">(21)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=138227" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}'  rel="nofollow">
+																	Marketing and brand Management																</a>
+																&nbsp;<span class="t-mute">(6)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_SOCIAL_TAGS" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_SOCIAL_TAGS">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=2508" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Marketing																	</a>
+																	&nbsp;<span class="t-mute">(6)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=15496" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Human Resources																	</a>
+																	&nbsp;<span class="t-mute">(6)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=1232917" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Information Technology																	</a>
+																	&nbsp;<span class="t-mute">(5)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=6702" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Auditing																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=6543" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Architecture																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=392" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Underwriting																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=1316920" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Business																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=10856" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Insurance																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=31356" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Customer Service Skills																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=3386" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		MIS																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=8641" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		EHS																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=17997" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Communications																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=11308" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		.NET																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=16621" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Finance																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=11135" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Manufacturing																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=10284" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		General Administration																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=6127" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Term Life Insurance																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=4684" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		SQL																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=7463" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Engineering																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_social_tags%5D%5B%5D=9860" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_SOCIAL_TAGS"}' rel="nofollow">
+																		Developer Tools																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_INDUSTRY_ID_ORIGINAL" class="accordion-toggle" type="checkbox" checked="checked">
+										<label for="JB_INDUSTRY_ID_ORIGINAL" class="accordion-title">Industry</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/sectors/technology-telecom/industries/information-technology/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}'  >
+																	Information Technology																</a>
+																&nbsp;<span class="t-mute">(2280)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/sectors/social-services/industries/other/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}'  >
+																	Other																</a>
+																&nbsp;<span class="t-mute">(1267)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/sectors/construction-property/industries/engineering/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}'  >
+																	Engineering																</a>
+																&nbsp;<span class="t-mute">(514)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/sectors/banking-finance/industries/banking/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}'  >
+																	Banking																</a>
+																&nbsp;<span class="t-mute">(356)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/sectors/technology-telecom/industries/telecommunications/" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}'  >
+																	Telecommunications																</a>
+																&nbsp;<span class="t-mute">(220)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_INDUSTRY_ID_ORIGINAL" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_INDUSTRY_ID_ORIGINAL">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/administrative-support-services/industries/employment-placement-agencies-recruiting/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Employment Placement Agencies/Recruiting																	</a>
+																	&nbsp;<span class="t-mute">(165)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/hospitality/industries/hospitality-tourism-travel/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Hospitality/Tourism/Travel																	</a>
+																	&nbsp;<span class="t-mute">(150)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/manufacturing-industrial/industries/industrial/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Industrial																	</a>
+																	&nbsp;<span class="t-mute">(60)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/healthcare-science/industries/pharmaceutical/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Pharmaceutical																	</a>
+																	&nbsp;<span class="t-mute">(37)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/sales-marketing/industries/sales/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Sales																	</a>
+																	&nbsp;<span class="t-mute">(35)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/oil-gas-energy/industries/oil-gas/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Oil/Gas																	</a>
+																	&nbsp;<span class="t-mute">(23)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/technology-telecom/industries/computer-software/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Computer/Software																	</a>
+																	&nbsp;<span class="t-mute">(18)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/construction-property/industries/planning/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Planning																	</a>
+																	&nbsp;<span class="t-mute">(18)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/construction-property/industries/construction-civil-engineering/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Construction/Civil Engineering																	</a>
+																	&nbsp;<span class="t-mute">(12)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/social-services/industries/education-training-library/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Education, Training, and Library																	</a>
+																	&nbsp;<span class="t-mute">(11)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/healthcare-science/industries/science/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Science																	</a>
+																	&nbsp;<span class="t-mute">(10)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/construction-property/industries/construction/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Construction																	</a>
+																	&nbsp;<span class="t-mute">(9)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/transportation-logistics/industries/aviation-marine-refueling/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Aviation/Marine Refueling																	</a>
+																	&nbsp;<span class="t-mute">(5)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/administrative-support-services/industries/consulting-services/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Consulting Services																	</a>
+																	&nbsp;<span class="t-mute">(4)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/sales-marketing/industries/retail-wholesale/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Retail/Wholesale																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/technology-telecom/industries/internet-e-commerce/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Internet/E-commerce																	</a>
+																	&nbsp;<span class="t-mute">(3)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/transportation-logistics/industries/automotive/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Automotive																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/banking-finance/industries/accounting-auditing/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Accounting/Auditing																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/healthcare-science/industries/healthcare-other/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Healthcare, other																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/sectors/administrative-support-services/industries/support-services/" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_INDUSTRY_ID_ORIGINAL"}' >
+																		Support Services																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																																																																																																																														</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_CAREER_LEVEL_ID_ORIGINAL" class="accordion-toggle" type="checkbox" >
+										<label for="JB_CAREER_LEVEL_ID_ORIGINAL" class="accordion-title">Career Level</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=5" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}'  rel="nofollow">
+																	Senior Executive																</a>
+																&nbsp;<span class="t-mute">(1)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=3" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}'  rel="nofollow">
+																	Management																</a>
+																&nbsp;<span class="t-mute">(39)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=2" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}'  rel="nofollow">
+																	Mid Career																</a>
+																&nbsp;<span class="t-mute">(134)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=1" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}'  rel="nofollow">
+																	Entry Level																</a>
+																&nbsp;<span class="t-mute">(12)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=6" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}'  rel="nofollow">
+																	Fresh Graduate																</a>
+																&nbsp;<span class="t-mute">(4)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsJB_CAREER_LEVEL_ID_ORIGINAL" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsJB_CAREER_LEVEL_ID_ORIGINAL">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_career_level_id_original%5D%5B%5D=0" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_CAREER_LEVEL_ID_ORIGINAL"}' rel="nofollow">
+																		Student/Internship																	</a>
+																	&nbsp;<span class="t-mute">(5018)</span>																</li>
+																																																										</ul>
+													</div>
+																							</div>
+										</div>
+																																													<input id="JB_EMPLOYMENT_TYPE" class="accordion-toggle" type="checkbox" >
+										<label for="JB_EMPLOYMENT_TYPE" class="accordion-title">Employment Type</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																			<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_employment_type%5D%5B%5D=1" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_EMPLOYMENT_TYPE"}'  rel="nofollow">
+																	Full Time Employee																</a>
+																&nbsp;<span class="t-mute">(151)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_employment_type%5D%5B%5D=6" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_EMPLOYMENT_TYPE"}'  rel="nofollow">
+																	Freelancer																</a>
+																&nbsp;<span class="t-mute">(3)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_employment_type%5D%5B%5D=8" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_EMPLOYMENT_TYPE"}'  rel="nofollow">
+																	Commission																</a>
+																&nbsp;<span class="t-mute">(1)</span>															</li>
+																																																							</ul>
+																							</div>
+										</div>
+																																													<input id="JB_GENDER_INT" class="accordion-toggle" type="checkbox" >
+										<label for="JB_GENDER_INT" class="accordion-title">Gender</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_gender_int%5D%5B%5D=1" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_GENDER_INT"}'  rel="nofollow">
+																	Male																</a>
+																&nbsp;<span class="t-mute">(5205)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_gender_int%5D%5B%5D=2" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_GENDER_INT"}'  rel="nofollow">
+																	Female																</a>
+																&nbsp;<span class="t-mute">(5204)</span>															</li>
+																																																							</ul>
+																							</div>
+										</div>
+																																													<input id="EMPLOYER_COMPANY_TYPE" class="accordion-toggle" type="checkbox" >
+										<label for="EMPLOYER_COMPANY_TYPE" class="accordion-title">Company Type</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																			<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_company_type%5D%5B%5D=2" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_COMPANY_TYPE"}'  rel="nofollow">
+																	Recruitment Agency																</a>
+																&nbsp;<span class="t-mute">(163)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_company_type%5D%5B%5D=1" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_COMPANY_TYPE"}'  rel="nofollow">
+																	Employer (Private Sector)																</a>
+																&nbsp;<span class="t-mute">(28)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_company_type%5D%5B%5D=3" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_COMPANY_TYPE"}'  rel="nofollow">
+																	Employer (Public Sector)																</a>
+																&nbsp;<span class="t-mute">(1)</span>															</li>
+																																																							</ul>
+																							</div>
+										</div>
+																																													<input id="JB_LAST_MODIFICATION_DATE_INTERVAL" class="accordion-toggle" type="checkbox" >
+										<label for="JB_LAST_MODIFICATION_DATE_INTERVAL" class="accordion-title">Date Modified</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																			<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_last_modification_date_interval%5D%5B%5D=3" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LAST_MODIFICATION_DATE_INTERVAL"}'  rel="nofollow">
+																	1 day ago																</a>
+																&nbsp;<span class="t-mute">(282)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_last_modification_date_interval%5D%5B%5D=2" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LAST_MODIFICATION_DATE_INTERVAL"}'  rel="nofollow">
+																	7 days ago																</a>
+																&nbsp;<span class="t-mute">(818)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bjb_last_modification_date_interval%5D%5B%5D=1" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"JB_LAST_MODIFICATION_DATE_INTERVAL"}'  rel="nofollow">
+																	30 days ago																</a>
+																&nbsp;<span class="t-mute">(1879)</span>															</li>
+																																																							</ul>
+																							</div>
+										</div>
+																																													<input id="EMPLOYER_GROUP_ID" class="accordion-toggle" type="checkbox" >
+										<label for="EMPLOYER_GROUP_ID" class="accordion-title">Company Name</label>
+										<div class="accordion-animate">
+											<div class="accordion-content">
+												<ul class="list is-basic is-spaced is-compact t-small m0">
+																											<li>
+															<a data-js-filter="" href="/en/india/jobs/" data-close-sheet  class = "jsAjaxLoad" >
+																All															</a>
+														</li>
+																																																																																																																																																																																																																									<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1878697" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}'  rel="nofollow">
+																	Spectrum Talent Management																</a>
+																&nbsp;<span class="t-mute">(92)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1739167" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}'  rel="nofollow">
+																	TopGear Consultants Pvt Ltd																</a>
+																&nbsp;<span class="t-mute">(67)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1676662" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}'  rel="nofollow">
+																	Move One																</a>
+																&nbsp;<span class="t-mute">(3)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1999428" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}'  rel="nofollow">
+																	Versatile Consultancy																</a>
+																&nbsp;<span class="t-mute">(3)</span>															</li>
+																																																																								<li class="t-small">
+																<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1330049" class = "jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}'  rel="nofollow">
+																	Avertra																</a>
+																&nbsp;<span class="t-mute">(2)</span>															</li>
+																																																							</ul>
+																									<div class="t-right">
+														<a href="#hiddenGroupsEMPLOYER_GROUP_ID" class="is-gray t-xsmall toggler-active" data-toggler>
+															<span>Show More</span>
+															<span></span>
+														</a>
+													</div>
+													<div id="hiddenGroupsEMPLOYER_GROUP_ID">
+													<ul class="list is-basic is-spaced is-compact t-small m0">
+																																																											<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2039209" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Benfie Consultancy Private Limited																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2001373" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Lulu Group International - Other locations																	</a>
+																	&nbsp;<span class="t-mute">(2)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2039728" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		spingere pvt																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038988" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Mindler Education Private Limited																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2039727" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Techenoid																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1542979" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Client of iQuest Consultants Pvt. Ltd.																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038509" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Creazione Services Pvt. Ltd.																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2039464" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Agile Academy																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2039451" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Agile Consultancy																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1743177" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		TASC Outsourcing																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038571" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Zoondia																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=1542258" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Cognizant																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038965" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Raythone systems																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038744" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		NorthStar Homes																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038590" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Citiyano de solutions pvt. ltd.																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038494" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Bharat voip communication private limited																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2038444" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		Alcea Technologies PVT LTD																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=475200" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		ATKINS																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2037434" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		caxita tech solutions																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																												<li class="t-small">
+																	<a data-js-filter="" href="/en/india/jobs/?filters%5Bemployer_group_id%5D%5B%5D=2037385" class="jsAjaxLoad" data-close-sheet data-js-params ='{"clickedFacet":"EMPLOYER_GROUP_ID"}' rel="nofollow">
+																		EASY SOLUTION INFOSYSTEMS PVT LTD																	</a>
+																	&nbsp;<span class="t-mute">(1)</span>																</li>
+																																																																																																																																																	</ul>
+													</div>
+																							</div>
+										</div>
+																								</div>
+						</div>
+					</div>
+				</div>
+			</form>		</div>
+	</div>
+</div>
+		</aside>
+	</div>
+
+		
+<div class="m is-compact p0 is-attached to-screen is-inner jsMobilePromotions u-none" data-position="b">
+	<div class="mobile-banner t-small">
+		<a class="b-close is-inverse m20x-d" onclick="BaytNavigation.appBanner.hide()"  href="javascript:void(0)"></a>
+		<div class="mobile-logo">
+			<img alt="baytApp" class="img-apps is-b-inverse" width="38" height="21" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=">
+		</div>
+		<span class="mobile-content t-center-d">Download Bayt.com <br> mobile app for FREE</span>
+		<a class="is-inverse  t-right-d" href="https://bayt.app.link/download-banner-mobile-site"><u>Download</u></a>
+	</div>
+</div><footer>
+	<div class="box">
+					<div class="row">
+				<div class="col">
+					<ol itemScope="" class="breadcrumb" itemType="http://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="https://www.bayt.com/en/india/" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1" /></li><li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a href="/en/india/jobs/search/" itemprop="item"><span itemprop="name">Search Jobs</span></a><meta itemprop="position" content="2" /></li><li>India Jobs</li></ol>					<hr class="m20y">
+				</div>
+			</div>
+							<div class="row d">
+				<div class="col">
+					<p class="t-mute t-large">Find Jobs</p>
+					<ul class="list is-tabular of-6 t-small t-mute" id="yw1">
+<li><a href="https://www.bayt.com/en/uae/jobs/locations/abu-dhabi/">  Jobs in Abu Dhabi</a></li>
+<li><a href="https://www.bayt.com/en/uae/jobs/locations/dubai/">  Jobs in Dubai</a></li>
+<li><a href="https://www.bayt.com/en/algeria/jobs/">  Jobs in Algeria</a></li>
+<li><a href="https://www.bayt.com/en/bahrain/jobs/">  Jobs in Bahrain</a></li>
+<li><a href="https://www.bayt.com/en/egypt/jobs/">  Jobs in Egypt</a></li>
+<li><a href="https://www.bayt.com/en/india/jobs/">  Jobs in India</a></li>
+<li><a href="https://www.bayt.com/en/iraq/jobs/">  Jobs in Iraq</a></li>
+<li><a href="https://www.bayt.com/en/jordan/jobs/">  Jobs in Jordan</a></li>
+<li><a href="https://www.bayt.com/en/kuwait/jobs/">  Jobs in Kuwait</a></li>
+<li><a href="https://www.bayt.com/en/lebanon/jobs/">  Jobs in Lebanon</a></li>
+<li><a href="https://www.bayt.com/en/libya/jobs/">  Jobs in Libya</a></li>
+<li><a href="https://www.bayt.com/en/morocco/jobs/">  Jobs in Morocco</a></li>
+<li><a href="https://www.bayt.com/en/oman/jobs/">  Jobs in Oman</a></li>
+<li><a href="https://www.bayt.com/en/pakistan/jobs/">  Jobs in Pakistan</a></li>
+<li><a href="https://www.bayt.com/en/qatar/jobs/">  Jobs in Qatar</a></li>
+<li><a href="https://www.bayt.com/en/saudi-arabia/jobs/">  Jobs in Saudi Arabia</a></li>
+<li><a href="https://www.bayt.com/en/sri-lanka/jobs/">  Jobs in Sri Lanka</a></li>
+<li><a href="https://www.bayt.com/en/tunisia/jobs/">  Jobs in Tunisia</a></li>
+<li><a href="https://www.bayt.com/en/uae/jobs/">  Jobs in UAE</a></li>
+<li><a href="https://www.bayt.com/en/yemen/jobs/">  Jobs in Yemen</a></li>
+</ul>				</div>
+			</div>
+			<hr class="m20y d">
+				<div class="row is-m">
+			<div class="col is-8 d">
+				<p class="t-mute t-large m0">About Bayt.com</p>
+				<p class="t-mute t-small">Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.</p>
+									<p class="t-mute t-large">Follow Bayt.com</p>
+					<ul class="list is-basic is-inline is-compact t-mute" id="yw2">
+<li><a class="m0 icon is-18 is-facebook" href="https://www.facebook.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-twitter" href="https://twitter.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-linkedin" href="https://www.linkedin.com/company/bayt.com"></a></li>
+<li><a class="m0 icon is-18 is-youtube" href="https://www.youtube.com/user/baytTV"></a></li>
+<li><a class="m0 icon is-18 is-instagram" href="https://www.instagram.com/baytcom/"></a></li>
+<li><a class="m0 icon is-18 is-pinterest" href="https://www.pinterest.com/baytcom/"></a></li>
+</ul>							</div>
+							<div class="col is-2-d">
+					<p class="t-mute t-large m0">Company</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw3">
+<li><a href="https://www.bayt.com/en/pages/about-us/">About Us</a></li>
+<li><a href="https://www.bayt.com/en/pages/contact-us/">Contact Us</a></li>
+<li><a href="https://www.bayt.com/en/careers/">Careers</a></li>
+<li><a href="https://www.bayt.com/en/press-corner/">Press Corner</a></li>
+<li><a href="https://www.bayt.com/en/advertise/">Advertise With Us</a></li>
+<li><a href="https://www.bayt.com/en/pages/charity/">Community Service</a></li>
+</ul>				</div>
+										<div class="col is-2-d">
+					<p class="t-mute t-large m0">Quick Links</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw4">
+<li><a href="https://www.bayt.com/en/blog/">Blog</a></li>
+<li><a href="https://www.bayt.com/en/feedback/">Help</a></li>
+<li><a href="https://www.bayt.com/en/affiliates/">Affiliate Program</a></li>
+<li><a href="https://www.bayt.com/en/pages/never-miss-an-email/">Never Miss an Email</a></li>
+</ul>				</div>
+					</div>
+		<hr class="m20y">
+		<div class="row">
+			<div class="col p0">
+				<div class="u-right-d t-small">
+											<a href="/fr/india/jobs/" class="t-mute p10r"> Français </a>
+											<a href="/ar/india/jobs/" class="t-mute p10r"> العربية </a>
+									</div>
+				<p class="t-mute t-small m0-d">
+					&copy; <b>2000-2019 Bayt.com, Inc.</b> All Rights Reserved.					<a class="is-gray t-small" href="https://www.bayt.com/en/pages/terms/">Terms of Use</a> -
+					<a href="https://www.bayt.com/en/pages/privacy-statement/" class="is-gray t-small"> Privacy Statement </a> -
+					<a href="https://www.bayt.com/en/pages/cookie-policy/" class="is-gray t-small"> Cookie Policy </a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer><noscript data-deferred-styles><link rel="stylesheet" type="text/css" href="//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/B8.css" media="all" /></noscript>	<script src="//jscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/js/adsenseCSA.js" defer="defer" id="1270973354"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/search-134/js/job-search.js" defer="defer" id="496978256"></script>
+<script src="//jscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/js/B8com.js" defer="defer" id="4072084034"></script>
+<script src="https://www.googletagservices.com/tag/js/gpt.js" async="async" id="3904013848"></script>
+<script src="https://www.googletagmanager.com/gtm.js?id=GTM-NW36N4" async="async" id="3804486059"></script>
+<script>
+/*<![CDATA[*/
+B8.ready(function(){BaytNavigation.ajax.defaultAjaxSetup()});
+var dataLayer = dataLayer || [];dataLayer.push({"pageLang":"en","pageName":"find_jobs","pageSection":"Job Seeker","pageProtected":false});dataLayer.push({"gtm.start":new Date().getTime(),"event":"gtm.js"});
+B8v={"domainType":"jobs","cookiesDomain":".bayt.com","devProjects":{"baytUI":1,"generic":0,"yiiBetaAndDev":0,"new_email_confirmation_considration":1,"hr_communities_new":1,"baytUIProfile":1,"cv_refreshness_project":1,"shagheel_domain":1,"job_post_baytui":1},"pageCached":true,"saveNav":false,"isShagheelUrl":false,"adsenseCSA":{"pageOptions":{"channel":6339614250,"query":"Jobs in India","hl":"en","adPage":1,"adtest":"off"},"ads":[{"block":{"container":"adsenseCSA_BTF","number":3},"fallback":{"slot":"4090403126"}}]},"globalSearchVars":{"page":0,"jobAlertScript":"\/\/jscf.b8cdn.com\/bayt\/assets\/userregistration-63\/js\/registerJobAlert.js","clickedFacet":""},"showPopupAfterJobAlert":false,"csrf":{"token":"3789b547bed42d52d46ce59b0000fa4e505b2198"},"mainSearch":{"webNotifications":{"msg":"I want to be notified when similar jobs are posted.","title":"Send Me New Job Notifications","but":{"yes":"Yes","no":"No"},"swPath":"\/sw.js"}},"baytUiNavigation":{"mode":"jsLogout","list":"jobsLoggedOut","links":{"upg":"https:\/\/www.bayt.com\/en\/ecommerce\/upgrade\/?native_source=Top-bar","prm":"https:\/\/www.bayt.com\/en\/myworkspace-j\/elite-premium-account\/"},"confirmationMsgs":{"undeliverable":"<h5>Employers Can't Contact You!<\/h5> We tried to send you an email but it seems that your email address is incorrect. Change your email address by <a href=\"https:\/\/www.bayt.com\/en\/mycvs\/#contact\">clicking here<\/a>.","risky":"<h5>Employers Can't Contact You!<\/h5> You need to confirm your email address before you can appear in the employer search. <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\">Click here<\/a> to send the confirmation email.","unknown":"<h5>Employers Can't Contact You!<\/h5> We've sent you a confirmation email. Log in to your email and follow the instructions to confirm. Didn't get the email? <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\"> Send it again. <\/a>"}},"gpt":{"ads":["ad_listing_1","ad_listing_2"],"targets":{"page":"job-search-results","lang":"en","url":"en india jobs"},"slot":"jobseekers.searchResult"}};B8.ready(function(){try {(adsenseCSA.run)()}catch(err){console.error(err)};try {(JobSearch.init)()}catch(err){console.error(err)};});
+/*]]>*/
+</script>
+</body>
+</html>
+

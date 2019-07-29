@@ -1,0 +1,286 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+		<meta name="copyright" content="Copyright 2000-2019 Bayt.com, Inc."/>
+		<link rel="shortcut icon" href="//img0cf.b8cdn.com/images/templates/bayt/favicon_new.ico" type="image/x-icon"/>
+		<link hreflang="x-default" rel="alternate" href="https://www.bayt.com/en/employers/" />
+<link hreflang="en" rel="alternate" href="https://www.bayt.com/en/employers/" />
+<link hreflang="ar" rel="alternate" href="https://www.bayt.com/ar/employers/" />
+<link hreflang="fr" rel="alternate" href="https://www.bayt.com/fr/employers/" />
+<style >
+/*<![CDATA[*/
+@media screen{.print-only{display:none!important}}@media screen and (min-width:1024px){.search-bar:not(.is-active).is-compact>.input-pack,.search-bar:not(.is-active)>.b-close,.search-bar:not(.is-compact)>.b-search{display:none}}.icon{min-width:18px}.slider{position:relative}.slider-arrow{color:transparent}.slider-arrows{position:absolute}.t-danger{color:#ff3b30}@font-face{font-family:icons;src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot);src:url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot#iefix) format("embedded-opentype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-c1e03ae2bb370c07ec80e233666a3bdd.woff) format("woff"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-ed5fc7e449ef107102dbd0a9e51fc9c5.ttf) format("truetype"),url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/Simple-Line-Icons-Pro-d15b23562c07294e75a74e206d443995.svg#test) format("svg");font-display:optional;font-weight:400;font-style:normal}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/dPJ5r9gl3kK6ijoeP1IRsvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:300;src:local('Lato Light'),local('Lato-Light'),url(//fonts.gstatic.com/s/lato/v14/EsvMC5un3kjyUhB9ZEPPwg.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:400;src:local('Lato Regular'),local('Lato-Regular'),url(//fonts.gstatic.com/s/lato/v14/1YwB1sO8YE1Lyjf12WNiUA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/ObQr5XYcoH0WBoUxiaYK3_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');font-display:optional;unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+20A0-20AB,U+20AD-20CF,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Lato;font-style:normal;font-weight:700;src:local('Lato Bold'),local('Lato-Bold'),url(//fonts.gstatic.com/s/lato/v14/H2DMvhDLycM56KNuAtbJYA.woff2) format('woff2');font-display:optional;unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:400;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Regular.ttf) format('truetype');font-display:optional}@font-face{font-family:'Noto Kufi Arabic';font-style:normal;font-weight:700;src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot);src:url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.eot?#iefix) format('embedded-opentype'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notokufiarabic/v2/NotoKufiArabic-Bold.ttf) format('truetype');font-display:optional}.h2,h1,h2,h3,h5,h6{line-height:1.2;margin:0 0 .5em;color:#000}.list.is-basic,.list.is-basic>li{padding-left:0}.cover,.row{display:flex}.popover,.popover-owner,button,hr,input{overflow:visible}.btn.is-outline,a{color:#2784fc}.dropdown>li>a,a{text-decoration:none}.popover,nav>.nav{text-align:left}.btn,.dropdown>li>a,.nav>li>a,.t-nowrap{white-space:nowrap}html{box-sizing:border-box;font-family:Lato,Noto Kufi Arabic,sans-serif;font-size:16px;line-height:1.67}.tab.is-active,nav,section{display:block}h1{font-size:2.875rem}hr{box-sizing:content-box;height:0;width:100%;padding:.5px 0;background-color:#e7e9ed;border:0}.btn.is-inverse.is-outline,.btn.is-outline,a{background-color:transparent}b{font-weight:bolder}img{border-style:none}button,input,select{margin:0;font-family:inherit}button,input{font-family:inherit}button,select{text-transform:none}*,:after,:before{box-sizing:inherit}body,html{padding:0;margin:0;background:#f4f4f4;color:#3b3b3b}.box,.cover{margin:0 auto}.h2,h2{font-size:2.25rem}h3{font-size:1.75rem}h5{font-size:1.25rem}h6{font-size:1rem}.list{font-size:16px;padding-left:1em}.box,.col{padding:10px}.list>li{padding-left:1.375em;font-size:1em;line-height:1.625}.list.is-basic{list-style:none}.list.is-basic.is-spaced>li{padding:6px 0}.box{max-width:1000px}.cover{align-items:center;height:460px;background-position:50% 0;background-repeat:no-repeat;background-size:cover}.cover.from-bottom{background-position-y:100%}.cover.is-compact{height:320px}.cover>.box{text-align:center;width:100%}.row{flex-flow:row wrap;flex:1 0 auto}.row.is-compact>.col{flex-grow:0;padding:3px}.row.h-align-center{justify-content:center}.row.h-align-between{justify-content:space-between}.row.v-align-center{align-items:center}.col{display:block;flex:1 1 auto}.col.is-3{flex:0 0 auto;width:25%}.col.is-4{flex:0 0 auto;width:33.33333%}.col.is-8{flex:0 0 auto;width:66.66667%}.col.is-11{flex:0 0 auto;width:91.66667%}.col.is-12{flex:0 0 auto;width:100%}.media{display:flex;align-items:flex-start}.media>img{margin-right:1em}.media>div{flex:1}.popover{position:absolute;display:none;min-width:270px;background-color:#fff;border:1px solid #e7e9ed;border-radius:5px;z-index:10000;outline:0}.dropdown>li,.dropdown>li>a,.list-menu-group,.list-menu-title,.popover-owner,.select,nav>.nav{position:relative}.b-close,.btn,.icon{text-align:center;vertical-align:middle}.nav,nav{z-index:5010}.btn{font-size:1rem;line-height:1;font-weight:700;padding:13px 27px;background-color:#2784fc;border:1px solid #2784fc;display:inline-block;overflow:hidden;color:#fff;border-radius:4px}.btn.is-small,.dropdown{font-size:.875rem;line-height:1}.btn.is-inverse{color:#828a93;background-color:#fff;border-color:#fff}.btn.is-small{font-weight:700;padding:11px 23px}.btn.is-large{font-size:1.125rem;line-height:1;font-weight:700;padding:15px 31px}.btn.is-inverse.is-outline{color:#fff}.btn.is-royal{background-color:#38526d;border-color:#38526d}.card,.select,.select>.input{background-color:#fff}.btn.is-round{border-radius:100px}.card{padding:20px;border-radius:4px}.card:only-child{display:flex;flex-direction:column;justify-content:space-between;height:100%}.card-head{padding-bottom:10px}.dropdown{list-style:none;padding:10px 0;margin:0;color:#3b3b3b;overflow:visible}.dropdown>li>a{display:block;padding:10px 20px;color:inherit;font-weight:400}.dropdown>li>a:not(:only-child):before{content:"";position:absolute;right:10px;top:50%;width:10px;height:10px;border:1px solid #a6afb8;border-width:0 1px 1px 0;transform:translate(-100%,-50%) rotate(-45deg)}.dropdown>li.has-divider{margin-top:10px;padding-top:10px}.dropdown>li.has-divider:before{content:"";display:block;position:absolute;top:0;left:0;right:0;height:1px;background-color:#e7e9ed}.dropdown>li.is-title{padding:12px 20px;font-size:14px;font-weight:700;text-transform:uppercase}.dropdown>li.is-title.has-divider{padding-top:20px}.form-hint{font-size:.75rem;line-height:1.66667;display:block;padding-top:8px;margin-bottom:32px;color:#a6afb9}.form-hint:empty{display:none}.b-close,.icon,.nav>li>a,.select,.select>.input{display:inline-block}.b-close,.icon{font-family:icons;font-style:normal;font-weight:400;line-height:.8125}.icon{margin:0 10px 0 0}.icon.is-32{font-size:32px;padding:7px}.icon.is-64{font-size:64px;padding:8px}.icon.is-smartphone:before{content:"\E8D9"}.icon.is-cart:before{content:"\E902"}.icon.is-shop:before{content:"\E919"}.icon.is-briefcase:before{content:"\E937"}.icon.is-apps:before{content:"\EB30"}.icon.is-bars:before{content:"\EB32"}.icon.is-search:before{content:"\EB4A"}.icon.is-ellipsis-v:before{content:"\EB53"}.icon.is-gift:before{content:"\EC52"}.b-close:after{content:"\EB0C";color:#a6afb9}.b-close.is-large{font-size:18px}.img-apps{width:40px;height:40px}.img-apps.is-b{background-position:-40px 0}.img-apps.is-specialties{background-position:-80px 0}.img-apps.is-talentera{background-position:-120px -83px}.img-apps.is-source2hire{background-position:-160px 0}.img-apps.is-e-salaries{background-position:-160px -40px}.img-apps.is-tests{background-position:-160px -80px}.img-apps.is-vfairs{background-position:0 -123px}.img-apps.is-ads{background-position:-40px -123px}.img-logo.is-android{background-position:-162px -129px;width:20px;height:24px}.img-logo.is-emp-logo{background-position:0 -88px;width:103px;height:41px}.img-logo.is-emp{background-position:0 0;width:187px;height:22px}.img-logo.is-iOS{background-position:-142px -129px;width:20px;height:24px}.input{width:auto;font-size:1rem;line-height:1;height:44px;padding:14px;border:1px solid #a6afb8;border-radius:2px;outline:0;vertical-align:middle;background-image:none}.list-menu,.nav,.t-small{font-size:.875rem}.input.is-large:not(textarea),.input:not(textarea){padding-top:0;padding-bottom:0}.input.is-large{font-size:1.125rem;line-height:1;height:50px;padding:16px}select.input{padding:0 12px;line-height:2}.select{width:100%;overflow:visible}.select:before{background:#fff;width:35px;top:3px;bottom:3px;right:3px;border-radius:0 2px 2px 0}.select:after,.select:before{content:"";position:absolute}.select:after{right:17.5px;top:calc(50% - 2px);width:10px;height:10px;border:1px solid #b9bfcb;border-width:0 1px 1px 0;transform:translate(-50%,-50%) rotate(45deg);z-index:2}.select>.input{width:100%;line-height:1.5;appearance:none;padding-right:36px}.list-menu{line-height:1.64285;width:360px;color:#a6afb9}.list-menu-title{color:#3b3b3b;padding:16px}.list-menu-group,.nav{list-style:none;padding:0;margin:0}.list-menu-title:first-child{border-bottom:1px solid #e7e9ed}.list-menu-group{overflow:auto;min-height:270px;max-height:480px;border-top:1px solid #e7e9ed}.list-menu-title+.list-menu-group{border-top:0}.nav{line-height:1.07357;display:flex;background-color:#2784fc}.nav>li{flex:0 0 auto;order:50;align-self:center;padding-bottom:1px}.nav>li>a{padding:28px 10px;color:#fff;line-height:1.14286}.nav>li>a>.icon{margin:0;font-size:inherit;color:#a6afb9;vertical-align:middle}.nav>li.is-group{margin:0 20px}.nav.is-aux{font-size:1.125rem;line-height:1.02056;justify-content:center}.nav.is-aux>li{padding-bottom:0}.nav.is-aux>li>a{padding:14px 15px 18px 5px}.dark-links>a{color:#3b3b3b}.tab{display:none;padding:0 0 10px}.m0{margin:0!important}.m0r{margin-right:0!important}.m10r,.m10x{margin-right:10px!important}.p0{padding:0!important}.p0b{padding-bottom:0!important}.m10x{margin-left:10px!important}.m10t{margin-top:10px!important}.m10b{margin-bottom:10px!important}.p10{padding:10px!important}.p10x{padding-right:10px!important;padding-left:10px!important}.p10y{padding-bottom:10px!important}.p10t,.p10y{padding-top:10px!important}.m20b,.m20y{margin-bottom:20px!important}.m20t,.m20y{margin-top:20px!important}.p20{padding:20px!important}.p20y{padding-bottom:20px!important}.p20t,.p20y{padding-top:20px!important}.m40l{margin-left:40px!important}.m40t{margin-top:40px!important}.p40l{padding-left:40px!important}.u-abs{position:absolute!important}.u-iblock{display:inline-block!important}.u-hide{visibility:hidden!important}.u-none{display:none!important}.t-left{text-align:left!important}.t-center{text-align:center!important}.t-nowrap{overflow:hidden;text-overflow:ellipsis}.t-small{line-height:1.67}.t-large{font-size:1.125rem;line-height:1.67}.t-primary{color:#2784fc}.t-mute{color:#a6afb9}.t-inverse{color:#fff}.bg-inverse{background-color:#fff}@media screen and (max-width:1023px){.h2,h1,h2,h3,h5,h6{line-height:1.2}.nav,.nav.can-toggle{background-color:#fff}h1{font-size:2.75rem}.h2,h2{font-size:2.125rem}h3{font-size:1.625rem}.nav>li>a,h5{font-size:1.125rem}h6{font-size:.875rem}.cover{padding:30px 0}.cover,.cover.is-compact{height:auto}.row{flex-flow:column nowrap}.row.is-m{flex-flow:row wrap}.col.is-12-m{flex:0 0 auto;width:100%}.popover-owner.has-pointer:before{content:"";position:absolute;top:14px;right:20px;width:10px;height:10px;border:1px solid #3b3b3b;border-width:0 1px 1px 0;transform:rotate(45deg)}.popover{overflow:auto;position:fixed;top:auto;bottom:0;left:0;width:100%;max-height:75vh;border-radius:0;transform:translate3d(0,100%,0)}.popover.is-inline{display:none;position:relative;max-height:none;padding-left:10px;transform:none;border:none;overflow:visible}.popover.is-full{top:0;max-height:none;transform:translate3d(100%,0,0)}.popover.is-nested{display:none;position:relative;width:100%;border:0;transform:none;z-index:10010}.card{padding:16px;border-radius:0}.dropdown>li>a:not(:only-child):before{transform:translate(-125%,-90%) rotate(45deg)}.dropdown>li.is-title,.dropdown>li>a{padding:14px 20px}.dropdown.is-nested{padding-left:20px}.dropdown.in-nav{color:#3b3b3b}.dropdown.in-nav>li>a{padding:7px 20px}.in-pack,.input-pack{display:block}.in-pack{width:100%}.in-pack:not(:last-child){margin-bottom:16px}.list-menu{display:flex;width:auto;height:100%;flex-direction:column;overflow:hidden}.list-menu-title{flex:0 0 auto}.list-menu-group{overflow:auto;flex:1 1 auto;justify-content:flex-start;max-height:none;min-height:auto}.nav>li.is-wide-m{flex:1}.nav>li{align-self:auto}.nav>li>a{line-height:1.125;padding:10px 20px;color:#a6afb9}.nav>li>a.is-logo{display:block;margin:0;padding:14px;text-align:center}.nav>li>a.is-toggle{padding:16px 20px}.nav>li.is-group{margin-top:10px;padding:10px 0;border-top:1px solid #e7e9ed}.nav>li.is-first{order:0;align-self:flex-end;width:100%}.nav.is-aux>li>a{padding:16px}.nav.can-toggle{flex-direction:column;position:fixed;top:0;right:0;bottom:0;left:0;padding:0;transform:translate3d(-100%,0,0)}.nav.can-toggle>li>a{display:block;color:#000}.p0-m{padding:0!important}.p0y-m{padding-bottom:0!important;padding-top:0!important}.m20b-m{margin-bottom:20px!important}.u-expanded-m{width:100%!important;display:block!important}.d,.u-none-m{display:none!important}.t-center-m{text-align:center!important}.t-regular-m{font-size:1rem;line-height:1.67}}@media screen and (min-width:1024px){.popover.is-pointing:after,.popover:before{content:"";position:absolute;display:block;z-index:-1}.list.is-inline{margin:0}.list.is-inline>li{display:inline-block;padding-left:0}.list.is-inline>li:not(:first-child){padding-left:23px}.col.is-4-d{flex:0 0 auto;width:33.33333%}.popover:before{top:-6px;right:-6px;bottom:-6px;left:-6px}.popover.is-pointing:before{top:-19px;right:-19px;bottom:-19px;left:-19px}.popover.is-pointing:after{border:0 transparent;background:#fff;width:14px;height:14px;backface-visibility:hidden}.popover.no-capture-right:before{right:0}.popover[data-placement=rt]{right:-4px;top:0;transform:translateX(100%) translateY(0) translateZ(2px)}.popover[data-placement=bl],.popover[data-placement=br]{bottom:-4px;transform:translateX(0) translateY(100%) translateZ(2px)}.popover[data-placement=rt]:after{top:0;left:0;transform:translate(-50%,100%) rotate(135deg)}.popover[data-placement=bl]{left:0}.popover[data-placement=bl]:after{top:0;left:0;transform:translate(100%,-50%) rotate(-135deg)}.popover[data-placement=br]{right:0}.popover[data-placement=br].is-pointing{bottom:-14px}.popover[data-placement=br]:after{top:0;right:0;transform:translate(-100%,-50%) rotate(-135deg)}.popover[data-placement=lt]{left:-4px;top:0;transform:translateX(-100%) translateY(0) translateZ(2px)}.popover[data-placement=lt]:after{top:0;right:0;transform:translate(50%,100%) rotate(-45deg)}.btn.in-pack{flex:none;min-width:auto;height:44px;padding:13px;border:1px solid #a6afb8;outline:0}.btn.in-pack.is-large{height:50px;padding:15px}.input-pack{display:flex}.in-pack{flex:1;vertical-align:top}.in-pack,.in-pack>.input{border-radius:0;min-width:150px}.in-pack:first-child{border-radius:2px 0 0 2px}.in-pack:last-child{border-radius:0 2px 2px 0}.in-pack:not(:first-child):not(:last-child){margin-left:-1px;margin-right:-1px}.nav.is-emp{background-color:#38526d}.nav.is-emp>li>a.is-logo{padding:16px 0 13px}.nav>li.is-wide-d{flex:1}.nav>li>a.is-logo{margin:0 75px 0 26px;padding:24px 0}.nav.is-aux>li>a>.icon{color:#fff}.p20b-d{padding-bottom:20px!important}.m,.u-none-d{display:none!important}.t-small-d{font-size:.875rem;line-height:1.67}}@media screen{.print-only{display:none!important}}
+/*]]>*/
+</style>
+<script>
+/*<![CDATA[*/
+!function(n){var a=[],e=setInterval(function(){if(B8.v){for(var n;n=a.pop();)B8.ready(n);clearInterval(e)}},100);n.B8=n.B8||{ready:function(n){a.push(n)}}}(window);
+/*]]>*/
+</script>
+<title>Employers - Bayt.com for Employers</title><link rel="canonical" href="https://www.bayt.com/en/employers/" />
+	</head>
+	<body>
+	<nav>
+	<ul class="nav data-nav "
+				style="background-color: #f1f2f0; height: 80px;">
+				<li data-bars class="m"><a class="is-toggle" href="#"> <i
+						class="icon is-bars m0"></i></a></li>
+
+				<li class="is-wide-m"><a class="is-logo" href="/"><img src="/logo.png" />
+				</a></li>
+				<li class="is-wide-d" style="margin-left:-207px;">
+					<ul data-toggle-bars="" class="nav is-main can-toggle "
+						data-capture="" id="yw0" style="background-color: #f1f2f0;">
+<li><a class="" href="/employer">Post a job</a></li>
+<li><a class="" href="/cvsearch">CV Search</a></li>
+<li class="popover-owner has-pointer has-inline" data-popover=""><a class="" href="/recruitmentsolutions">Recruitment Solutions</a>
+<ul data-placement="bl" class="popover is-inline dropdown p0y-m t-small-d t-regular-m in-nav">
+</ul>
+</li>
+<li class="popover-owner has-pointer has-inline" data-popover=""><a class="dropdown-toggle" href="/hrsolutions">HR Community</a>
+<ul data-placement="bl" class="popover is-inline dropdown p0y-m t-small-d t-regular-m in-nav">
+</ul>
+</li>
+<li><a class="" href="/contactus">Contact Us</a></li>
+<li class="popover-owner has-pointer has-inline" data-popover="" data-more="" style="display:none;"><a href="#">More</a>
+<div class="popover is-inline" data-placement="bl" data-bayt-popover="4">
+	<ul class="dropdown p0-m t-small-d t-regular-m in-nav"></ul>
+</div></li>
+<li>
+<ul class="list is-inline is-basic is-spaced t-nowrap d m10x">
+<li><a class="btn is-small is-inverse is-outline u-expanded-m" href="/starthiring">Start Hiring</a></li>
+</ul>
+</li>
+<li class="is-wide-d"><span></span></li>
+<li><a class="" href="https://www.bayt.com">Job Seeker?</a></li>
+<li><a class="" href="https://www.bayt.com/en/employers/login/">Log In</a></li>
+<li class="is-group">
+<ul class="list is-inline is-basic is-spaced t-nowrap">
+<li><a class="btn is-small is-inverse is-outline u-expanded-m d" href="https://www.bayt.com/en/employers/new/">Register</a></li>
+<li><a class="btn is-small is-outline u-expanded-m m" href="https://www.bayt.com/en/employers/new/">Register</a></li>
+</ul>
+</li>
+<li class="is-first"><ul class="nav is-aux  is-emp ">
+		<li class="is-wide-m m"><a data-nav-close href="#" class="b-close"></a></li>
+	<li>
+		<a href="/en/employers/recruitment-solutions/products/"><i class="icon is-cart"></i> </a>
+	</li>
+	<li class="popover-owner" data-popover='{"relocate":true}'>
+		<a href="#"><i class="icon is-apps"></i> </a>
+		<div class="popover is-pointing is-full" data-placement="br">
+	<div class="list-menu">
+		<div class="list-menu-title">
+			<a data-popover-close href="#" class="b-close is-large t-mute u-abs m"></a>
+			<h6 class="t-center-m m0"> Products By Bayt.com </h6>
+		</div>
+		<div class="list-menu-group t-center" data-empty="Nothing up to now!">
+			<div class="row is-m dark-links">
+													<a href="https://www.bayt.com" class="col is-4 ">
+						<img class="img-apps is-b" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Bayt.com" width="40" height="40">
+						<div class="m10t">Bayt.com</div>
+					</a>
+																			<a href="http://www.talentera.com/en/?utm_source=Bayt&utm_medium=web&utm_campaign=navtabs" class="col is-4 ">
+						<img class="img-apps is-talentera" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Talentera" width="40" height="40">
+						<div class="m10t">Talentera</div>
+					</a>
+																			<a href="https://www.bayt.com/en/employers/recruitment-solutions/source-to-hire/" class="col is-4 ">
+						<img class="img-apps is-source2hire" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Source2Hire" width="40" height="40">
+						<div class="m10t">Source2Hire</div>
+					</a>
+																			<a href="https://www.bayt.com/en/salaries/" class="col is-4 ">
+						<img class="img-apps is-e-salaries" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Salaries" width="40" height="40">
+						<div class="m10t">Salaries</div>
+					</a>
+																			<a href="https://www.bayt.com/en/employer-tests/send-test-invitations/" class="col is-4 ">
+						<img class="img-apps is-tests" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Employer Tests" width="40" height="40">
+						<div class="m10t">Employer Tests</div>
+					</a>
+																			<a href="http://vfairs.com/solutions/virtual-career-fair?utm_source=Bayt&utm_medium=web&utm_campaign=navtabs" class="col is-4 ">
+						<img class="img-apps is-vfairs" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Virtual Fairs" width="40" height="40">
+						<div class="m10t">Virtual Fairs</div>
+					</a>
+											<hr class="m0 m20t">
+						<div class="list-menu-title t-mute col is-12 p10y">MORE </div>
+																			<a href="https://specialties.bayt.com/en/specialties/communities/hr/?isLoggedOut=1" class="col is-4 ">
+						<img class="img-apps is-specialties" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Specialties" width="40" height="40">
+						<div class="m10t">Specialties</div>
+					</a>
+																			<a href="https://www.bayt.com/en/advertise/" class="col is-4 ">
+						<img class="img-apps is-ads" src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Advertise on Bayt.com" width="40" height="40">
+						<div class="m10t">Advertise on Bayt.com</div>
+					</a>
+																	</div>
+		</div>
+	</div>
+</div>
+	</li>
+	<li class="popover-owner" data-popover='{"trigger":"click"}'>
+		<a href="#"> <i class="icon is-ellipsis-v"></i> </a>
+		<div class="popover is-pointing no-capture-right" data-placement="br">
+			<ul class="dropdown">
+															<li class =""><a href="https://www.bayt.com/en/employers/about/">About Us</a></li>
+																				<li class="has-divider popover-owner" data-popover>
+							<a href="#"><i></i>Language</a>
+							<div class="popover is-nested" data-placement="lt">
+								<ul class="dropdown is-nested">
+																			<li><a id="fr-language" href="/fr/employers/">Français</a></li>
+																			<li><a id="ar-language" href="/ar/employers/">عربي</a></li>
+																	</ul>
+							</div>
+						</li>
+												</ul>
+		</div>
+	</li>
+</ul></li>
+</ul>		</li>
+				<li class="m u-hide">
+			<a data-search class="is-toggle" href="#"> <i class="icon is-search m0"></i></a>
+		</li>
+	</ul>
+</nav>
+		
+<div class="t-center print-only"><img src="//img1cf.b8cdn.com/bayt/assets/b8static/svg/bayt-logo.svg" alt="Bayt.com"></div>											<div class="all-content">
+	<section class="cover is-compact" style="background-image:url(//img3cf.b8cdn.com/bayt/assets/employers-122/images/Group.png);">
+	<div class="box">
+		<h1 class="t-inverse">Limited Time Offer!</h1>
+		<p class="t-inverse t-large">Get the best of Bayt.com’s Online Recruitment Solutions that have helped over 40,000 employers hire!</p>
+		<div class="t-center">
+			<a class="btn is-outline is-inverse" href="#info" rel="nofollow">
+				Read More			</a>
+		</div>
+	</div>
+</section>
+
+<div class="box t-center">
+						<div class="row v-align-center bg-primary">
+				<div class="col is-6-d is-12-m">
+					<div class="h-align-center v-align-center">
+						<b class="h1 t-inverse">
+							23%
+							<br>
+							OFF						</b>
+					</div>
+				</div>
+				<div class="col is-6 is-12-m bg-mute t-left">
+					<form id="buy" action="/app/control/byt_ecommerce_manager" method="post" class="form is-compact p10">
+												<input type="hidden" name="action_case" value="11"/>
+						<input type="hidden" name="featured_offer_package" value="6211"/>
+						<input type="hidden" name="native_source" value="CVoffer"/>
+						<h3 class="p20t">Save $298.1 with Today’s Special Offer!</h3>
+						<ul class="list is-basic">
+							<li><i class="icon is-search t-success is-20"></i>One Month CV Search</li>
+							<li><i class="icon is-post t-primary is-20"></i>Two Job Postings</li>
+						</ul>
+						<span class="offer-price pull-left">$999.90</span>
+						<span class="t-mute m20l"><del>$1,298</del></span>
+						<footer class="form-footer p0x">
+							<a href="/en/employers/about/contact/" class="btn is-secondary">Get in Touch</a>
+							<button class="btn m10y m0x" type="submit">Add to Cart</button>
+						</footer>
+					</form>
+				</div>
+			</div>
+			</div>
+
+<section id="info" class="is-compact bg-inverse t-center">
+	<div class="box">
+		<h2 class="m20">Here's What's Included in Your Special Offer</h2>
+		<div class="media t-left">
+			<div class="row ">
+				<div class="col is-6-d">
+					<h3><i class="icon is-search t-success is-32"></i>CV Search</h3>
+					<ul class="list is-basic t-regular t-mute">
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Get access to search through 36,500,000+ CVs</span></li>
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Use 33+ filtration tools to help you narrow down your search results</span></li>
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Get trained on how to utilize CV Search to hire the best for your organization</span></li>
+					</ul>
+				</div>
+				<div class="col is-6-d">
+					<h3><i class="icon is-post t-primary is-32"></i>Job Postings</h3>
+					<ul class="list is-basic t-regular t-mute">
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Create questionnaire for applicants to answer when applying to jobs</span></li>
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Express your vacancy to over 10,000,000 monthly visitors</span></li>
+						<li><i class="icon is-check t-success"></i><span class="t-xsmall">Create folders to help you organize sort and categorize your applicants</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<button class="btn" type="button" onclick="B8.get('#buy').submit()">Add to Cart</button>
+	</div>
+</section></div>
+		<footer>
+	<div class="box">
+						<div class="row is-m">
+			<div class="col is-8 d">
+				<p class="t-mute t-large m0">About Bayt.com</p>
+				<p class="t-mute t-small">Bayt.com is the leading job site in the Middle East and North Africa, connecting job seekers with employers looking to hire. Every day, thousands of new job vacancies are listed on the award-winning platform from the region's top employers.</p>
+									<p class="t-mute t-large">Follow Bayt.com</p>
+					<ul class="list is-basic is-inline is-compact t-mute" id="yw1">
+<li><a class="m0 icon is-18 is-facebook" href="https://www.facebook.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-twitter" href="https://twitter.com/Baytcom"></a></li>
+<li><a class="m0 icon is-18 is-linkedin" href="https://www.linkedin.com/company/bayt.com"></a></li>
+<li><a class="m0 icon is-18 is-youtube" href="https://www.youtube.com/user/baytTV"></a></li>
+<li><a class="m0 icon is-18 is-instagram" href="https://www.instagram.com/baytcom/"></a></li>
+<li><a class="m0 icon is-18 is-pinterest" href="https://www.pinterest.com/baytcom/"></a></li>
+</ul>							</div>
+							<div class="col is-2-d">
+					<p class="t-mute t-large m0">Company</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw2">
+<li><a href="https://www.bayt.com/en/employers/about/">About Us</a></li>
+<li><a href="https://www.bayt.com/en/employers/about/contact/">Contact Us</a></li>
+<li><a href="https://www.bayt.com/en/careers/">Careers</a></li>
+<li><a href="https://www.bayt.com/en/press-corner/">Press Corner</a></li>
+<li><a href="https://www.bayt.com/en/advertise/">Advertise With Us</a></li>
+<li><a href="https://www.bayt.com/en/pages/charity/">Community Service</a></li>
+</ul>				</div>
+										<div class="col is-2-d">
+					<p class="t-mute t-large m0">Quick Links</p>
+					<ul class="list is-basic is-spaced is-compact t-small t-mute" id="yw3">
+<li><a href="https://www.bayt.com/en/blog/">Blog</a></li>
+<li><a href="https://www.bayt.com/en/feedback/">Help</a></li>
+<li><a href="https://www.bayt.com/en/affiliates/">Affiliate Program</a></li>
+<li><a href="https://www.bayt.com/en/pages/never-miss-an-email/">Never Miss an Email</a></li>
+</ul>				</div>
+					</div>
+		<hr class="m20y">
+		<div class="row">
+			<div class="col p0">
+				<div class="u-right-d t-small">
+											<a href="/fr/employers/recruitment-solutions/offers/" class="t-mute p10r"> Français </a>
+											<a href="/ar/employers/recruitment-solutions/offers/" class="t-mute p10r"> العربية </a>
+									</div>
+				<p class="t-mute t-small m0-d">
+					&copy; <b>2000-2019 Bayt.com, Inc.</b> All Rights Reserved.					<a class="is-gray t-small" href="https://www.bayt.com/en/pages/terms/">Terms of Use</a> -
+					<a href="https://www.bayt.com/en/pages/privacy-statement/" class="is-gray t-small"> Privacy Statement </a> -
+					<a href="https://www.bayt.com/en/pages/cookie-policy/" class="is-gray t-small"> Cookie Policy </a>
+				</p>
+			</div>
+		</div>
+	</div>
+</footer><noscript data-deferred-styles><link rel="stylesheet" type="text/css" href="//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/css/B8.css" media="all" /></noscript>	<script src="//jscf.b8cdn.com/bayt/assets/baytui-1.69.0-c2/js/B8com.js" defer="defer" id="4072084034"></script>
+<script src="https://www.googletagmanager.com/gtm.js?id=GTM-NW36N4" async="async" id="3804486059"></script>
+<script>
+/*<![CDATA[*/
+
+			if(window.jQuery)
+			{
+				$.ajaxSetup({
+					data: {"YII_CSRF_TOKEN": "105f04067030c2575fae274e5c708c6c997f260b"},
+						cache:false
+				});
+			}
+			csrfTokenName = "YII_CSRF_TOKEN";
+			csrfToken = "105f04067030c2575fae274e5c708c6c997f260b";
+			
+B8.ready(function(){BaytNavigation.ajax.defaultAjaxSetup()});
+var dataLayer = dataLayer || [];dataLayer.push({"pageLang":"en","pageName":null,"pageSection":"Employer","pageProtected":false,"userId":"0","userRole":"Guest"});dataLayer.push({"gtm.start":new Date().getTime(),"event":"gtm.js"});
+B8v={"domainType":"jobs","cookiesDomain":".bayt.com","devProjects":{"baytUI":1,"generic":0,"yiiBetaAndDev":0,"new_email_confirmation_considration":1,"hr_communities_new":1,"baytUIProfile":1,"cv_refreshness_project":1,"shagheel_domain":1,"job_post_baytui":1},"pageCached":false,"saveNav":false,"csrf":{"token":"105f04067030c2575fae274e5c708c6c997f260b"},"ext":{"liveChat":true},"baytUiNavigation":{"mode":"empLogout","list":"empLoggedOut","links":{"upg":"https:\/\/www.bayt.com\/en\/ecommerce\/upgrade\/?native_source=Top-bar","prm":"https:\/\/www.bayt.com\/en\/myworkspace-j\/elite-premium-account\/"},"confirmationMsgs":{"undeliverable":"<h5>Employers Can't Contact You!<\/h5> We tried to send you an email but it seems that your email address is incorrect. Change your email address by <a href=\"https:\/\/www.bayt.com\/en\/mycvs\/#contact\">clicking here<\/a>.","risky":"<h5>Employers Can't Contact You!<\/h5> You need to confirm your email address before you can appear in the employer search. <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\">Click here<\/a> to send the confirmation email.","unknown":"<h5>Employers Can't Contact You!<\/h5> We've sent you a confirmation email. Log in to your email and follow the instructions to confirm. Didn't get the email? <a href=\"javascript:;\" onclick=\"B8.ajax('\/app\/control\/byt_reg_manager',{data: {byt_reg_stage:45,withMessage:1},success:function(data){B8.push('Email sent, please check your inbox.');}});\"> Send it again. <\/a>"}},"requestDemo":{"modelName":"EmployerResourcesMiniRegistrationForm","title":"Request a Free Demo","bodyHeader":"<p class=\"t-mute\">Are you hiring? Book your free demo with a Bayt.com Recruitment Consultant and find out more about how we can help you hire candidates for your business.<\/p><p class=\"t-mute\"><strong>Are you a job seeker? <a href=\"\/en\/feedback\/\">Click here<\/a>.<\/strong><\/p>","url":"\/en\/employers\/new\/employer-resources-mini-registration\/?custom=1&landingType=requestDemo","submitText":"Submit","config":{"close":{"type":"event","event":"onclick","element":"#demoCancel","action":"close"},"hiring":{"type":"style","element":"span#EmployerResourcesMiniRegistrationForm_hiringTime","action":"addClass","value":"input-group_inline"}}},"thankYouModal":{"image":"","title":"Thank you for requesting a demo.","body":"A Bayt.com representative will contact you shortly.","okButton":"OK","hide":true},"requestDemoUrl":"\/en\/employers\/recruitment-solutions\/request-demo\/","requestDemoJs":"\/\/jscf.b8cdn.com\/bayt\/assets\/employers-122\/js\/requestDemo.js"};
+/*]]>*/
+</script>
+</body>
+</html>
+

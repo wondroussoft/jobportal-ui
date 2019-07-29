@@ -1,0 +1,599 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:replace="../fragments/header :: header"></div>
+<div class="t-center print-only">
+	<img src="//img1cf.b8cdn.com/bayt/assets/b8static/svg/bayt-logo.svg"
+		alt="mindful.com">
+</div>
+<section class="cover slider"
+	data-slider='{
+	"autoplay": 0,
+	"dots": false,
+	"arrows": true	}'>
+	<div class="box slider-content">
+		<h1 class="t-inverse">Aim Higher. Reach Further. Dream Bigger</h1>
+		<p class="t-inverse t-large">
+			A better career is out there. we'll help you find it we're Your first
+			step to<br>become everything you want to be.
+		</p>
+
+		<!--  <img src="#" alt="IMAGE FROM KUWAIT FINANCE HOUSE" class="image-baner"> -->
+
+
+		<form class="t-left card p10 d" action="/jobs" method="get"
+			data-validate-form="/jobs">
+			<input type="hidden" name="position_operator" value="3">
+			<div class="input-pack">
+				<input id="text_search" name="keyword" type="text"
+					class="input in-pack is-large m0r"
+					placeholder="Enter job title, skills, etc." autocomplete="off">
+				<div class="select in-pack m10x">
+					<select name="country" class="input is-large " id="search_country1"
+						data-value="india" data-searchable="getSearchConfig">
+						<option value="" disabled="disabled" selected="selected">Select
+							Country</option>
+						<option value="international">- All -</option>
+						<option value="Algeria">Algeria</option>
+						<option value="Bahrain">Bahrain</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Egypt">Egypt</option>
+						<option value="India">India</option>
+						<option value="Italy">Italy</option>
+						<option value="Iraq">Iraq</option>
+						<option value="Jordan">Jordan</option>
+						<option value="Kuwait">Kuwait</option>
+						<option value="Lebanon">Lebanon</option>
+						<option value="Lebanon">Libya</option>
+						<option value="Morocco">Morocco</option>
+						<option value="Oman">Oman</option>
+						<option value="Pakistan">Pakistan</option>
+						<option value="Qatar">Qatar</option>
+						<option value="Saudi Arabia">Saudi Arabia</option>
+						<option value="Sri Lanka">Sri Lanka</option>
+						<option value="Tunisia">Tunisia</option>
+						<option value="United Arab Emirates">United Arab Emirates</option>
+						<option value="Yemen">Yemen</option>
+					</select>
+				</div>
+				<input id="text_search" name="keyword" type="text"
+					class="input in-pack is-large m0r" placeholder="Search By Sector"
+					autocomplete="off"
+					data-searchable="">
+
+				<button onclick="/jobs" type="submit" class="btn  is-large">
+					Search Jobs <i class="icon is-search"></i>
+				</button>
+			</div>
+			<span id="cvSearch_position_keyword_em_" class="form-hint"></span>
+		</form>
+		<form class="t-left m" action="/jobs" method="get" target=""
+			data-validate-form="">
+			<input type="hidden" name="position_operator" value="3">
+			<div class="input-pack">
+				<input id="text_search1" name="keyword" type="text"
+					class="input in-pack is-large m0r"
+					placeholder="Enter job title, skills, etc." autocomplete="off">
+				<div class="select in-pack">
+					<select name="country" class="input is-large " id="search_country2"
+						data-value="india" data-searchable="getSearchConfig">
+						<option value="" disabled="disabled" selected="selected">Select
+							Country</option>
+						<option value="international">- All -</option>
+						<option value="Algeria">Algeria</option>
+						<option value="Bahrain">Bahrain</option>
+						<option value="Dubai">Dubai</option>
+						<option value="Egypt">Egypt</option>
+						<option value="India">India</option>
+						<option value="Italy">Italy</option>
+						<option value="Iraq">Iraq</option>
+						<option value="Jordan">Jordan</option>
+						<option value="Kuwait">Kuwait</option>
+						<option value="Lebanon">Lebanon</option>
+						<option value="Lebanon">Libya</option>
+						<option value="Morocco">Morocco</option>
+						<option value="Oman">Oman</option>
+						<option value="Pakistan">Pakistan</option>
+						<option value="Qatar">Qatar</option>
+						<option value="Saudi Arabia">Saudi Arabia</option>
+						<option value="Sri Lanka">Sri Lanka</option>
+						<option value="Tunisia">Tunisia</option>
+						<option value="United Arab Emirates">United Arab Emirates</option>
+						<option value="Yemen">Yemen</option>
+					</select>
+				</div>
+				<a href="/jobs"><button type="submit"  class="btn is-large in-pack">
+					Search Jobs <i class="icon is-search"></i></a>
+				</button>
+			</div>
+			<span id="cvSearch_position_keyword_m_em_" class="form-hint"></span>
+		</form>
+		<ul class="list is-basic is-spaced"style="margin-top:20px;">
+			<li class="d upload-resume"
+				style="background-color: #fed90a; display: initial; color: black; padding-inline: 10px;"><i
+				class="fa fa-arrow-circle-up"></i><a href="/resume"
+				class="is-inverse" style="color: black;">Upload your resume</a></li>
+			<li class="d hiring"
+				style="background-color: #fed90a; display: initial;"><i
+				class="fa fa-briefcase"></i><a href="/employers" class="is-inverse"
+				style="color: black; padding-inline: 10px;">Hiring? Post a job
+					for free</a></li>
+		</ul>
+	</div>
+	<div>
+		<div class="slider-item is-visible" data-slide="0">
+			<div class="slider-image"
+				style="background-image: url('/banner.png')"></div>
+			<a href="mindfulcompany/kuwait-finance-house-135519/"
+				class="slider-caption">IMAGE FROM KUWAIT FINANCE HOUSE</a>
+		</div>
+		<div class="slider-item " data-slide="1">
+			<div class="slider-image"
+				style="background-image: url('//img0cf.b8cdn.com/images/homepage/cover_photo_20180918070149.jpg')"></div>
+			<a href="mindfulcompany/lukoil-mid-east-ltd-2021271/owner/"
+				class="slider-caption">IMAGE FROM LUKOIL Mid - East Ltd.</a>
+		</div>
+		<div class="slider-item " data-slide="2">
+			<div class="slider-image"
+				style="background-image: url('//img1cf.b8cdn.com/images/homepage/cover_photo_20180718141049.jpg')"></div>
+			<a href="mindfulcompany/teleperformance-greece-1800709/"
+				class="slider-caption">Teleperformance Greece</a>
+		</div>
+		<div class="slider-item " data-slide="3">
+			<div class="slider-image"
+				style="background-image: url('//img4cf.b8cdn.com/images/homepage/cover_photo_20180404110657.jpg')"></div>
+			<a href="mindfulcompany/royal-jordanian-airlines-1556305/"
+				class="slider-caption">IMAGE FROM ROYAL JORDANIAN</a>
+		</div>
+	</div>
+</section>
+
+<header class="container search-sec1"
+	style="margin-top: 148px; margin-left: 196px;">
+	<h1 class="text-center">Find Popular Jobs</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<div class="cards">
+					<div class="row box-shadow"
+						style="padding-left: 36px; padding-inline-end: 50px; height: 100px;">
+						<div class="col-md-2">
+							<img src="/google.png" style="margin-top: 14px;">
+						</div>
+						<div class="col-md-8"
+							style="margin-top: 15px; padding-left: 43px;">
+							<h5>I O S Devoloper</h5>
+							<p>
+								<i class="fa fa-suitcase"></i> Google &nbsp; <i
+									class="fa fa-map-marker"></i> 07th Avenue,New york,NY,united
+								states $22,000-$50,000
+							</p>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-primary btn-sm"
+								style="margin-top: 31px; margin-left: 77px;background-color: #52a73f;height: 41px;">Full Time
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="cards">
+					<div class="row box-shadow"
+						style="padding-left: 36px; padding-inline-end: 32px; height: 100px;">
+						<div class="col-md-2">
+							<img src="/micro.png" style="margin-top: 14px;">
+						</div>
+						<div class="col-md-8"
+							style="margin-top: 15px; padding-left: 43px; height: 100px;">
+							<h5>Back-End developer</h5>
+							<p>
+								<i class="fa fa-suitcase"></i> Microsoft &nbsp; <i
+									class="fa fa-map-marker"></i> 07th Avenue,New york,NY,united
+								states $22,000-$50,000
+							</p>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-primary btn-sm"
+								style="margin-top: 31px; margin-left: 77px;height: 41px;background-color: chocolate;">Full Time
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="cards">
+					<div class="row box-shadow"
+						style="padding-left: 36px; padding-inline-end: 50px; height: 100px;">
+						<div class="col-md-2">
+							<img src="/apple.png">
+						</div>
+						<div class="col-md-8"
+							style="margin-top: 15px; padding-left: 43px;">
+							<h5>UI/UX Designer</h5>
+							<p>
+								<i class="fa fa-suitcase"></i> Apple &nbsp; <i
+									class="fa fa-map-marker"></i> 07th Avenue,New york,NY,united
+								states $22,000-$50,000
+							</p>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-primary btn-sm"
+								style="margin-top: 31px; margin-left: 77px;background-color:blueviolet;">Full Time
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+				<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="cards">
+					<div class="row box-shadow"
+						style="padding-left: 36px; padding-inline-end: 50px; height: 100px;">
+						<div class="col-md-2">
+							<img src="/wipro.png">
+						</div>
+						<div class="col-md-8"
+							style="margin-top: 15px; padding-left: 43px;">
+							<h5>I O S Devoloper</h5>
+							<p>
+								<i class="fa fa-suitcase"></i> Wipro &nbsp; <i
+									class="fa fa-map-marker"></i> 07th Avenue,New york,NY,united
+								states $22,000-$50,000
+							</p>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-primary btn-sm"
+								style="margin-top: 31px; margin-left: 77px;">Full Time
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2"></div>
+			<div class="col-lg-8">
+				<div class="cards">
+					<div class="row box-shadow"
+						style="padding-left: 36px; padding-inline-end: 50px; height: 100px;">
+						<div class="col-md-2">
+							<img src="/twitter.png" style="margin-top: 14px;">
+						</div>
+						<div class="col-md-8"
+							style="margin-top: 15px; padding-left: 43px;">
+							<h5>Marketing Holder</h5>
+							<p>
+								<i class="fa fa-suitcase"></i> Twitter &nbsp; <i
+									class="fa fa-map-marker"></i> 07th Avenue,New york,NY,united
+								states $22,000-$50,000
+							</p>
+						</div>
+						<div class="col-md-2">
+							<button class="btn btn-primary btn-sm"
+								style="margin-top: 31px; margin-left: 77px;height: 41px;background-color:#52a73f;">Full Time
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2"></div>
+		</div>
+	</div>
+	<div class="text-center">
+		<button class="btn btn-warning btn-md"style="margin-left: 315px;background-color: gold;">View All Jobs</button>
+	</div>
+</header>
+<section class="container-fliud"
+	style="background-color: #6b6a73; min-height: 140px;">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3" style="padding-left: 45px; margin-left: 115px;">
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-md-3" style="margin-top: 20px;">
+						<img src="/job.png">
+					</div>
+					<div class="col-md-9">
+						<h1 style="color: yellow; margin-top: 10px;">890+</h1>
+						<p style="color: #ffffff; margin-top: -23px; font-weight: bold;">JOBS
+							AVAILABLE</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3" style="padding-left: 45px;">
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-md-3" style="margin-top: 20px;">
+						<img src="/member.png">
+					</div>
+					<div class="col-md-9">
+						<h1 style="color: yellow; margin-top: 10px;">3120+</h1>
+						<p style="color: #ffffff; margin-top: -23px; font-weight: bold;">ACTIVE
+							RESUMES</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3" style="padding-left: 45px;">
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-md-3" style="margin-top: 20px;">
+						<img src="/employer.png">
+					</div>
+					<div class="col-md-9">
+						<h1 style="color: yellow; margin-top: 10px;">230+</h1>
+						<p style="color: #ffffff; margin-top: -23px; font-weight: bold;">EMPLOYERS
+							PROFILE</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3" style="padding-left: 45px;">
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-md-3" style="margin-top: 20px;">
+						<img src="/postions.png">
+					</div>
+					<div class="col-md-9">
+						<h1 style="color: yellow; margin-top: 10px;">150+</h1>
+						<p style="color: #ffffff; margin-top: -23px; font-weight: bold;">POSITIONS
+							MATCHED</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<div class="box">
+	<div class="box">
+		<div class="row d m10y p10"
+			style="background-image: url(//img4cf.b8cdn.com/bayt/assets/job-260/images/Group_new.png); background-repeat: round;">
+			<div class="col is-2-d"></div>
+			<div class="col is-10-d">
+				<a
+					class="btn is-outline is-round is-regular is-secondary is-inverse  u-right   p40x m20t m20r"
+					href="/jobs"> <span class="t-small" style="margin-left: -11px;">Discover Jobs‎</span>
+				</a>
+				<h3 class="t-inverse m10">Executive Jobs</h3>
+				<p class="t-light t-large t-inverse m10">Explore the latest
+					opportunities in top management</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="box">
+		<div class="box">
+			<div class="row d m10y p10"
+				style="background-image: url(/qatar.png); background-repeat: round; width: 1003px; height: 188px; margin-left: -34px;">
+				<div class="col is-2-d"></div>
+				<div class="col is-10-d">
+					<a
+						class="btn is-outline is-round is-regular is-secondary is-inverse  u-right   p40x m20t m20r"
+						href="/applynow" style="background-color:white;color:black;"> <span
+						class="t-small" style="margin-left: -11px;">Apply Now‎</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="box m t-center"
+		style="background-image: url(//img1cf.b8cdn.com/bayt/assets/job-260/images/Rectangle.png); background-repeat: round;">
+		<h5 class="h3 t-inverse m20t">Executive Jobs</h5>
+		<p class="t-light t-inverse m10">Explore the latest opportunities
+			in top management</p>
+		<a
+			class="btn is-outline is-left is-round is-secondary is-inverse is-xlarge t-light "
+			href="/en/india/jobs/q/executive-level/"> <span class="t-small">Discover
+				Jobs‎</span>
+		</a>
+	</div>
+</div>
+<!-- <div class="box d u-none jsMobilePromotions">
+		<div class="row is-compact h-align-center bg-inverse">
+			<div class="col is-11 p0 p20t">
+				<div class="media">
+					<img
+						src="//img3cf.b8cdn.com/bayt/assets/misc-210/images/appStore.png"
+						alt="App Store" class="m10t">
+					<div>
+						<div class="row is-compact v-align-center h-align-between">
+							<div class="col is-8 p10 p40l m40l">
+								<h5>Get mindful.com on your mobile</h5>
+								<p class="t-large m0">Find and apply to jobs everywhere you
+									go, get fresh updates on your job applications, and stay
+									connected to employers.</p>
+								<a href="https://goo.gl/FR18kk" target="_blank"
+									class="p10t u-iblock"><img class="img-logo is-android"
+									width="20" height="24"
+									src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png"
+									alt="Google Play"></a> <a href="https://goo.gl/hS8DQX"
+									target="_blank" class="p10t p10x u-iblock"><img
+									class="img-logo is-iOS" width="20" height="24"
+									src="//img3cf.b8cdn.com/bayt/assets/b8static/png/1.png"
+									alt="Apple Store"></a>
+							</div>
+							<div class="col is-3 t-center">
+								<img
+									src="//img4cf.b8cdn.com/bayt/assets/misc-210/images/qrCode-js.png"
+									alt="Get mindful.com on your mobile">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+ -->
+<div class="box">
+	<h2 class="t-center m20y p20y">How Does mindful.com Work?</h2>
+
+	<div class="row m20y p20y t-center">
+		<div class="row is-m h-align-center">
+			<div class="col is-10-d is-16by9 embed">
+				<iframe class="embedded u-stretch"
+					src="https://www.youtube.com/embed/ptP7vjCIVwI" frameborder="0"
+					gesture="media" allowfullscreen=""></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+
+<section class="bg-inverse p20">
+	<div class="box t-center">
+		<h2 class="m20y p20y">Who's Hiring on mindfulqatar.com</h2>
+
+		<div class="card">
+			<div class="card-banner">
+				<img src="/who_is_hiring.png" alt="Who's Hiring on Bayt.com"
+					class="u-stretch" usemap="#map" data-remap>
+				<map name="map">
+					<area shape="rect" alt="/quater.png" coords="0,0,200,200" href="">
+					<area shape="rect" alt="/nissan.png" coords="200,0,400,200" href="">
+					<area shape="rect" alt="/alfrd.png" coords="400,0,600,200" href="">
+					<area shape="rect" alt="/Elan.png" coords="600,0,800,200" href="">
+					<area shape="rect" alt="/darwish.png" coords="800,0,1000,200"
+						href="">
+					<area shape="rect" alt="/musium.png" coords="0,200,200,400" href="">
+					<area shape="rect" alt="/Abbusia.png" coords="200,200,400,400"
+						href="">
+					<area shape="rect" alt="  " coords="400,200,600,400" href="">
+					<area shape="rect" alt="/weill.png" coords="600,200,800,400"
+						href="">
+					<area shape="rect" alt="/Jadian.png" coords="800,200,1000,400"
+						href="">
+					<area shape="rect" alt="images/Quatr.png" coords="800,200,1000,400"
+						href="">
+				</map>
+			</div>
+		</div>
+		<div class="p20y">
+			<a href="" class="t-wrap btn is-round is-secondary is-outline">Is
+				your company hiring? Join 40,000 employers on mindfulqatar.com</a>
+		</div>
+	</div>
+</section>
+
+<div class="box">
+	<div id="success-story" class="m20y p20y">
+		<h2 class="t-center">Success Stories</h2>
+		<div class="row t-center-d">
+			<div class="col is-3-d">
+				<div class="card">
+					<div class="card-content media-m">
+						<img
+							src="team1.png"
+							class="img-120 img-70-m is-circular u-left-m" alt="" style="margin-left:32px;">
+						<div>
+							<ul class="list is-basic m0-m">
+								<li><a target="_blank"
+									href="https://people.bayt.com/trecia-thapa-27685190/?lang=en">
+										<b>Ahmed Nijami Imran</b>
+								</a></li>
+								<li>Sales operations analyst</li>
+								<li class="t-mute">Bahrawi Trading</li>
+							</ul>
+							<p class="t-small">
+								This is the Perfect Opportunity and way to share our experience with bayt.com this is a great..<br/><a
+									href="https://www.bayt.com/en/career-rising-story/?story=97912"
+									class="is-gray">See More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col is-3-d">
+				<div class="card">
+					<div class="card-content media-m">
+						<img
+							src="/team2.png"
+							class="img-120 img-70-m is-circular u-left-m" alt="" style="margin-left:32px;">
+						<div>
+							<ul class="list is-basic m0-m">
+								<li><a target="_blank"
+									href="https://people.bayt.com/imran-ahmed-1422175/?lang=en">
+										<b>Ahmed Najmi Imran</b>
+								</a></li>
+								<li>Assistant manager</li>
+								<li class="t-mute">CMA CGM</li>
+							</ul>
+							<p class="t-small">
+								Hi Friends - It is time now to say thank you to the site that
+								brought me my first coveted&#8230;<br /> <a
+									href="https://www.bayt.com/en/career-rising-story/?story=102571"
+									class="is-gray">See More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col is-3-d">
+				<div class="card">
+					<div class="card-content media-m">
+						<img
+							src="/team3.png"
+							class="img-120 img-70-m is-circular u-left-m" alt=""style="margin-left:32px;">
+						<div>
+							<ul class="list is-basic m0-m">
+								<li><a target="_blank"
+									href="https://people.bayt.com/arun-george-mathew-31238823/?lang=en">
+										<b>Arun George Mathew</b>
+								</a></li>
+								<li>Sales Executive</li>
+								<li class="t-mute">TRANSMED</li>
+							</ul>
+							<p class="t-small">
+								I am really thankful to Bayt.com for helping me find a job
+								vacancy at Transmed. I would also&#8230;<br /> <a
+									href="https://www.bayt.com/en/career-rising-story/?story=107310"
+									class="is-gray">See More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col is-3-d">
+				<div class="card">
+					<div class="card-content media-m">
+						<img
+							src="/team4.png"
+							class="img-120 img-70-m is-circular u-left-m" alt=""style="margin-left:32px;">
+						<div>
+							<ul class="list is-basic m0-m">
+								<li><a target="_blank"
+									href="https://people.bayt.com/tamara-abu-qulbain-27545200/?lang=en">
+										<b>Tamara Abu Qulbain</b>
+								</a></li>
+								<li>Admisitrative Secretary</li>
+								<li class="t-mute">Labbaik Group</li>
+							</ul>
+							<p class="t-small">
+								I applied to a job offer at Labbaik Group through Bayt.com, it
+								is a great experience with&#8230;<br /> <a
+									href="https://www.bayt.com/en/career-rising-story/?story=97553"
+									class="is-gray">See More</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="t-center m20y p20y">
+			<a href="/viewmore"
+				class="btn is-round is-secondary t-center is-outline">View More</a>
+		</div>
+
+	</div>
+</div>
+
+
+<div th:replace="../fragments/footer :: footer"></div>
