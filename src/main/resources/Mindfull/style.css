@@ -609,6 +609,9 @@ padding: 7px;
 font-size: 14px;
 padding: 0px 20px 20px 0px;
 }
+.google h4 {
+    cursor: pointer;
+}
 .full-time{
 background-color: #00D839; 
 }
@@ -1528,7 +1531,6 @@ input:focus, textarea:focus, select:focus {
 }
 .admin-name{padding: 10px 15px;}
 .admin-name a{padding:1px 2px !important;}
-.employers-data{}
 .design4-content{padding: 25px;background-color: #ececec;}
 .employer{
     margin: 10px 0px;
@@ -1649,6 +1651,12 @@ input:focus, textarea:focus, select:focus {
 .social-media p{
     font-size: 15px;
     font-weight: 200;
+}
+.employers-Option li {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 .ditems{
     padding-left: 0px;
