@@ -1,0 +1,114 @@
+#login{
+    background-color: #f9f9f9;
+    padding: 25px 0px;
+}
+.login-form{background-color: #fff;padding:40px}
+.loginHeading{    
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.login-form .input{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1;
+    height: 44px;
+    padding: 14px;
+    border: 1px solid #a6afb8;
+    border-radius: 2px;
+    outline: none;
+    vertical-align: middle;
+    background-image: none;
+    box-shadow: none;
+}
+.login-form .form-item {
+    margin-top: 16px;
+    display: table;
+    width: 100%;
+}
+input[type="checkbox"] .input.is-small+label {
+    padding: 10.5px 10.5px 10.5px 27.125px;
+    font-size: 14px;
+    line-height: 1.21429;
+}
+label:before {
+    width: 17.5px;
+    height: 17.5px;
+}
+input[type="checkbox"]  .input.is-small+label:after, input[type="checkbox"].input.is-small+label:before {
+    top: 10.5px;
+}
+input[type="checkbox"] .input:checked+label:before {
+    background-color: #2784fc;
+    border: none;
+}
+.btn:active:not(:disabled) {
+    background-color: #3294ff;
+    border-color: #3294ff;
+}
+.form-footer {
+    padding: 32px 0;
+}
+.u-expanded {
+    display: block!important;
+}
+.u-expanded, .u-fit, .u-stretch {
+    width: 100%!important;
+}
+.btn{
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 13px 27px;
+    background-color: #2784fc;
+    border: 1px solid #2784fc;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.btn.is-facebook {
+    background-color: #2e579f;
+    border-color: #2e579f;
+}
+.btn:focus:not(:disabled), .btn:hover:not(:disabled) {
+    background-color: #0070eb;
+    border-color: #0070eb;
+}
+.btn.is-facebook:focus:not(:disabled), .btn.is-facebook:hover:not(:disabled) {
+    background-color: #26457c;
+    border-color: #26457c;
+}
+.btn.is-g-plus:focus:not(:disabled), .btn.is-g-plus:hover:not(:disabled) {
+    background-color: #c62f26;
+    border-color: #c62f26;
+}
+.btn:hover {
+    color: #fff;
+}
+.list.is-basic {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 18px;
+}
+.btn.is-g-plus {
+    background-color: #ec382d;
+    border-color: #ec382d;
+}
+.list.is-basic.is-spaced>li {
+    padding: 6px 0;
+}
+.t-mute {
+    color: #a6afb9;
+}
+.t-xsmall {
+    font-size: .75rem;
+    line-height: 1.67;
+    text-align: left;
+}
+a:not(.btn):not(.b-close):not(.label):hover {
+    text-decoration: none;
+}

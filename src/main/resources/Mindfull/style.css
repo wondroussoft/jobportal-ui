@@ -333,7 +333,8 @@ p{
 Navigation 
 ================================*/
 .navbar-light .navbar-nav .nav-link{
-padding: 0px 17px;
+    padding: 0px 17px 0px 15px;
+    margin-left: 15px;
 /*border-left: 1px solid;*/
 font-size: 15px;
 font-weight: 600;
@@ -350,8 +351,8 @@ content: "";
 height: 15px;
 background-color: #242424;
 width: 2px;
-margin-left: 15px;
-top: 32%;
+margin-left: 23px;
+    top: 21%;
 background: #fed92e;
 }
 .navbar-light .navbar-nav .border-contact:after{
@@ -586,12 +587,13 @@ display: none;
 option {
 color: black;
 }
-.search-btn{
+.search-btn button{
 background: #fff;
 padding: 5px 20px;
 height: 38px;
+border: 0px;
 }
-.search-btn a i{
+.search-btn button i{
 vertical-align: middle;
 color: #878484;
 }
@@ -675,6 +677,10 @@ margin-top: 30px;
 	padding: 40px 0px 30px;
     background-color: #525659;
 }
+#clientsinfo img{
+    height: 120px;
+    padding: 15px 0px;
+    margin: 20px 0px;}
 /*.bg-overlay{
 	height:177px;
     width: 100%;
