@@ -1537,6 +1537,7 @@ input:focus, textarea:focus, select:focus {
 }
 .admin-name{padding: 10px 15px;}
 .admin-name a{padding:1px 2px !important;}
+.employers-data{}
 .design4-content{padding: 25px;background-color: #ececec;}
 .employer{
     margin: 10px 0px;
@@ -1658,12 +1659,6 @@ input:focus, textarea:focus, select:focus {
     font-size: 15px;
     font-weight: 200;
 }
-.employers-Option li {
-    list-style-type: none;
-    padding: 10px;
-    margin-left: 20px;
-    cursor: pointer;
-}
 .ditems{
     padding-left: 0px;
     padding-top: 100px;
@@ -1697,7 +1692,7 @@ input:focus, textarea:focus, select:focus {
     left: 0px;
     bottom: 0px;
 }
-.ditem a:after:hover{
+.ditem a:hover:after{
     content:'';
     width:100%;
     height: 2px;
@@ -1706,12 +1701,23 @@ input:focus, textarea:focus, select:focus {
     left: 0px;
     bottom: 0px;
 }
-.ditem:hover{
+.ditem:hover a{
     color:#fff;
+}
+.ditem:hover a:after{
+    background-color: #fff;
 }
 .ditem a:hover{
     color:#fff;
 }
+.ditem:hover{
+    color:#fff;
+}
+.ditem:hover .fa-chevron-left:before {
+    content: "\f078";
+}
+/*Design4 styles end*/
+
 #myModal .modal-dialog{
     max-width: 810px!important;
     background-color: transparent!important;
