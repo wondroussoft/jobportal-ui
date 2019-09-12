@@ -1,0 +1,20 @@
+.register-account{padding: 50px 0px 80px}
+.modal-data .nav-tabs {
+    border-bottom: 0px;
+}
+.modal-data .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: transparent;
+}
+.modat-data .nav-tabs .nav-link {
+    border: 0px;
+}
+.modal-data .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+.modal-data .nav-tabs .nav-item {
+	width: 50%;
+}
+.modal-data inputgroup .fa:hover{
+	cursor: pointer;
+}
+.modal-data .modal-selector .fa-caret-down:hover{cursor: pointer;}

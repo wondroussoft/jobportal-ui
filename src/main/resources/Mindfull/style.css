@@ -343,7 +343,7 @@ position:relative;
 text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-background-color: #fed92e;
+background-color: #fed90a;
 }
 .navbar-light .navbar-nav .nav-link:after {
 position: absolute;
@@ -353,7 +353,7 @@ background-color: #242424;
 width: 2px;
 margin-left: 23px;
     top: 21%;
-background: #fed92e;
+background: #fed90a;
 }
 .navbar-light .navbar-nav .border-contact:after{
 content: none;
@@ -363,7 +363,7 @@ padding: 10px 45px 10px 0px;
 }
 #navbar .contact-details{
 width: 87%;
-background-color: #fed92e;
+background-color: #fed90a;
 color: #000;
 font-size: 15px;
 padding: 0px 15px;
@@ -601,7 +601,7 @@ color: #878484;
 position: relative;
 }
 .banner-btn{
-background-color: #fed92e;
+background-color: #fed90a;
 border-radius: 0px;
 font-size: 14px !important;
 padding: 7px;
@@ -649,7 +649,7 @@ font-weight: 900;
 padding-top: 40px;
 }
 .view-jobs{
-background-color: #fed92e;
+background-color: #fed90a;
 font-size: 15px;
 font-weight: 600;
 text-transform: uppercase;
@@ -1077,7 +1077,7 @@ input:focus, textarea:focus, select:focus {
     margin-bottom: 25px;
     padding: 1px 10px;
     border-radius: 0px;
-    background: #fed92e;
+    background: #fed90a;
     display: inline-block;
 }
 .input-file-container label{
@@ -1143,13 +1143,13 @@ input:focus, textarea:focus, select:focus {
 .application{
     background-color: #ffffff;
     border-radius: 20px;
-    border:1px solid #fed92e;
+    border:1px solid #fed90a;
     padding: 35px;
 }
 .applied-job{
     background-color: #ffffff;
     border-radius: 20px;
-    border:2px solid #fed92e;
+    border:2px solid #fed90a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1279,7 +1279,7 @@ input:focus, textarea:focus, select:focus {
     font-size: 15px;
 }
 .update{
-    color: #fed92e;
+    color: #fed90a;
     font-size: 15px;
 }
 .professional{
@@ -1309,7 +1309,7 @@ input:focus, textarea:focus, select:focus {
     color: #606060;
 }
 .fallow{
-    background-color: #fed92e;
+    background-color: #fed90a;
     font-size: 16px;
     font-weight: 600;
     text-transform: capitalize;
@@ -1422,7 +1422,7 @@ input:focus, textarea:focus, select:focus {
     margin: 30px 30px 30px 30px;
 }
 .quick-suggestion-sub {
-    border: 1px solid #fed92e;
+    border: 1px solid #fed90a;
     border-radius: 20px;
     border-width: 2px;
     background-color: #FFFFFF;
@@ -1437,7 +1437,7 @@ input:focus, textarea:focus, select:focus {
     margin-top: 25px;
 }
 .quick-suggestion-sub .btn-custom {
-    background-color: #fed92e;
+    background-color: #fed90a;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1516,7 +1516,7 @@ input:focus, textarea:focus, select:focus {
         Design4
 ===========================*/
 .mindful-admin{
-    background-color: #fed92e;
+    background-color: #fed90a;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1571,7 +1571,7 @@ input:focus, textarea:focus, select:focus {
 .table thead th {
     vertical-align: bottom;
     border-bottom: 1px solid #dee2e6;
-    background-color: #fed92e;
+    background-color: #fed90a;
     position: relative;
     font-size: 15px;
     padding: 7px;
@@ -1582,7 +1582,7 @@ input:focus, textarea:focus, select:focus {
     padding: 4px;
 }
 .border-right{
-    border-right:2px solid #fed92e !important;
+    border-right:2px solid #fed90a !important;
 }
 .thead-border:after {
     position: absolute;
@@ -1603,7 +1603,7 @@ input:focus, textarea:focus, select:focus {
     background-color: #d5d5d5;
 }
 .employers-heading{
-    background-image: linear-gradient(#fed92ea8, #fff);
+    background-image: linear-gradient(#fed90aa8, #fff);
     padding: 10px 15px;
 }
 .employers-heading h4{
@@ -1674,20 +1674,20 @@ input:focus, textarea:focus, select:focus {
     list-style: none;
     padding: 15px 0px 6px 15px;
     text-align: right;
-    /*border-bottom: 2px solid #fed92e;*/
+    /*border-bottom: 2px solid #fed90a;*/
     position: relative;
 }
 .ditem a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
-    color:#fed92e;
+    color:#fed90a;
 }
 .ditem a:after{
     content:'';
     width:100%;
     height: 2px;
-    background-color: #fed92e;
+    background-color: #fed90a;
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -1733,7 +1733,11 @@ input:focus, textarea:focus, select:focus {
     font-weight: 600;
     text-transform: uppercase;
 }
-.modal-data inputgroup .fa{color: #a09f9f;}
+.modal-data inputgroup .fa{
+    color: #a09f9f;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;}
 .employer-data{background-color: #83b71f !important;}
 .choose-data{padding: 5px 0px 30px;}
 .choose-data .choose-account:after {
@@ -1741,7 +1745,7 @@ input:focus, textarea:focus, select:focus {
     content: "";
     height: 1px;
     background-color: #242424;
-    width: 36%;
+    width: 40%;
     margin-left: 10px;
     top: 42%;
     background: #d2d1d1;
@@ -1751,15 +1755,16 @@ input:focus, textarea:focus, select:focus {
     content: "";
     height: 1px;
     background-color: #242424;
-    width: 36%;
+    width: 40%;
     margin-left: 15px;
     top: 42%;
     left: -14px;
     background: #d2d1d1;
 }
 .choose-account{
-    color: #00a1ff;
+    color: #00a1ff !important;
     position: relative;
+    text-decoration: none !important;
 }
 .account-details{
     position: relative;
@@ -1787,11 +1792,12 @@ input:focus, textarea:focus, select:focus {
 .modal-data inputgroup{
     border: 1px solid #b7b6b6;
     padding: 10px;
+    position: relative;
 }
 .modal-data input{
     border:0px;
     height: 15px;
-    width: 88%;
+    width: 96%;
 }
 .label-data{
     margin-top: 15px;
@@ -1802,7 +1808,7 @@ input:focus, textarea:focus, select:focus {
     color: #676666;
 }
 .modal-data .phone{
-    width: 95%;
+    width: 98%;
 }
 .selector{
     width: 100%;
@@ -1821,6 +1827,7 @@ input:focus, textarea:focus, select:focus {
 .modal-data .empty-check{
     width: 2%;
     margin-right: 6px;
+    cursor: pointer;
 }
 .privacy{    padding: 20px 0px;}
 .accepts{
