@@ -475,6 +475,15 @@ color: #16181b;
 text-decoration: none;
 background-color: #ffc843;
 }
+.employers-Option li{list-style: none;margin-top: 10px;}
+.employers-Option li a{
+    color: #231f20;
+    padding: 0px 0px 0px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.employers-Option li a:hover{color:#fff;}
 .dropdown:hover .dropdown-menu{display: block;}
 /*#navbar .contact {
 padding: 10px 45px 10px 0px;
