@@ -1,0 +1,53 @@
+.has-attachments {
+    position: relative;
+}
+.cover>.box {
+    text-align: center;
+    width: 100%;
+}
+.cover {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 460px;
+    margin: 0 auto;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.cover>.box>.h1, .cover>.box>h1 {
+    font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 1.19444;
+    margin-bottom: 20px;
+}
+.is-attached.is-fluid {
+    max-width: 750px;
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+}
+.is-attached[data-position="bc"] {
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+}
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+.u-shadow {
+    box-shadow: 0 4px 9px 0 hsla(0,0%,70%,.5);
+}
+.is-attached {
+    position: absolute;
+    z-index: 1;
+}

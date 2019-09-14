@@ -18,7 +18,7 @@ body{    font-family: Lato,Noto\ Kufi\ Arabic,sans-serif;}
     line-height: 1.67;
 }
 
-#contactUs{background: #f4f4f4;padding: 20px 0px;}
+#contactUs{background: #f1f2f0;}
 .card {
     background-color: #fff;
     padding: 20px;
@@ -174,3 +174,51 @@ a:not(.btn):not(.b-close):not(.label).is-gray {
     margin-bottom: 10px!important;
 }
 .u-nowrap{    margin-bottom: 15px;}
+
+
+
+
+.contact-info{    padding: 32px 24px 35px 30px;
+background-color: #6b6a73;}
+.contact-form{
+    background-color: #fcfcfc;
+    padding: 28px 30px 8px 30px;
+    margin-left: -30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.10);
+}
+.contactPage{
+    margin-top: -105px !important;
+    box-sizing: border-box;
+    width: 100%;
+}
+.contact-input-form input,.contact-input-form textarea{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #f1f2f0;
+    font-size: 12px;
+    color: #000;
+    padding: 12px 14px;
+}
+.careerfy-ct-form{
+    padding: 17px 23px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 1;
+    border: 1px solid;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #fed90a;
+}
+.careerfy-ct-form:hover{
+    background-color: #fff;
+    border-color:#6b6a73;
+    color:#6b6a73;
+}
