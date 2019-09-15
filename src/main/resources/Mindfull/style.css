@@ -424,6 +424,9 @@ width: 20%;
 .login-details a{
 color: #ffffff;
 }
+.navbar-bg{
+    background-color: #ffffff !important;
+}
 .navbar-brand{
 width: 100px;
 }
@@ -484,7 +487,7 @@ background-color: #ffc843;
     font-weight: 600;
 }
 .employers-Option li a:hover{color:#fff;}
-.dropdown:hover .dropdown-menu{display: block;}
+/* .dropdown:hover .dropdown-menu{display: block;} */
 /*#navbar .contact {
 padding: 10px 45px 10px 0px;
 }*/
