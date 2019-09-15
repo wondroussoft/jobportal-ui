@@ -2,14 +2,35 @@
 .modal-data .nav-tabs {
     border-bottom: 0px;
 }
-.modal-data .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    border-color: transparent;
+.modal-data{
+    background-color: #fff;
+    padding: 40px 15px;
 }
-.modat-data .nav-tabs .nav-link {
-    border: 0px;
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: #fed90a;
+    color: #fff;
+    border: 1px solid #6b6a73 !important;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active .candidate{
+    background-color: #231f20;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active p
+{
+    color:#f1f2f0;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active h4{
+    color:#fff;
+}
+.nav-tabs .nav-item .nav-link{
+    position: relative;
+    text-align: center;
+    border: 1px solid #6b6a73;
+    padding: 20px 15px;
+    margin: 13px;
+    border-radius: 5px;
 }
 .modal-data .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
-    border-color: transparent;
+    border-color: 1px solid #6b6a73 !important;
 }
 .modal-data .nav-tabs .nav-item {
 	width: 50%;
@@ -18,3 +39,138 @@
 	cursor: pointer;
 }
 .modal-data .modal-selector .fa-caret-down:hover{cursor: pointer;}
+.choose-data{padding: 5px 0px 30px;}
+.choose-data .choose-account:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #242424;
+    width: 40%;
+    margin-left: 10px;
+    top: 42%;
+    background: #d2d1d1;
+}
+.choose-data .choose-account:before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #242424;
+    width: 40%;
+    margin-left: 15px;
+    top: 42%;
+    left: -14px;
+    background: #d2d1d1;
+}
+.choose-account{
+    color: #6b6a73 !important;
+    position: relative;
+    text-decoration: none !important;
+}
+.login-link:hover{
+    color:#fed90a !important;
+}
+.candidate{
+    background-color: #6b6a73;
+    padding: 10px;
+    border-radius: 100%;
+    color: #fff;
+    position: absolute;
+    top: -20px;
+    display: flex;
+    margin: 0px 44%
+}
+.account-details p{
+    font-style: italic;
+    color:#6b6a73;
+}
+.account-details h4{
+    color:#231f20;
+}
+#myModal .modal-dialog{
+    max-width: 810px!important;
+    background-color: transparent!important;
+    /*margin-left: 15px !important;*/
+    margin-top: 120px;
+}
+#myModal .modal-content{
+    padding: 20px;
+}
+.modal-heading{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.modal-data inputgroup .fa{
+    color: #6b6a73;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;}
+/* .employer-data{background-color: #231f20 !important;} */
+
+
+.modal-data inputgroup{
+    border: 1px solid #b7b6b6;
+    padding: 10px;
+    position: relative;
+}
+.modal-data input{
+    border:0px;
+    height: 15px;
+    width: 96%;
+}
+.label-data{
+    margin-top: 15px;
+    margin-bottom: 6px;
+}
+.label-data label{
+    font-size: 16px;
+    color: #6b6a73;
+}
+.modal-data .phone{
+    width: 98%;
+}
+.selector{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    margin-top: -10px;
+}
+.modal-selector{
+    position: relative;
+}
+.modal-selector .fa-caret-down{
+    position: absolute;
+    right: -3px;
+    bottom: 6px;
+}
+.modal-data .empty-check{
+    width: 2%;
+    margin-right: 6px;
+    cursor: pointer;
+}
+.privacy{    padding: 20px 0px;}
+.accepts{
+    font-size: 16px;
+    color: #6b6a73;
+}
+.accepts span a{
+    color: #231f20;
+    text-decoration: none;
+}
+.accepts span a:hover{
+    color: #fed90a;
+}
+.btn-signup{
+    background-color: #fed90a;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 8px 30px
+}
+.btn-signup:hover{
+    background-color:#e9c708;
+    color:#fff;
+}

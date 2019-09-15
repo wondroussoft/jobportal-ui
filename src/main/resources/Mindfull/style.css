@@ -413,7 +413,7 @@ font-size: 15px;
 }
 .login-details{
 padding: 10px 20px;
-background-color: #858b90;
+background-color: #6b6a73;
 color: #ffffff;
 width: 20%;
 }
@@ -475,6 +475,15 @@ color: #16181b;
 text-decoration: none;
 background-color: #ffc843;
 }
+.employers-Option li{list-style: none;margin-top: 10px;}
+.employers-Option li a{
+    color: #231f20;
+    padding: 0px 0px 0px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.employers-Option li a:hover{color:#fff;}
 .dropdown:hover .dropdown-menu{display: block;}
 /*#navbar .contact {
 padding: 10px 45px 10px 0px;
@@ -650,6 +659,7 @@ padding-top: 40px;
 }
 .view-jobs{
 background-color: #fed90a;
+border: 1px solid #6b6a73;
 font-size: 15px;
 font-weight: 600;
 text-transform: uppercase;
@@ -730,7 +740,7 @@ margin-top: 30px;
     padding: 20px 0;
 }
 .yellow{
-    color: #fec13d;
+    color: #fed90a;
 }
 .basic-links a{
     color:#FFF;
@@ -738,7 +748,7 @@ margin-top: 30px;
 
 /*WorkVideo Section*/
 .worktext{
-    color: #6a6c6d;
+    color: #6b6a73;
     font-weight: 600;
 }
 .workbg{
@@ -826,7 +836,7 @@ button:focus {
     height:100px;
 }
 .link{
-    color:grey;
+    color:#6b6a73;
     text-decoration: underline;
     font-size: 14px;
     padding-bottom: 20px;
@@ -878,22 +888,22 @@ button:focus {
 }
 .view{
     background-color: transparent;
-    color: #5d5c6d;
-    border: 1px solid #5d5c6d;
+    color: #6b6a73;
+    border: 2px solid #6b6a73;
     font-size: 14px;
     padding:5px 15px;
 }
 .view:hover{
-    background-color: #5d5c6d;
+    background-color: #6b6a73;
     color:white;
-    border:1px solid #5d5c6d;
+    border:2px solid #fed90a;
 }
 /*----------------------------
         footer section
 ------------------------------*/
 
 .footer-section{
-    background-color: #6c6c6e;
+    background-color: #6b6a73;
     padding: 25px 0px 25px;
 }
 .about img{    
@@ -1031,8 +1041,8 @@ button:focus {
     font-size: 15px;
 }
 .btn-ftr{
-    background-color: #ffc23d;
-    border-color: #ffc23d;
+    background-color: #fed90a;
+    border-color: #fed90a;
     padding: 0 14px;
     border-radius: 0px;
     border: 0px;
@@ -1717,132 +1727,3 @@ input:focus, textarea:focus, select:focus {
     content: "\f078";
 }
 /*Design4 styles end*/
-
-#myModal .modal-dialog{
-    max-width: 810px!important;
-    background-color: transparent!important;
-    /*margin-left: 15px !important;*/
-    margin-top: 120px;
-}
-#myModal .modal-content{
-    padding: 20px;
-}
-.modal-heading{
-    font-size: 22px;
-    letter-spacing: 1px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-.modal-data inputgroup .fa{
-    color: #a09f9f;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;}
-.employer-data{background-color: #83b71f !important;}
-.choose-data{padding: 5px 0px 30px;}
-.choose-data .choose-account:after {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background-color: #242424;
-    width: 40%;
-    margin-left: 10px;
-    top: 42%;
-    background: #d2d1d1;
-}
-.choose-data .choose-account:before {
-    position: absolute;
-    content: "";
-    height: 1px;
-    background-color: #242424;
-    width: 40%;
-    margin-left: 15px;
-    top: 42%;
-    left: -14px;
-    background: #d2d1d1;
-}
-.choose-account{
-    color: #00a1ff !important;
-    position: relative;
-    text-decoration: none !important;
-}
-.account-details{
-    position: relative;
-    text-align: center;
-    border: 1px solid #aaaaaa;
-    padding: 20px 15px;
-}
-.candidate{
-    background-color: #1cb1f9;
-    padding: 10px;
-    border-radius: 100%;
-    color: #fff;
-    position: absolute;
-    top: -20px;
-    display: flex;
-    margin: 0px 40%
-}
-.account-details p{
-    font-style: italic;
-}
-.account-active{
-    background-color: #12344c;
-    color: #fff
-}
-.modal-data inputgroup{
-    border: 1px solid #b7b6b6;
-    padding: 10px;
-    position: relative;
-}
-.modal-data input{
-    border:0px;
-    height: 15px;
-    width: 96%;
-}
-.label-data{
-    margin-top: 15px;
-    margin-bottom: 6px;
-}
-.label-data label{
-    font-size: 16px;
-    color: #676666;
-}
-.modal-data .phone{
-    width: 98%;
-}
-.selector{
-    width: 100%;
-    height: 40px;
-    padding: 0px 10px;
-    margin-top: -10px;
-}
-.modal-selector{
-    position: relative;
-}
-.modal-selector .fa-caret-down{
-    position: absolute;
-    right: -3px;
-    bottom: 6px;
-}
-.modal-data .empty-check{
-    width: 2%;
-    margin-right: 6px;
-    cursor: pointer;
-}
-.privacy{    padding: 20px 0px;}
-.accepts{
-    font-size: 16px;
-    color: #989797;
-}
-.accepts span{
-    color: #000;
-}
-.btn-signup{
-    background-color: #1db5fd;
-    border-radius: 20px;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 8px 30px
-}
