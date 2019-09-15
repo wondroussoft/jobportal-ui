@@ -454,18 +454,18 @@ opacity: 0;}
     #right-job{
         padding: 55px 0px ;
     }
-    .btn-search-job{
+    .million-jobs .btn-search-job{
         display: inline-block;
         padding: 17px 30px;
         line-height: 1;
         color: #ffffff;
         font-weight: 600;
         text-transform: uppercase;
-        border-radius: 2px;
+        border-radius: 5px;
         overflow: hidden;
         position: relative;
         background-color: #fed90a;
         margin-top:20px;
     }
-    .btn-search-job:hover{color: #ffffff;background-color: #E3C20B;}
+    .million-jobs .btn-search-job:hover{color: #ffffff;background-color: #E3C20B;}
     .million-jobs .find-job {text-align: left;}

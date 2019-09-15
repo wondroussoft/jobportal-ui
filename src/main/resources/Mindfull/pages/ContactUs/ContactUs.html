@@ -15,16 +15,8 @@
     <link href="../../assets/css/responsive.css" rel="stylesheet">
     <link href="ContactUs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 </head>
-
-<script>
-    $(function () {
-        $("#header").load("../../components/Header/commonHeader.html");
-        $("#footer").load("../../components/Footer/commonFooter.html");
-    });
-</script>
 
 <body>
     <!-- navigation section-->
@@ -185,9 +177,15 @@
     <script src="../../assets/js/plugin.js"></script>
     <script src="owl.carousel.min.js"></script>
     <!-- navigation script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
 
     <!-- Counter number script -->
+    <!-- Header and Footer script -->
+    <script>
+            $(function () {
+                $("#header").load("../../components/Header/commonHeader.html");
+                $("#footer").load("../../components/Footer/commonFooter.html");
+            });
+        </script>
     <script type="text/javascript">
         $('.counter').each(function () {
             var $this = $(this),
