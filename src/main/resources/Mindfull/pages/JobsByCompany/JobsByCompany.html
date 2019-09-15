@@ -14,119 +14,20 @@
     <link href="../../style.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
 </head>
 
+<script>
+    $(function () {
+        $("#header").load("../../components/Header/commonHeader.html");
+        $("#footer").load("../../components/Footer/commonFooter.html");
+    });
+</script>
+
 <body>
     <!-- navigation section-->
-    <header id="navbar" class="nav-down">
-        <div class=" d-flex mb-detail">
-            <div class="contact-details d-flex">
-                <div class="d-flex contact">
-                    <span>
-					<a href="#" class="fa fa-envelope-o"></a>
-					<a href="#">Support@mindfulqatar.com</a>
-				</span>
-                </div>
-                <div class="d-flex contact">
-                    <span class="d-flex align-items-baseline">
-					<a href="#" class="fa fa-volume-control-phone"></a>
-					<a href="tel:123-456-7890">123-456-7890</a>
-				</span>
-                </div>
-                <div class="contact">
-                    <p>Working Hours:9:00 am to 5:00 pm</p>
-                </div>
-                <div class="basic-links ftr">
-                    <ul style="padding-top:10px;margin-bottom: 0px">
-                        <li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"
-								aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-								aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"
-								aria-hidden="true"></i></a></li>
-                        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-								aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="employers-Option">
-                    <li><a href="../Employers/Employers.html">Employers</a></li>
-                </div>
-            </div>
-            <div class="login-details d-flex float-right">
-                <div class="d-flex pad-right30">
-                    <span>
-					<!-- <a href="" class=""></a> -->
-					<a href="../Login/Login.html" class=""><i class="fa fa-user-circle-o pr-1"></i>Login</a>
-				</span>
-                </div>
-                <div class="d-flex">
-                    <span>
-					<!-- <a href="" class=""></a> -->
-					<a href="../Register/Register.html" class=""><i
-							class="fa fa-pencil-square-o pr-1"></i>Register</a>
-				</span>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../../assets/image/logos/logo.png">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-                <div class="collapse navbar-collapse float-right " id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../../index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">Search Jobs <i
-								class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="../AdvanceSearch/AdvanceSearch.html">Advanced
-								Search</a>
-                                <a class="dropdown-item" href="../JobsByRole/JobsByRole.html">Jobs By Role</a>
-                                <a class="dropdown-item" href="../JobsBySector/JobsBySector.html">Jobs By
-								Sector</a>
-                                <a class="dropdown-item" href="../JobsByLocation/JobsByLocation.html">Jobs By
-								Location</a>
-                                <a class="dropdown-item" href="#">Jobs By
-								Companies</a>
-                                <a class="dropdown-item" href="../ExecutiveJobs/ExecutiveJobs.html">Executive
-								Jobs</a>
-                                <a class="dropdown-item" href="../Salaries/Salaries.html">Salaries</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">Services <i
-								class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="Energy.html">Energy</a>
-                                <a class="dropdown-item" href="Communication-automation.html">Communication &
-								Automation</a>
-                                <a class="dropdown-item" href="Kabelhome.html">Kabel Home</a>
-                                <a class="dropdown-item" href="Smartcity.html">Smart City</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../CompanyReviews/CompanyReviews.html">Company Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../AboutUs/AboutUs.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link border-contact" href="../ContactUs/ContactUs.html">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
     <!-- header end -->
 
     <!-- Body starts here -->
@@ -136,10 +37,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Partner and More  logo" title="Partner and More logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Partner and More  logo" title="Partner and More logo">
                         <div>
                             <a href="/#">
-								Partner and More </a>
+                                Partner and More </a>
                             <p class="t-mute m0-m p10y">
                                 57 Jobs </p>
                         </div>
@@ -149,10 +51,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png" alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png"
+                            alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 48 Jobs </p>
                         </div>
@@ -162,10 +65,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Premium Card  logo" title="Premium Card logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Premium Card  logo" title="Premium Card logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 24 Jobs </p>
                         </div>
@@ -176,10 +80,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png" alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png"
+                            alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 48 Jobs </p>
                         </div>
@@ -189,10 +94,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Premium Card  logo" title="Premium Card logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Premium Card  logo" title="Premium Card logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 24 Jobs </p>
                         </div>
@@ -202,10 +108,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png" alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png"
+                            alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 48 Jobs </p>
                         </div>
@@ -215,10 +122,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Premium Card  logo" title="Premium Card logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Premium Card  logo" title="Premium Card logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 24 Jobs </p>
                         </div>
@@ -228,10 +136,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png" alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png"
+                            alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 48 Jobs </p>
                         </div>
@@ -241,23 +150,25 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Premium Card  logo" title="Premium Card logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Premium Card  logo" title="Premium Card logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 24 Jobs </p>
                         </div>
                     </div>
                 </div>
             </div>
-             <div class="col is-2-d">
+            <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png" alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1765031_logo_1553415065_n.png"
+                            alt="TASC Outsourcing  logo" title="TASC Outsourcing logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 48 Jobs </p>
                         </div>
@@ -267,10 +178,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Premium Card  logo" title="Premium Card logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Premium Card  logo" title="Premium Card logo">
                         <div>
                             <a href="/#">
-								Premium Card </a>
+                                Premium Card </a>
                             <p class="t-mute m0-m p10y">
                                 24 Jobs </p>
                         </div>
@@ -281,10 +193,11 @@
             <div class="col is-2-d">
                 <div class="card">
                     <div class="card-content t-center-d media-m">
-                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png" alt="Samaya Electronics  logo" title="Samaya Electronics logo">
+                        <img class="img-120 img-70-m u-left-m" src="../../assets/image/1992151_logo_1525976263_n.png"
+                            alt="Samaya Electronics  logo" title="Samaya Electronics logo">
                         <div>
                             <a href="/#">
-								Samaya Electronics </a>
+                                Samaya Electronics </a>
                             <p class="t-mute m0-m p10y">
                                 9 Jobs </p>
                         </div>
@@ -310,123 +223,9 @@
     <!-- Body ends here -->
 
     <!-- footer section -->
-    <footer id="down-footer">
-        <div class="footer-section">
-            <div class="container">
-                <div class="row">
-                    <!-- <div class="digitax-details"> -->
-                    <div class="col col-6 col-sm-6 col-md-4 col-lg-2">
-                        <div class="basic-links">
-                            <h3 class="white">Featured Job</h3>
-                            <ul class="basic-link-item pl-0">
-                                <li class="item"><a href="">Browse Jobs</a></li>
-                                <li class="item"><a href="">Premium MBA Jobs</a></li>
-                                <li class="item"><a href="">Access Database</a></li>
-                                <li class="item"><a href="">Managae Response</a></li>
-                                <li class="item"><a href="">Report a Problem</a></li>
-                                <li class="item"><a href="">Mobile Site</a></li>
-                                <li class="item"><a href="">Jobs By Skill</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-6 col-sm-6 col-md-3 col-lg-2">
-                        <div class="basic-links">
-                            <h3 class="white footer-link">Find Jobs</h3>
-                            <ul class="basic-link-item pl-0">
-                                <li class="item"><a href="">AI Rayyan</a></li>
-                                <li class="item"><a href="">AI Wakra</a></li>
-                                <li class="item"><a href="">Umm Said</a></li>
-                                <li class="item"><a href="">Khor AI Udaid</a></li>
-                                <li class="item"><a href="">AI Khor</a></li>
-                                <li class="item"><a href="">RLIC</a></li>
-                                <li class="item"><a href="">Mesaieed</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-                        <div class="row">
-                            <div class="col col-12 col-md-6 col-lg-6">
-                                <div class="basic-links">
-                                    <h3 class="white footer-link">Company</h3>
-                                    <ul class="basic-link-item pl-0">
-                                        <li class="item"><a href="">About us</a></li>
-                                        <li class="item"><a href="">Contact us</a></li>
-                                        <li class="item"><a href="">Careers</a></li>
-                                        <li class="item"><a href="">Blogs</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col col-12 col-md-6 col-lg-6">
-                                <div class="basic-links">
-                                    <h3 class="white footer-link">Quick Links</h3>
-                                    <ul class="basic-link-item pl-0">
-                                        <li class="item"><a href="">Caareer Tips</a></li>
-                                        <li class="item"><a href="">Events</a></li>
-                                        <li class="item"><a href="">Never Miss An Email</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col col-12 col-sm-12 col-md-6 col-lg-12">
-                                <div class="basic-links ftr">
-                                    <h6 class="yellow">Follow <a href="#">Mindfulqatar.com</a></h6>
-                                    <ul>
-                                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-                        <div class="basic-links">
-                            <h3 class="white">Reach Us</h3>
-                            <ul class="basic-link-item pl-0">
-                                <li class="item"><a href="">Mindful Consulting</a></li>
-                                <li class="item"><a href="">AI Shoumoukh Tower</a></li>
-                                <li class="item"><a href="">C Ring Road</a></li>
-                                <li class="item"><a href="">Doha, Qatar</a></li>
-                                <li class="item"><a href="" class="mb-none">Email:support@mindfulqatar.com</a></li>
-                                <li class="item"><a href="">Call:+974 123 45678</a></li>
-                                <li class="item"><a href="">FAX: 123 456 85</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
-                        <div class="basic-links">
-                            <h3 class="white">Drop A Mail</h3>
-                            <form action="/action_page.php">
-                                <input type="text" placeholder="Your Name">
-                            </form>
-                            <form action="/action_page.php">
-                                <input type="email" placeholder="Email">
-                            </form>
-                            <form action="/action_page.php">
-                                <textarea type="text" placeholder="Message"></textarea>
-                            </form>
-                            <button class="btn-ftr">Send</button>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="all-rights mx-auto text-center">
-            <div class="container">
-                <div class="copy-right">
-                    © Copyright 2019 Mindfulqatar | Design By <span style="color:#ffc23d;font-weight: 600">THE
-              WAY</span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer"></div>
     <!-- Footer end -->
+
     <!-- bootstrap script links -->
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
@@ -440,7 +239,7 @@
 
     <!-- Counter number script -->
     <script type="text/javascript">
-        $('.counter').each(function() {
+        $('.counter').each(function () {
             var $this = $(this),
                 countTo = $this.attr('data-count');
 
@@ -451,17 +250,17 @@
             }, {
                 duration: 1000,
                 easing: 'linear',
-                step: function() {
+                step: function () {
                     $this.text(Math.floor(this.countNum));
                 },
-                complete: function() {
+                complete: function () {
                     $this.text(this.countNum);
                     //alert('finished');
                 }
             });
         });
 
-        $(window).mousemove(function(e) {
+        $(window).mousemove(function (e) {
             var change;
             var xpos = e.clientX;
             var ypos = e.clientY;
