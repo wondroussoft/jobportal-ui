@@ -15,6 +15,42 @@ public class HomeController {
 	public String GetLogin(Model model) {
 		return "login";
 	}
+	
+	@GetMapping("/advancesearch")
+	public String GetAdvancesearch(Model model) {
+		return "advancesearch";
+	}
+	
+	@GetMapping("/jobsbylocations")
+	public String GetJobsbylocations(Model model) {
+		return "jobsbylocations";
+	}
+	
+	@GetMapping("/jobsbyrole")
+	public String GetJobsbyrole(Model model) {
+		return "jobsbyrole";
+	}
+	
+	@GetMapping("/jobsbysector")
+	public String GetJobsbysector(Model model) {
+		return "jobsbysector";
+	}
+	
+	@GetMapping("/salaries")
+	public String GetSalaries(Model model) {
+		return "salaries";
+	}
+	
+	@GetMapping("/searchjobs")
+	public String GetSearchjobs(Model model) {
+		return "searchjobs";
+	}
+	
+	@GetMapping("/searchpage")
+	public String GetSearchpage(Model model) {
+		return "searchpage";
+	}
+	
 
 	@PostMapping("/candidate_workspace")
 	public String Getworkspace(Model model) {
@@ -76,11 +112,21 @@ public class HomeController {
 		return "contactus";
 	}
 
-	@GetMapping("/review")
+	@GetMapping("/companyreview")
 	public String Getreview(Model model) {
-		return "review";
+		return "companyreviews";
+	}
+	
+	@GetMapping("/executivejobs")
+	public String GetExecutivejobs(Model model) {
+		return "executivejobs";
 	}
 
+	@GetMapping("/jobsbycompany")
+	public String GetJobsByCompany(Model model) {
+		return "jobsbycompany";
+	}
+	
 	@GetMapping("/resume")
 	public String Getresume(Model model) {
 		return "resume_upload";

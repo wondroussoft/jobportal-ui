@@ -1,138 +1,4 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml"
-	xmlns:th="http://www.thymeleaf.org"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
-
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" th:href="@{'/assets/css/bootstrap.min.css'}" />
-<link rel="stylesheet" th:href="@{'/assets/css/plugin.css'}" />
-<link rel="stylesheet" th:href="@{'/assets/css/style.css'}" />
-<link rel="stylesheet" th:href="@{'/assets/css/responsive.css'}" />
-<link rel="stylesheet" th:href="@{'/assets/css/about-us/about-us.css'}" />
-
-<link rel="stylesheet"
-	th:href="@{'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}" />
-</head>
-
-<body>
-<!-- navigation section-->
-<header id="navbar" class="nav-down">
-	<div class=" d-flex mb-detail">
-		<div class="contact-details d-flex">
-			<div class="d-flex contact">
-				<span>
-					<a th:href="@{'#'}" class="fa fa-envelope-o"></a>
-					<a th:href="@{'#'}">Support@mindfulqatar.com</a>
-				</span>
-			</div>
-			<div class="d-flex contact">
-				<span class="d-flex align-items-baseline">
-					<a th:href="@{'#'}" class="fa fa-volume-control-phone"></a>
-					<a th:href="@{'tel:123-456-7890'}">123-456-7890</a>
-				</span>
-			</div>
-			<div class="contact">
-				<p>Working Hours:9:00 am to 5:00 pm</p>
-			</div>
-			<div class="basic-links ftr">
-				<ul style="padding-top:10px;margin-bottom: 0px">
-					<li><a th:href="@{'https://www.twitter.com'}" target="_blank"><i class="fa fa-twitter"
-								aria-hidden="true"></i></a></li>
-					<li><a th:href="@{'https://www.instagram.com'}" target="_blank"><i class="fa fa-instagram"
-								aria-hidden="true"></i></a></li>
-					<li><a th:href="@{'https://www.linkedin.com'}" target="_blank"><i class="fa fa-linkedin"
-								aria-hidden="true"></i></a></li>
-					<li><a th:href="@{'https://www.facebook.com'}" target="_blank"><i class="fa fa-facebook"
-								aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
-
-			<div class="employers-Option">
-				<li><a th:href="@{'#'}">Employers</a></li>
-			</div>
-		</div>
-		<div class="login-details d-flex float-right">
-			<div class="d-flex pad-right30">
-				<span>
-					<!-- <a th:href="@{''}" class=""></a> -->
-					<a th:href="@{'LOGIN_PATH'}" class=""><i class="fa fa-user-circle-o pr-1"></i>Login</a>
-				</span>
-			</div>
-			<div class="d-flex">
-				<span>
-					<!-- <a th:href="@{''}" class=""></a> -->
-					<a th:href="@{'REGISTRATION_PATH'}" class=""><i
-							class="fa fa-pencil-square-o pr-1"></i>Register</a>
-				</span>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" th:href="@{'HOME_PATH'}">
-				<img th:src="@{'/assets/image/logos/logo.png'}">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse float-right " id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" th:href="@{'HOME_PATH'}">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" th:href="@{'#'}" id="navbardrop" data-toggle="dropdown">Search Jobs <i
-								class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" th:href="@{'ADVANCE_SEARCH_PATH'}">Advanced
-								Search</a>
-							<a class="dropdown-item" th:href="@{'JOBS_BY_ROLE_PATH'}">Jobs By Role</a>
-							<a class="dropdown-item" th:href="@{'JOBS_BY_SECTOR_PATH'}">Jobs By
-								Sector</a>
-							<a class="dropdown-item" th:href="@{'JOBS_BY_LOCATION_PATH'}">Jobs By
-								Location</a>
-							<a class="dropdown-item" th:href="@{'JOBS_BY_COMPANY_PATH'}">Jobs By
-								Companies</a>
-							<a class="dropdown-item" th:href="@{'EXECUTIVE_JOBS_PATH'}">Executive
-								Jobs</a>
-							<a class="dropdown-item" th:href="@{'SALARIES_PATH'}">Salaries</a>
-						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link" th:href="@{'#'}" id="navbardrop" data-toggle="dropdown">Services <i
-								class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" th:href="@{'ENERGY_PATH'}">Energy</a>
-							<a class="dropdown-item" th:href="@{'COMMUNICATION_AUTOMATION_PATH'}">Communication &
-								Automation</a>
-							<a class="dropdown-item" th:href="@{'KABEL_HOME_PATH'}">Kabel Home</a>
-							<a class="dropdown-item" th:href="@{'SMART_CITY_PATH'}">Smart City</a>
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" th:href="@{'COMPANY_REVIEWS_PATH'}">Company Reviews</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" th:href="@{'#'}">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-contact" th:href="@{'CONTACT_US_PATH'}">Contact Us</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</header>
-<!-- header end -->
+<div th:replace="../fragments/header :: header"></div>
 	<section id="slider">
 		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			<!-- <ol class="carousel-indicators">
@@ -184,7 +50,7 @@
 												</label>
 											</div>
 											<div>
-												<a href="#" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
+												<a th:href="@{'#'}" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
 													job for free</a>
 											</div>
 										</span>
@@ -234,7 +100,7 @@
 													<i class="fa fa-arrow-circle-up"> Upload your resume</i>
 												</label>
 											</div>
-											<div><a href="#" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
+											<div><a th:href="@{'#'}" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
 													job for free</a></div>
 										</span>
 									</div>
@@ -284,7 +150,7 @@
 													<i class="fa fa-arrow-circle-up"> Upload your resume</i>
 												</label>
 											</div>
-											<div><a href="#" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
+											<div><a th:href="@{'#'}" class="fa fa-suitcase btn banner-btn"> &nbsp;Hiring? Post a
 													job for free</a></div>
 										</span>
 									</div>
@@ -293,12 +159,12 @@
 						</div>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span><img src="./assets/image/logos/left.png" class="img-fluid" style="width: 75%;"></span>
+				<a class="carousel-control-prev" th:href="@{'#carouselExampleIndicators'}" role="button" data-slide="prev">
+					<span><img th:src="@{'/assets/image/logos/left.png'}" class="img-fluid" style="width: 75%;"></span>
 					<span class="sr-only">Previous</span>
 				</a>
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span><img src="./assets/image/logos/right-arrow.png" class="img-fluid" style="width: 75%;"></span>
+				<a class="carousel-control-next" th:href="@{'#carouselExampleIndicators'}" role="button" data-slide="next">
+					<span><img th:src="@{'/assets/image/logos/right-arrow.png'}" class="img-fluid" style="width: 75%;"></span>
 					<span class="sr-only">Next</span>
 				</a>
 			</div>
@@ -321,7 +187,7 @@
 								<div class="row">
 									<div class="col col-12 col-sm-2 col-md-2 col-lg-2">
 										<div class="profile-img">
-											<img src="./assets/image/logos/ios.png" class="img-fluid
+											<img th:src="@{'/assets/image/logos/ios.png'}" class="img-fluid
 											">
 										</div>
 									</div>
@@ -333,7 +199,7 @@
 												<span><i class="fa fa-map-marker "> 07th Avenue, NewYork, NY,United
 														States</i> </span>
 												<span class="d-flex dollar"><img
-														src="./assets/image/logos/dollar-bill.png" class="img-fluid"
+														th:src="@{'/assets/image/logos/dollar-bill.png'}" class="img-fluid"
 														style="height: 20px">
 													<p class="amount"> $22,000-$50,000</p>
 												</span>
@@ -348,7 +214,7 @@
 								<div class="row">
 									<div class="col col-12 col-sm-2 col-md-2 col-lg-2">
 										<div class="profile-img">
-											<img src="./assets/image/logos/twitter.png" class="img-fluid">
+											<img th:src="@{'/assets/image/logos/twitter.png'}" class="img-fluid">
 										</div>
 									</div>
 									<div class="col col-12 col-sm-7 col-md-8 col-lg-8 no-pad">
@@ -359,7 +225,7 @@
 												<span><i class="fa fa-map-marker "> 07th Avenue, NewYork, NY,United
 														States</i> </span>
 												<span class="d-flex dollar"><img
-														src="./assets/image/logos/dollar-bill.png" class="img-fluid"
+														th:src="@{'/assets/image/logos/dollar-bill.png'}" class="img-fluid"
 														style="height: 20px">
 													<p class="amount"> $22,000-$50,000</p>
 												</span>
@@ -374,7 +240,7 @@
 								<div class="row">
 									<div class="col col-12 col-sm-2 col-md-2 col-lg-2">
 										<div class="profile-img">
-											<img src="./assets/image/logos/designer.png" class="img-fluid">
+											<img th:src="@{'/assets/image/logos/designer.png'}" class="img-fluid">
 										</div>
 									</div>
 									<div class="col col-12 col-sm-7 col-md-8 col-lg-8 no-pad">
@@ -385,7 +251,7 @@
 												<span><i class="fa fa-map-marker "> 07th Avenue, NewYork, NY,United
 														States</i> </span>
 												<span class="d-flex dollar"><img
-														src="./assets/image/logos/dollar-bill.png" class="img-fluid"
+														th:src="@{'/assets/image/logos/dollar-bill.png'}" class="img-fluid"
 														style="height: 20px">
 													<p class="amount"> $22,000-$50,000</p>
 												</span>
@@ -401,7 +267,7 @@
 								<div class="row">
 									<div class="col col-12 col-sm-2 col-md-2 col-lg-2">
 										<div class="profile-img">
-											<img src="./assets/image/logos/wipro.png" class="img-fluid">
+											<img th:src="@{'/assets/image/logos/wipro.png'}" class="img-fluid">
 										</div>
 									</div>
 									<div class="col col-12 col-sm-7 col-md-8 col-lg-8 no-pad">
@@ -412,7 +278,7 @@
 												<span><i class="fa fa-map-marker "> 07th Avenue, NewYork, NY,United
 														States</i> </span>
 												<span class="d-flex dollar"><img
-														src="./assets/image/logos/dollar-bill.png" class="img-fluid"
+														th:src="@{'/assets/image/logos/dollar-bill.png'}" class="img-fluid"
 														style="height: 20px">
 													<p class="amount"> $22,000-$50,000</p>
 												</span>
@@ -428,7 +294,7 @@
 								<div class="row">
 									<div class="col col-12 col-sm-2 col-md-2 col-lg-2">
 										<div class="profile-img">
-											<img src="./assets/image/logos/back-end.png" class="img-fluid">
+											<img th:src="@{'/assets/image/logos/back-end.png'}" class="img-fluid">
 										</div>
 									</div>
 									<div class="col col-12 col-sm-7 col-md-8 col-lg-8 no-pad">
@@ -439,7 +305,7 @@
 												<span><i class="fa fa-map-marker "> 07th Avenue, NewYork, NY,United
 														States</i> </span>
 												<span class="d-flex dollar"><img
-														src="./assets/image/logos/dollar-bill.png" class="img-fluid"
+														th:src="@{'/assets/image/logos/dollar-bill.png'}" class="img-fluid"
 														style="height: 20px">
 													<p class="amount"> $22,000-$50,000</p>
 												</span>
@@ -452,7 +318,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="d-flex justify-content-center"><a href="#" class="btn view-jobs">View All Jobs</a></div>
+					<div class="d-flex justify-content-center"><a th:href="@{'#'}" class="btn view-jobs">View All Jobs</a></div>
 				</div>
 			</div>
 		</div>
@@ -467,7 +333,7 @@
 					<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 						<div class="client1 text-center">
 							<div class="client-img m-bottom25">
-								<img src="./assets/image/logos/fun1.png" style="height:75px">
+								<img th:src="@{'/assets/image/logos/fun1.png'}" style="height:75px">
 							</div>
 							<div class="client-text white">
 								<div class="counter" data-count="890">0 </div><span class="countplus">+</span>
@@ -478,7 +344,7 @@
 					<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 						<div class="client1">
 							<div class="client-img m-bottom25">
-								<img src="./assets/image/logos/fun2.png" style="height:75px">
+								<img th:src="@{'/assets/image/logos/fun2.png'}" style="height:75px">
 							</div>
 							<div class="client-text white">
 								<div class="counter" data-count="3120">0</div><span class="countplus">+</span>
@@ -489,7 +355,7 @@
 					<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 						<div class="client1 text-center">
 							<div class="client-img m-bottom25">
-								<img src="./assets/image/logos/fun3.png" style="height:75px">
+								<img th:src="@{'/assets/image/logos/fun3.png'}" style="height:75px">
 							</div>
 							<div class="client-text white">
 								<div class="counter" data-count="230">0</div><span class="countplus">+</span>
@@ -500,7 +366,7 @@
 					<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 						<div class="client1 text-center">
 							<div class="client-img m-bottom25">
-								<img src="./assets/image/logos/fun4.png" style="height:75px">
+								<img th:src="@{'/assets/image/logos/fun4.png'}" style="height:75px">
 							</div>
 							<div class="client-text white">
 								<div class="counter" data-count="150">0</div><span class="countplus">+</span>
@@ -521,7 +387,7 @@
 					<h1 class="worktext padbot20">How Does Mindful Work?</h1>
 				</div>
 				<div class="col col-12 col-md-12 col-lg-12">
-					<embed src="https://www.youtube.com/embed/F9Bo89m2f6g" allowfullscreen="true" width="100%"
+					<embed th:src="@{'https://www.youtube.com/embed/F9Bo89m2f6g'}" allowfullscreen="true" width="100%"
 						height="400px">
 				</div>
 			</div>
@@ -535,7 +401,7 @@
 				<div class="col col-12 col-md-12 col-lg-12">
 					<div class="row workbg">
 						<div class="col col-12 col-sm-4 col-md-3 col-lg-2 pl-0">
-							<img src="./assets/image/logos/tag.png">
+							<img th:src="@{'/assets/image/logos/tag.png'}">
 						</div>
 						<div class="col col-12 col-sm-8 col-md-6 col-lg-7">
 							<h1 class="jobstext ex-text">Executive Jobs</h1>
@@ -552,7 +418,7 @@
 				<div class="col col-12 col-md-12 col-lg-12">
 					<div class="row workbg1">
 						<div class="col col-12 col-sm-5 col-md-4 col-lg-4 pl-0">
-							<img src="./assets/image/logos/tag1.png" class="img-fluid" style="height: 100%">
+							<img th:src="@{'/assets/image/logos/tag1.png'}" class="img-fluid" style="height: 100%">
 						</div>
 						<div class="col col-12 col-sm-7 col-md-5 col-lg-5">
 							<h1 class="jobstext">Jobs for Qatari Nationals Are Available Today</h1>
@@ -576,42 +442,42 @@
 					<div class="row">
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/Qatar-Logo.png" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/Qatar-Logo.png'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/Saleh.jpg" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/Saleh.jpg'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 								<div>
-									<img src="./assets/image/logos/alfa.png" class="img-fluid" />
+									<img th:src="@{'/assets/image/logos/alfa.png'}" class="img-fluid" />
 								</div>
 							</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/darwish.png" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/darwish.png'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/abuissa.png" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/abuissa.png'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/we.png" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/we.png'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/jaidah.jpg" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/jaidah.jpg'}" class="img-fluid" />
 							</div>
 						</div>
 						<div class="col-12 col-sm-6 col-md-3 col-lg-3">
 							<div>
-								<img src="./assets/image/logos/Qatar-Fondation.png" class="img-fluid" />
+								<img th:src="@{'/assets/image/logos/Qatar-Fondation.png'}" class="img-fluid" />
 							</div>
 						</div>
 						
@@ -622,36 +488,36 @@
 					</div>
 					<!-- 				<div class="row">
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/hiring.png">
+								<img th:src="@{'/assets/image/logos/hiring.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/nissan.png">
+								<img th:src="@{'/assets/image/logos/nissan.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/alfardan.png">
+								<img th:src="@{'/assets/image/logos/alfardan.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/elan.png">
+								<img th:src="@{'/assets/image/logos/elan.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/darwish.png">
+								<img th:src="@{'/assets/image/logos/darwish.png">
 							</div>
 						</div>
 						<div class="row padtop50 padbot25">
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/qatar.png">
+								<img th:src="@{'/assets/image/logos/qatar.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/abuissa.png">
+								<img th:src="@{'/assets/image/logos/abuissa.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/hiring.png">
+								<img th:src="@{'/assets/image/logos/hiring.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/weill.png">
+								<img th:src="@{'/assets/image/logos/weill.png">
 							</div>
 							<div class="col col-2 col-md-2 col-lg-2">
-								<img src="./assets/image/logos/foundation.png">
+								<img th:src="@{'/assets/image/logos/foundation.png">
 							</div>
 						</div> -->
 				</div>
@@ -669,7 +535,7 @@
 						<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="testimonial">
 								<div class="pic">
-									<img src="./assets/image/logos/client3.png" alt="">
+									<img th:src="@{'/assets/image/logos/client3.png'}" alt="">
 								</div>
 								<div class="customer-details">
 									<div class="c-name light-green">Ahmed Afzal</div>
@@ -679,13 +545,13 @@
 								<div class="divider"></div>
 								<p class="sub-heading-text c-opinion">This is the perfect opportunity and way to
 									shareour experience with Bayt.com. This is a great ....</p>
-								<a href="#" class="link">See More</a>
+								<a th:href="@{'#'}" class="link">See More</a>
 							</div>
 						</div>
 						<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="testimonial">
 								<div class="pic">
-									<img src="./assets/image/logos/client5.png" alt="">
+									<img th:src="@{'/assets/image/logos/client5.png'}" alt="">
 								</div>
 								<div class="customer-details">
 									<div class="c-name light-green">Ahmed Nazmi Imran</div>
@@ -695,13 +561,13 @@
 								<div class="divider"></div>
 								<p class="sub-heading-text c-opinion">Hi friends, it is time now to say thank you tothe
 									site that thought me my first conveyed ...</p>
-								<a href="#" class="link">See More</a>
+								<a th:href="@{'#'}" class="link">See More</a>
 							</div>
 						</div>
 						<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="testimonial">
 								<div class="pic">
-									<img src="./assets/image/logos/client6.png" alt="">
+									<img th:src="@{'/assets/image/logos/client6.png'}" alt="">
 								</div>
 								<div class="customer-details">
 									<div class="c-name light-green">Arun George Mathew</div>
@@ -711,13 +577,13 @@
 								<div class="divider"></div>
 								<p class="sub-heading-text c-opinion">I am really thankful to Bayt.com for helping me
 									find a job vacancy at Transmed. I would also ...</p>
-								<a href="#" class="link">See More</a>
+								<a th:href="@{'#'}" class="link">See More</a>
 							</div>
 						</div>
 						<div class="col col-12 col-sm-6 col-md-6 col-lg-3">
 							<div class="testimonial">
 								<div class="pic">
-									<img src="./assets/image/logos/client2.png" alt="">
+									<img th:src="@{'/assets/image/logos/client2.png'}" alt="">
 								</div>
 								<div class="customer-details">
 									<div class="c-name light-green">Trecia Thapa</div>
@@ -727,7 +593,7 @@
 								<div class="divider"></div>
 								<p class="sub-heading-text c-opinion">After posting my CV on Bayt.com, i received an
 									opportunity for an interview from marka holding ...</p>
-								<a href="#" class="link">See More</a>
+								<a th:href="@{'#'}" class="link">See More</a>
 							</div>
 						</div>
 					</div>
@@ -739,170 +605,8 @@
 				</div>
 			</div>
 			<div class="d-flex justify-content-end">
-				<a href="#" class="chat-link">Chat With Us Now <i class="fa fa-comments-o" aria-hidden="true"></i></a>
+				<a th:href="@{'#'}" class="chat-link">Chat With Us Now <i class="fa fa-comments-o" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</section>
-  <!-- footer section -->
-	<footer id="down-footer">
-      <div class="footer-section">
-        <div class="container">
-          <div class="row">
-            <!-- <div class="digitax-details"> -->
-            <div class="col col-6 col-sm-6 col-md-4 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white">Featured Job</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a th:href="@{''}">Browse Jobs</a></li>
-                  <li class="item"><a th:href="@{''}">Premium MBA Jobs</a></li>
-                  <li class="item"><a th:href="@{''}">Access Database</a></li>
-                  <li class="item"><a th:href="@{''}">Managae Response</a></li>
-                  <li class="item"><a th:href="@{''}">Report a Problem</a></li>
-                  <li class="item"><a th:href="@{''}">Mobile Site</a></li>
-                  <li class="item"><a th:href="@{''}">Jobs By Skill</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-6 col-sm-6 col-md-3 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white footer-link">Find Jobs</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a th:href="@{''}">AI Rayyan</a></li>
-                  <li class="item"><a th:href="@{''}">AI Wakra</a></li>
-                  <li class="item"><a th:href="@{''}">Umm Said</a></li>
-                  <li class="item"><a th:href="@{''}">Khor AI Udaid</a></li>
-                  <li class="item"><a th:href="@{''}">AI Khor</a></li>
-                  <li class="item"><a th:href="@{''}">RLIC</a></li>
-                  <li class="item"><a th:href="@{''}">Mesaieed</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-              <div class="row">
-                <div class="col col-12 col-md-6 col-lg-6">
-                  <div class="basic-links">
-                    <h3 class="white footer-link">Company</h3>
-                    <ul class="basic-link-item pl-0">
-                      <li class="item"><a th:href="@{''}">About us</a></li>
-                      <li class="item"><a th:href="@{''}">Contact us</a></li>
-                      <li class="item"><a th:href="@{''}">Careers</a></li>
-                      <li class="item"><a th:href="@{''}">Blogs</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-6">
-                  <div class="basic-links">
-                    <h3 class="white footer-link">Quick Links</h3>
-                    <ul class="basic-link-item pl-0">
-                      <li class="item"><a th:href="@{''}">Caareer Tips</a></li>
-                      <li class="item"><a th:href="@{''}">Events</a></li>
-                      <li class="item"><a th:href="@{''}">Never Miss An Email</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-12">
-                  <div class="basic-links ftr">
-                    <h6 class="yellow">Follow <a th:href="@{'#'}">Mindfulqatar.com</a></h6>
-                    <ul>
-                      <li><a th:href="@{'#'}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a th:href="@{'#'}"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li><a th:href="@{'#'}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                      <li><a th:href="@{'#'}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-  
-            <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-              <div class="basic-links">
-                <h3 class="white">Reach Us</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a th:href="@{''}">Mindful Consulting</a></li>
-                  <li class="item"><a th:href="@{''}">AI Shoumoukh Tower</a></li>
-                  <li class="item"><a th:href="@{''}">C Ring Road</a></li>
-                  <li class="item"><a th:href="@{''}">Doha, Qatar</a></li>
-                  <li class="item"><a th:href="@{''}" class="mb-none">Email:support@mindfulqatar.com</a></li>
-                  <li class="item"><a th:href="@{''}">Call:+974 123 45678</a></li>
-                  <li class="item"><a th:href="@{''}">FAX: 123 456 85</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white">Drop A Mail</h3>
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Your Name">
-                </form>
-                <form action="/action_page.php">
-                  <input type="email" placeholder="Email">
-                </form>
-                <form action="/action_page.php">
-                  <textarea type="text" placeholder="Message"></textarea>
-                </form>
-                <button class="btn-ftr">Send</button>
-  
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-      <div class="all-rights mx-auto text-center">
-        <div class="container">
-          <div class="copy-right">
-            © Copyright 2019 Mindfulqatar | Design By <span style="color:#ffc23d;font-weight: 600">THE
-              WAY</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-<!-- Footer end -->
-	<!-- bootstrap script links -->
-	<script th:src="@{'/assets/js/jquery.min.js'}"></script>
-	<script th:src="@{'/assets/js/popper.min.js'}"></script>
-	<script th:src="@{'/assets/js/bootstrap.min.js'}"></script>
-
-	<!-- plugin javascript -->
-	<script th:src="@{'/assets/js/plugin.js'}"></script>
-	<script th:src="@{'owl.carousel.min.js'}"></script>
-	<!-- navigation script -->
-
-
-	<!-- Counter number script -->
-	<script type="text/javascript">
-		$('.counter').each(function () {
-			var $this = $(this),
-				countTo = $this.attr('data-count');
-
-			$({ countNum: $this.text() }).animate({
-				countNum: countTo
-			},
-				{
-					duration: 1000,
-					easing: 'linear',
-					step: function () {
-						$this.text(Math.floor(this.countNum));
-					},
-					complete: function () {
-						$this.text(this.countNum);
-						//alert('finished');
-					}
-				});
-		});
-
-		$(window).mousemove(function (e) {
-			var change;
-			var xpos = e.clientX; var ypos = e.clientY; var left = change * 50;
-			var xpos = xpos * 2; ypos = ypos * 2;
-			$('.banner-seo-img').css('top', ((0 + (ypos / 50)) + "px"));
-			$('.banner-seo-img').css('right', ((0 + (xpos / 80)) + "px"));
-
-		});
-	</script>  
-</body>
-
-</html>
+  <div th:replace="../fragments/footer :: footer"></div>

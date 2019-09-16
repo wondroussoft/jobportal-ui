@@ -515,13 +515,13 @@ background-size: cover;
 width: 100%;
 }
 .slider1{
-background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./assets/image/logos/freelancer.png');
+background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/assets/image/logos/freelancer.png');
 }
 .slider2{
-background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./assets/image/logos/freelancer.png');
+background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/assets/image/logos/freelancer.png');
 }
 .slider3{
-background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./assets/image/logos/freelancer.png');
+background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('/assets/image/logos/freelancer.png');
 }
 .slider-content{
 padding: 150px 0px 60px
