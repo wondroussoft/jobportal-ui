@@ -42,7 +42,7 @@ input[type="checkbox"] .input:checked+label:before {
     background-color: #2784fc;
     border: none;
 }
-.btn:active:not(:disabled) {
+#login .btn:active:not(:disabled) {
     background-color: #3294ff;
     border-color: #3294ff;
 }
@@ -55,7 +55,7 @@ input[type="checkbox"] .input:checked+label:before {
 .u-expanded, .u-fit, .u-stretch {
     width: 100%!important;
 }
-.btn{
+#login .btn{
     font-size: 1rem;
     line-height: 1;
     font-weight: 700;
@@ -70,51 +70,51 @@ input[type="checkbox"] .input:checked+label:before {
     white-space: nowrap;
     vertical-align: middle;
 }
-.btn.is-facebook {
+#login .btn.is-facebook {
     background-color: #2e579f;
     border-color: #2e579f;
 }
-.btn:focus:not(:disabled), .btn:hover:not(:disabled) {
+#login .btn:focus:not(:disabled), #login .btn:hover:not(:disabled) {
     background-color: #e4c205;
     border-color: #6b6a73;
 }
-.btn.is-facebook:focus:not(:disabled), .btn.is-facebook:hover:not(:disabled) {
+#login .btn.is-facebook:focus:not(:disabled), #login .btn.is-facebook:hover:not(:disabled) {
     background-color: #26457c;
     border-color: #26457c;
 }
-.btn.is-g-plus:focus:not(:disabled), .btn.is-g-plus:hover:not(:disabled) {
+#login .btn.is-g-plus:focus:not(:disabled), #login .btn.is-g-plus:hover:not(:disabled) {
     background-color: #c62f26;
     border-color: #c62f26;
 }
-.btn:hover {
+#login .btn:hover {
     color: #fff;
 }
-.list.is-basic {
+#login .list.is-basic {
     list-style: none;
     padding-left: 0;
     margin-top: 18px;
 }
-.btn.is-g-plus {
+#login .btn.is-g-plus {
     background-color: #ec382d;
     border-color: #ec382d;
 }
 .list.is-basic.is-spaced>li {
     padding: 6px 0;
 }
-.t-mute {
+#login .t-mute {
     color: #a6afb9;
 }
-.t-xsmall {
+#login .t-xsmall {
     font-size: .75rem;
     line-height: 1.67;
     text-align: left;
 }
-a:not(.btn):not(.b-close):not(.label):hover {
+#login a:not(.btn):not(.b-close):not(.label):hover {
     text-decoration: none;
 }
-.register{
+#login .register{
     color:#6b6a73;
     font-size: 19px;
     font-weight: 600;
 }
-.register:hover{color:#fed90a;}
+#login .register:hover{color:#fed90a;}

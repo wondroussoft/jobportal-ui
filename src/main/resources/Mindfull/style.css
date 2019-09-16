@@ -345,6 +345,7 @@ text-transform: uppercase;
 .navbar-light .navbar-nav .nav-link:hover{
 background-color: #fed90a;
 }
+/* #navbar .navbar-bg{background-color: #ffffff !important;} */
 .navbar-light .navbar-nav .nav-link:after {
 position: absolute;
 content: "";
@@ -415,7 +416,7 @@ text-decoration: none !important;
 .login-details a:hover,.login-details .employers-Option a:hover{
     color:#fed90a;
 }
-.navbar-bg{
+#navbar .navbar-bg{
     background-color: #ffffff !important;
 }
 .navbar-brand{
@@ -1187,7 +1188,7 @@ input:focus, textarea:focus, select:focus {
     margin: 20px 0px;
 }
 .card{
-    margin-top: 15px;
+    /* margin-top: 15px; */
     border-radius: 0px;
 }
 .card-header{

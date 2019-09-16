@@ -155,7 +155,7 @@ strong{
 }
 }
 html{
-	font-size:10px;
+	/* font-size:10px; */
 	-webkit-tap-highlight-color:transparent
 }
 a{
@@ -425,14 +425,14 @@ ol{
 
 
 /* default.css */
-p{
+/* p{
 	padding:5px 0;
 	margin:0
 }
 div{
 	margin:0;
 	padding:0
-}
+} */
 a[href^=tel]{
 	text-decoration:none
 }
