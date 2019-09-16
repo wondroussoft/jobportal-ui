@@ -2,1063 +2,845 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<!-- Main Style Css -->
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Main Style Css -->
 	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
 	<!-- Main Style Css -->
 	<link rel="stylesheet" href="../../assets/css/plugin.css" />
-  <link href="../../style.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link type="text/css" rel="stylesheet" media="screen" href="./CompanyReviews.css">
+	<link href="../../style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link type="text/css" rel="stylesheet" media="screen" href="./CompanyReviews.css">
 
 </head>
 
 
-
 <body>
-<!-- navigation section-->
-<header id="navbar" class="nav-down">
-	<div class=" d-flex mb-detail">
-		<div class="contact-details d-flex">
-			<div class="d-flex contact">
-				<span>
-					<a href="#" class="fa fa-envelope-o"></a>
-					<a href="#">Support@mindfulqatar.com</a>
-				</span>
-			</div>
-			<div class="d-flex contact">
-				<span class="d-flex align-items-baseline">
-					<a href="#" class="fa fa-volume-control-phone"></a>
-					<a href="tel:123-456-7890">123-456-7890</a>
-				</span>
-			</div>
-			<div class="contact">
-				<p>Working Hours:9:00 am to 5:00 pm</p>
-			</div>
-			<div class="basic-links ftr">
-				<ul style="padding-top:10px;margin-bottom: 0px">
-					<li><a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"
-								aria-hidden="true"></i></a></li>
-					<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-								aria-hidden="true"></i></a></li>
-					<li><a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"
-								aria-hidden="true"></i></a></li>
-					<li><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"
-								aria-hidden="true"></i></a></li>
-				</ul>
-			</div>
+	<!-- navigation section-->
+	<div id="header"></div>
+	<!-- header end -->
 
-			<div class="employers-Option">
-				<li><a href="#">Employers</a></li>
-			</div>
-		</div>
-		<div class="login-details d-flex float-right">
-			<div class="d-flex pad-right30">
-				<span>
-					<!-- <a href="" class=""></a> -->
-					<a href="../Login/Login.html" class=""><i class="fa fa-user-circle-o pr-1"></i>Login</a>
-				</span>
-			</div>
-			<div class="d-flex">
-				<span>
-					<!-- <a href="" class=""></a> -->
-					<a href="../Register/Register.html" class=""><i
-							class="fa fa-pencil-square-o pr-1"></i>Register</a>
-				</span>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<nav class="navbar navbar-expand-lg navbar-light">
-			<a class="navbar-brand" href="../../index.html">
-				<img src="../../assets/image/logos/logo.png">
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-				aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse float-right " id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="../../index.html">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">Search Jobs <i
-								class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="../AdvanceSearch/AdvanceSearch.html">Advanced
-								Search</a>
-							<a class="dropdown-item" href="../JobsByRole/JobsByRole.html">Jobs By Role</a>
-							<a class="dropdown-item" href="../JobsBySector/JobsBySector.html">Jobs By
-								Sector</a>
-							<a class="dropdown-item" href="../JobsByLocation/JobsByLocation.html">Jobs By
-								Location</a>
-							<a class="dropdown-item" href="../JobsByCompany/JobsByCompany.html">Jobs By
-								Companies</a>
-							<a class="dropdown-item" href="../ExecutiveJobs/ExecutiveJobs.html">Executive
-								Jobs</a>
-							<a class="dropdown-item" href="../Salaries/Salaries.html">Salaries</a>
+
+
+	<!-- Body starts here -->
+
+	<div class="loader" style="display: none;"></div>
+	<div class="main-area">
+
+		<section>
+			<div class="head prices">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-sm-12 col-xs-12">
+							<h2 class="white reviews-top"><span class="hidden-xs">Web Designer Express
+								</span><strong>Reviews</strong></h2>
+							<h4 class="no-margin margin-top-10 hidden-sm hidden-xs"><strong>Providing excellent web
+									services since 1996</strong></h4>
 						</div>
-					</li>
-
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">Services <i
-								class="fa fa-caret-down"></i></a>
-						<div class="dropdown-menu">
-							<a class="dropdown-item" href="Energy.html">Energy</a>
-							<a class="dropdown-item" href="Communication-automation.html">Communication &
-								Automation</a>
-							<a class="dropdown-item" href="Kabelhome.html">Kabel Home</a>
-							<a class="dropdown-item" href="Smartcity.html">Smart City</a>
+						<div class="col-md-5 col-sm-6 col-xs-12 text-center hidden-sm hidden-xs">
+							<div class="margin-top-20 text-center">
+								<span class="icon-star-3 yellow huge"></span>
+								<span class="icon-star-3 yellow huge"></span>
+								<span class="icon-star-3 yellow huge"></span>
+								<span class="icon-star-3 yellow huge"></span>
+								<span class="icon-star-3 yellow huge"></span>
+							</div>
+							<div>
+								<h4 class="white no-margin margin-top-10"><strong>5.0 Overall Satisfaction
+										Rating</strong></h4>
+								<p class="white">Based on <span>52</span> Ratings from Actual Customers</p>
+							</div>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Company Reviews</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="../AboutUs/AboutUs.html">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link border-contact" href="../ContactUs/ContactUs.html">Contact Us</a>
-					</li>
-				</ul>
+					</div>
+				</div>
 			</div>
-		</nav>
-	</div>
-</header>
-<!-- header end -->
-  
-
-
-<!-- Body starts here -->
-
-<div class="loader" style="display: none;"></div>
-<div class="main-area">
-	
-	<section>
-		<div class="head prices">
-			<div class="container">
+			<div class="inner-menu-link">
+				<div class="container">
+					<div class="row no-margin">
+						<div class="col-sm-4 col-xs-6 text-left"><a class="text-left" href="tel:305.386.9003"> Sales:
+								305.386.9003 </a></div>
+						<div class="col-sm-4 hidden-xs text-center"><a class="text-center"
+								href="https://www.webdesignerexpress.com/contact.html"> Contact Us </a></div>
+						<div class="col-sm-4 col-xs-6 text-right"><a href="tel:305.432.5115" class="text-right"> <span
+									class="hidden-xs">Support</span><span class="visible-xs inline-block">Spt</span>:
+								305.432.5115</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="separator xs hidden-sm  hidden-xs"></div>
+			<div class="container hidden-sm hidden-xs">
+				<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.webdesignerexpress.com/">
+							<meta property="name" content="www.webdesignerexpress.com">
+							<span class="icon-home"></span>
+						</a>
+						<meta property="position" content="1">
+					</li>
+					<li property="itemListElement" typeof="ListItem">
+						<a property="item" typeof="WebPage" href="https://www.webdesignerexpress.com/reviews">
+							<span property="name">Reviews</span>
+						</a>
+						<meta property="position" content="2">
+					</li>
+				</ol>
 				<div class="row">
-					<div class="col-md-7 col-sm-12 col-xs-12">
-						<h2 class="white reviews-top"><span class="hidden-xs">Web Designer Express
-							</span><strong>Reviews</strong></h2>
-						<h4 class="no-margin margin-top-10 hidden-sm hidden-xs"><strong>Providing excellent web
-								services since 1996</strong></h4>
-					</div>
-					<div class="col-md-5 col-sm-6 col-xs-12 text-center hidden-sm hidden-xs">
-						<div class="margin-top-20 text-center">
-							<span class="icon-star-3 yellow huge"></span>
-							<span class="icon-star-3 yellow huge"></span>
-							<span class="icon-star-3 yellow huge"></span>
-							<span class="icon-star-3 yellow huge"></span>
-							<span class="icon-star-3 yellow huge"></span>
+					<div class="col-sm-3 col-xs-6">
+						<h5 class="no-margin hidden-sm hidden-xs"><strong>Recommend this company</strong></h5>
+						<h6 class="no-margin visible-sm visible-xs"><strong>Recommend <span class="hidden-sm">this
+									company</span></strong></h6>
+						<div class="margin-top-10">
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
 						</div>
-						<div>
-							<h4 class="white no-margin margin-top-10"><strong>5.0 Overall Satisfaction
-									Rating</strong></h4>
-							<p class="white">Based on <span>52</span> Ratings from Actual Customers</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="inner-menu-link">
-			<div class="container">
-				<div class="row no-margin">
-					<div class="col-sm-4 col-xs-6 text-left"><a class="text-left" href="tel:305.386.9003"> Sales:
-							305.386.9003 </a></div>
-					<div class="col-sm-4 hidden-xs text-center"><a class="text-center"
-							href="https://www.webdesignerexpress.com/contact.html"> Contact Us </a></div>
-					<div class="col-sm-4 col-xs-6 text-right"><a href="tel:305.432.5115" class="text-right"> <span
-								class="hidden-xs">Support</span><span class="visible-xs inline-block">Spt</span>:
-							305.432.5115</a></div>
-				</div>
-			</div>
-		</div>
-		<div class="separator xs hidden-sm  hidden-xs"></div>
-		<div class="container hidden-sm hidden-xs">
-			<ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
-				<li property="itemListElement" typeof="ListItem">
-					<a property="item" typeof="WebPage" href="https://www.webdesignerexpress.com/">
-						<meta property="name" content="www.webdesignerexpress.com">
-						<span class="icon-home"></span>
-					</a>
-					<meta property="position" content="1">
-				</li>
-				<li property="itemListElement" typeof="ListItem">
-					<a property="item" typeof="WebPage" href="https://www.webdesignerexpress.com/reviews">
-						<span property="name">Reviews</span>
-					</a>
-					<meta property="position" content="2">
-				</li>
-			</ol>
-			<div class="row">
-				<div class="col-sm-3 col-xs-6">
-					<h5 class="no-margin hidden-sm hidden-xs"><strong>Recommend this company</strong></h5>
-					<h6 class="no-margin visible-sm visible-xs"><strong>Recommend <span class="hidden-sm">this
-								company</span></strong></h6>
-					<div class="margin-top-10">
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
-					</div>
-					<div class="row  no-margin margin-top-10 font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							5 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 100%;"></div>
+						<div class="row  no-margin margin-top-10 font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								5 stars
 							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(52)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							4 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							3 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							2 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							1 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<h5 class="no-margin hidden-sm hidden-xs"><strong>Would do Business Again</strong></h5>
-					<h6 class="no-margin visible-sm visible-xs"><strong>Would do Business Again</strong></h6>
-					<div class="margin-top-10">
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
-					</div>
-					<div class="row  no-margin margin-top-10 font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							5 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 100%;"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(52)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							4 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							3 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							2 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							1 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="separator small visible-xs"></div>
-					<h5 class="no-margin hidden-sm hidden-xs"><strong>Overall Price of Project</strong></h5>
-					<h6 class="no-margin visible-sm visible-xs"><strong>Overall Price of Project</strong></h6>
-					<div class="margin-top-10">
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
-					</div>
-					<div class="row  no-margin margin-top-10 font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							5 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 100%;"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(52)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							4 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							3 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							2 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							1 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-3 col-xs-6">
-					<div class="separator small visible-xs"></div>
-					<h5 class="no-margin hidden-sm hidden-xs"><strong>Overall Satisfaction</strong></h5>
-					<h6 class="no-margin visible-sm visible-xs"><strong>Overall Satisfaction</strong></h6>
-					<div class="margin-top-10">
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span class="icon-star-3 yellow lg"></span>
-						<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
-					</div>
-					<div class="row  no-margin margin-top-10 font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							5 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress">
-								<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
-									aria-valuemax="100" style="width: 100%;"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(52)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							4 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							3 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							2 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-					<div class="row no-margin font-14">
-						<div class="col-md-3 col-sm-4 col-xs-4">
-							1 stars
-						</div>
-						<div class="col-md-7 col-sm-8 col-xs-8">
-							<div class="progress progress-info">
-								<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
-									aria-valuemin="0" aria-valuemax="100"></div>
-							</div>
-						</div>
-						<div class="col-md-2 hidden-sm hidden-xs">
-							(0)
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="separator xs hidden-sm hidden-xs"></div>
-		<div class="side-light-blue">
-			<div class="container" itemscope="" itemtype="http://schema.org/Product">
-				<meta itemprop="name" content="Web Designer Express">
-				<span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
-					<meta itemprop="ratingValue" content="5">
-					<meta itemprop="reviewCount" content="52">
-				</span>
-				<div>
-					<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
-						itemtype="http://schema.org/Review">
-						<div class="col-sm-12">
-							<div class="row">
-								<div class="col-md-10 col-sm-9">
-									<h4 title="Author" style="display: inline;">
-										<strong itemprop="author">
-											Juan Carlos Orozco </strong>
-									</h4>
-									<span style="padding: 0 20px;">
-										<span>
-											xtreme-men.com </span>
-									</span>
-									<meta itemprop="datePublished" content="2016-07-06">
-									Posted on Jul 06th 2016
-								</div>
-								<div class="col-md-2 col-sm-3 hidden-xs text-right">
-									<strong class="green"><span class="icon-checkmark-2"></span> Verified
-										Customer</strong>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+										aria-valuemax="100" style="width: 100%;"></div>
 								</div>
 							</div>
-							<div class="separator xs"></div>
-							<div class="row relative">
-								<div class="col-md-1 col-sm-2 col-xs-3">
-									<div class="reviews-data">
-										<div class="review-points" itemprop="reviewRating" itemscope=""
-											itemtype="http://schema.org/Rating">
-											<span itemprop="ratingValue">5</span>.0
-										</div>
-										<div class="review-capture">
-											overall
-										</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(52)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								4 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								3 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								2 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								1 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<h5 class="no-margin hidden-sm hidden-xs"><strong>Would do Business Again</strong></h5>
+						<h6 class="no-margin visible-sm visible-xs"><strong>Would do Business Again</strong></h6>
+						<div class="margin-top-10">
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
+						</div>
+						<div class="row  no-margin margin-top-10 font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								5 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+										aria-valuemax="100" style="width: 100%;"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(52)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								4 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								3 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								2 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								1 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="separator small visible-xs"></div>
+						<h5 class="no-margin hidden-sm hidden-xs"><strong>Overall Price of Project</strong></h5>
+						<h6 class="no-margin visible-sm visible-xs"><strong>Overall Price of Project</strong></h6>
+						<div class="margin-top-10">
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
+						</div>
+						<div class="row  no-margin margin-top-10 font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								5 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+										aria-valuemax="100" style="width: 100%;"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(52)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								4 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								3 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								2 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								1 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<div class="separator small visible-xs"></div>
+						<h5 class="no-margin hidden-sm hidden-xs"><strong>Overall Satisfaction</strong></h5>
+						<h6 class="no-margin visible-sm visible-xs"><strong>Overall Satisfaction</strong></h6>
+						<div class="margin-top-10">
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span class="icon-star-3 yellow lg"></span>
+							<span style="padding-left: 10px;" class="hidden-sm hidden-xs">Average</span>
+						</div>
+						<div class="row  no-margin margin-top-10 font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								5 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+										aria-valuemax="100" style="width: 100%;"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(52)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								4 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								3 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								2 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+						<div class="row no-margin font-14">
+							<div class="col-md-3 col-sm-4 col-xs-4">
+								1 stars
+							</div>
+							<div class="col-md-7 col-sm-8 col-xs-8">
+								<div class="progress progress-info">
+									<div class="progress-bar-info" role="progressbar" aria-valuenow="60"
+										aria-valuemin="0" aria-valuemax="100"></div>
+								</div>
+							</div>
+							<div class="col-md-2 hidden-sm hidden-xs">
+								(0)
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="separator xs hidden-sm hidden-xs"></div>
+			<div class="side-light-blue">
+				<div class="container" itemscope="" itemtype="http://schema.org/Product">
+					<meta itemprop="name" content="Web Designer Express">
+					<span itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+						<meta itemprop="ratingValue" content="5">
+						<meta itemprop="reviewCount" content="52">
+					</span>
+					<div>
+						<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
+							itemtype="http://schema.org/Review">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<h4 title="Author" style="display: inline;">
+											<strong itemprop="author">
+												Juan Carlos Orozco </strong>
+										</h4>
+										<span style="padding: 0 20px;">
+											<span>
+												xtreme-men.com </span>
+										</span>
+										<meta itemprop="datePublished" content="2016-07-06">
+										Posted on Jul 06th 2016
 									</div>
-								</div>
-								<div class="col-md-8 col-sm-7 col-xs-9">
-									<div class="separator xs"></div>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<div class="margin-top-10 visible-xs">
+									<div class="col-md-2 col-sm-3 hidden-xs text-right">
 										<strong class="green"><span class="icon-checkmark-2"></span> Verified
 											Customer</strong>
 									</div>
 								</div>
-								<div class="col-md-3 col-sm-3 hidden-xs text-right">
-									<a rel="noindex, follow"
-										href="https://www.webdesignerexpress.com/reviews/like?id=72" class="ajax"
-										style="position: relative; top: -20px; right: 22px;"
-										data-counter="counter-72">
-										<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
-											id="counter-72">1449</span>)
-									</a>
+								<div class="separator xs"></div>
+								<div class="row relative">
+									<div class="col-md-1 col-sm-2 col-xs-3">
+										<div class="reviews-data">
+											<div class="review-points" itemprop="reviewRating" itemscope=""
+												itemtype="http://schema.org/Rating">
+												<span itemprop="ratingValue">5</span>.0
+											</div>
+											<div class="review-capture">
+												overall
+											</div>
+										</div>
+									</div>
+									<div class="col-md-8 col-sm-7 col-xs-9">
+										<div class="separator xs"></div>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<div class="margin-top-10 visible-xs">
+											<strong class="green"><span class="icon-checkmark-2"></span> Verified
+												Customer</strong>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 hidden-xs text-right">
+										<a rel="noindex, follow"
+											href="https://www.webdesignerexpress.com/reviews/like?id=72" class="ajax"
+											style="position: relative; top: -20px; right: 22px;"
+											data-counter="counter-72">
+											<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
+												id="counter-72">1449</span>)
+										</a>
+									</div>
+								</div>
+								<p itemprop="reviewBody"></p>
+								<p>Putting together a website is a task, finding the right individual or company is even
+									more complex. I did my search around looking for this particular company that has
+									the ability to create, design and optimized my web site. Thanks God I meet Gus at
+									MiamiWeb, not only they have great taste in design but they can guide you through
+									the process and beyond.</p>
+								<p></p>
+								<div class="separator small hidden-sm hidden-xs"></div>
+								<div class="row hidden-sm hidden-xs">
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<p itemprop="reviewBody"></p>
-							<p>Putting together a website is a task, finding the right individual or company is even
-								more complex. I did my search around looking for this particular company that has
-								the ability to create, design and optimized my web site. Thanks God I meet Gus at
-								MiamiWeb, not only they have great taste in design but they can guide you through
-								the process and beyond.</p>
-							<p></p>
-							<div class="separator small hidden-sm hidden-xs"></div>
-							<div class="row hidden-sm hidden-xs">
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
+						</div>
+						<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
+							itemtype="http://schema.org/Review">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<h4 title="Author" style="display: inline;">
+											<strong itemprop="author">
+												Leonardo Arteaga </strong>
+										</h4>
+										<span style="padding: 0 20px;">
+											<span>
+												Newface Brushes LLC </span>
+										</span>
+										<meta itemprop="datePublished" content="2016-06-02">
+										Posted on Jun 02nd 2016
+									</div>
+									<div class="col-md-2 col-sm-3 hidden-xs text-right">
+										<strong class="green"><span class="icon-checkmark-2"></span> Verified
+											Customer</strong>
 									</div>
 								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
+								<div class="separator xs"></div>
+								<div class="row relative">
+									<div class="col-md-1 col-sm-2 col-xs-3">
+										<div class="reviews-data">
+											<div class="review-points" itemprop="reviewRating" itemscope=""
+												itemtype="http://schema.org/Rating">
+												<span itemprop="ratingValue">5</span>.0
+											</div>
+											<div class="review-capture">
+												overall
 											</div>
 										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
+									</div>
+									<div class="col-md-8 col-sm-7 col-xs-9">
+										<div class="separator xs"></div>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<div class="margin-top-10 visible-xs">
+											<strong class="green"><span class="icon-checkmark-2"></span> Verified
+												Customer</strong>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 hidden-xs text-right">
+										<a rel="noindex, follow"
+											href="https://www.webdesignerexpress.com/reviews/like?id=71" class="ajax"
+											style="position: relative; top: -20px; right: 22px;"
+											data-counter="counter-71">
+											<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
+												id="counter-71">1487</span>)
+										</a>
 									</div>
 								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+								<p itemprop="reviewBody"></p>
+								<p>Excellent, working with web designer express was great. &nbsp;Thanks to their
+									knowledge and determination our website looks great and functions really good.
+									&nbsp;I am recommend anyone that is looking for a custom website to give them a call
+									and speak to Gus, he will guide you to the right direction.</p>
+								<p></p>
+								<div class="separator small hidden-sm hidden-xs"></div>
+								<div class="row hidden-sm hidden-xs">
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
 												</div>
 											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
 										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
 									</div>
 								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
+							</div>
+						</div>
+						<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
+							itemtype="http://schema.org/Review">
+							<div class="col-sm-12">
+								<div class="row">
+									<div class="col-md-10 col-sm-9">
+										<h4 title="Author" style="display: inline;">
+											<strong itemprop="author">
+												Susanna Wei </strong>
+										</h4>
+										<span style="padding: 0 20px;">
+											<span>
+												Chinese Arts, Inc. </span>
+										</span>
+										<meta itemprop="datePublished" content="2016-05-17">
+										Posted on May 17th 2016
+									</div>
+									<div class="col-md-2 col-sm-3 hidden-xs text-right">
+										<strong class="green"><span class="icon-checkmark-2"></span> Verified
+											Customer</strong>
+									</div>
+								</div>
+								<div class="separator xs"></div>
+								<div class="row relative">
+									<div class="col-md-1 col-sm-2 col-xs-3">
+										<div class="reviews-data">
+											<div class="review-points" itemprop="reviewRating" itemscope=""
+												itemtype="http://schema.org/Rating">
+												<span itemprop="ratingValue">5</span>.0
+											</div>
+											<div class="review-capture">
+												overall
 											</div>
 										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
+									</div>
+									<div class="col-md-8 col-sm-7 col-xs-9">
+										<div class="separator xs"></div>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<span class="icon-star-3 yellow big"></span>
+										<div class="margin-top-10 visible-xs">
+											<strong class="green"><span class="icon-checkmark-2"></span> Verified
+												Customer</strong>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3 hidden-xs text-right">
+										<a rel="noindex, follow"
+											href="https://www.webdesignerexpress.com/reviews/like?id=70" class="ajax"
+											style="position: relative; top: -20px; right: 22px;"
+											data-counter="counter-70">
+											<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
+												id="counter-70">980</span>)
+										</a>
+									</div>
+								</div>
+								<p itemprop="reviewBody">Our company has been working with Web Design Express since
+									2009. Web Design Express has evolved in a very positive way through the years. We
+									recently worked with them to update our website. We have been mainly working with
+									Edi. We are beyond pleased with Edi's impeccable service. He is extremely helpful in
+									guiding us through the whole process. He is very knowledgeable. He pays close
+									attention to details. He is also very patient in training us on how to use the new
+									administration system. Overall, we are very pleased with Web Design Express.</p>
+								<div class="separator small hidden-sm hidden-xs"></div>
+								<div class="row hidden-sm hidden-xs">
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
+										</h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
+									</div>
+									<div class="col-sm-3">
+										<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
+										<div class="row  no-margin margin-top-10 font-14">
+											<div class="col-sm-9 col-xs-11">
+												<div class="progress">
+													<div class="progress-bar" role="progressbar" aria-valuenow="60"
+														aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+													</div>
+												</div>
+											</div>
+											<div class="col-sm-2 col-xs-1">
+												5 </div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
-						itemtype="http://schema.org/Review">
-						<div class="col-sm-12">
-							<div class="row">
-								<div class="col-md-10 col-sm-9">
-									<h4 title="Author" style="display: inline;">
-										<strong itemprop="author">
-											Leonardo Arteaga </strong>
-									</h4>
-									<span style="padding: 0 20px;">
-										<span>
-											Newface Brushes LLC </span>
-									</span>
-									<meta itemprop="datePublished" content="2016-06-02">
-									Posted on Jun 02nd 2016
-								</div>
-								<div class="col-md-2 col-sm-3 hidden-xs text-right">
-									<strong class="green"><span class="icon-checkmark-2"></span> Verified
-										Customer</strong>
-								</div>
-							</div>
-							<div class="separator xs"></div>
-							<div class="row relative">
-								<div class="col-md-1 col-sm-2 col-xs-3">
-									<div class="reviews-data">
-										<div class="review-points" itemprop="reviewRating" itemscope=""
-											itemtype="http://schema.org/Rating">
-											<span itemprop="ratingValue">5</span>.0
-										</div>
-										<div class="review-capture">
-											overall
-										</div>
-									</div>
-								</div>
-								<div class="col-md-8 col-sm-7 col-xs-9">
-									<div class="separator xs"></div>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<div class="margin-top-10 visible-xs">
-										<strong class="green"><span class="icon-checkmark-2"></span> Verified
-											Customer</strong>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3 hidden-xs text-right">
-									<a rel="noindex, follow"
-										href="https://www.webdesignerexpress.com/reviews/like?id=71" class="ajax"
-										style="position: relative; top: -20px; right: 22px;"
-										data-counter="counter-71">
-										<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
-											id="counter-71">1487</span>)
-									</a>
-								</div>
-							</div>
-							<p itemprop="reviewBody"></p>
-							<p>Excellent, working with web designer express was great. &nbsp;Thanks to their
-								knowledge and determination our website looks great and functions really good.
-								&nbsp;I am recommend anyone that is looking for a custom website to give them a call
-								and speak to Gus, he will guide you to the right direction.</p>
-							<p></p>
-							<div class="separator small hidden-sm hidden-xs"></div>
-							<div class="row hidden-sm hidden-xs">
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="row" style="background: #fff; padding: 20px;" itemprop="review" itemscope=""
-						itemtype="http://schema.org/Review">
-						<div class="col-sm-12">
-							<div class="row">
-								<div class="col-md-10 col-sm-9">
-									<h4 title="Author" style="display: inline;">
-										<strong itemprop="author">
-											Susanna Wei </strong>
-									</h4>
-									<span style="padding: 0 20px;">
-										<span>
-											Chinese Arts, Inc. </span>
-									</span>
-									<meta itemprop="datePublished" content="2016-05-17">
-									Posted on May 17th 2016
-								</div>
-								<div class="col-md-2 col-sm-3 hidden-xs text-right">
-									<strong class="green"><span class="icon-checkmark-2"></span> Verified
-										Customer</strong>
-								</div>
-							</div>
-							<div class="separator xs"></div>
-							<div class="row relative">
-								<div class="col-md-1 col-sm-2 col-xs-3">
-									<div class="reviews-data">
-										<div class="review-points" itemprop="reviewRating" itemscope=""
-											itemtype="http://schema.org/Rating">
-											<span itemprop="ratingValue">5</span>.0
-										</div>
-										<div class="review-capture">
-											overall
-										</div>
-									</div>
-								</div>
-								<div class="col-md-8 col-sm-7 col-xs-9">
-									<div class="separator xs"></div>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<span class="icon-star-3 yellow big"></span>
-									<div class="margin-top-10 visible-xs">
-										<strong class="green"><span class="icon-checkmark-2"></span> Verified
-											Customer</strong>
-									</div>
-								</div>
-								<div class="col-md-3 col-sm-3 hidden-xs text-right">
-									<a rel="noindex, follow"
-										href="https://www.webdesignerexpress.com/reviews/like?id=70" class="ajax"
-										style="position: relative; top: -20px; right: 22px;"
-										data-counter="counter-70">
-										<strong><span class="icon-thumbs-up"></span> Like Review</strong> (<span
-											id="counter-70">980</span>)
-									</a>
-								</div>
-							</div>
-							<p itemprop="reviewBody">Our company has been working with Web Design Express since
-								2009. Web Design Express has evolved in a very positive way through the years. We
-								recently worked with them to update our website. We have been mainly working with
-								Edi. We are beyond pleased with Edi's impeccable service. He is extremely helpful in
-								guiding us through the whole process. He is very knowledgeable. He pays close
-								attention to details. He is also very patient in training us on how to use the new
-								administration system. Overall, we are very pleased with Web Design Express.</p>
-							<div class="separator small hidden-sm hidden-xs"></div>
-							<div class="row hidden-sm hidden-xs">
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Recommend this company</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Would do Business Again</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Price of Project</strong>
-									</h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-								<div class="col-sm-3">
-									<h5 class="no-margin text-xs-center"><strong>Overall Satisfaction</strong></h5>
-									<div class="row  no-margin margin-top-10 font-14">
-										<div class="col-sm-9 col-xs-11">
-											<div class="progress">
-												<div class="progress-bar" role="progressbar" aria-valuenow="60"
-													aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-2 col-xs-1">
-											5 </div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>        
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-</div>
+	</div>
 
-<!-- Body ends here -->
+	<!-- Body ends here -->
 
-  <!-- footer section -->
-	<footer id="down-footer">
-      <div class="footer-section">
-        <div class="container">
-          <div class="row">
-            <!-- <div class="digitax-details"> -->
-            <div class="col col-6 col-sm-6 col-md-4 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white">Featured Job</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a href="">Browse Jobs</a></li>
-                  <li class="item"><a href="">Premium MBA Jobs</a></li>
-                  <li class="item"><a href="">Access Database</a></li>
-                  <li class="item"><a href="">Managae Response</a></li>
-                  <li class="item"><a href="">Report a Problem</a></li>
-                  <li class="item"><a href="">Mobile Site</a></li>
-                  <li class="item"><a href="">Jobs By Skill</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-6 col-sm-6 col-md-3 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white footer-link">Find Jobs</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a href="">AI Rayyan</a></li>
-                  <li class="item"><a href="">AI Wakra</a></li>
-                  <li class="item"><a href="">Umm Said</a></li>
-                  <li class="item"><a href="">Khor AI Udaid</a></li>
-                  <li class="item"><a href="">AI Khor</a></li>
-                  <li class="item"><a href="">RLIC</a></li>
-                  <li class="item"><a href="">Mesaieed</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-              <div class="row">
-                <div class="col col-12 col-md-6 col-lg-6">
-                  <div class="basic-links">
-                    <h3 class="white footer-link">Company</h3>
-                    <ul class="basic-link-item pl-0">
-                      <li class="item"><a href="">About us</a></li>
-                      <li class="item"><a href="">Contact us</a></li>
-                      <li class="item"><a href="">Careers</a></li>
-                      <li class="item"><a href="">Blogs</a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col col-12 col-md-6 col-lg-6">
-                  <div class="basic-links">
-                    <h3 class="white footer-link">Quick Links</h3>
-                    <ul class="basic-link-item pl-0">
-                      <li class="item"><a href="">Caareer Tips</a></li>
-                      <li class="item"><a href="">Events</a></li>
-                      <li class="item"><a href="">Never Miss An Email</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col col-12 col-sm-12 col-md-6 col-lg-12">
-                  <div class="basic-links ftr">
-                    <h6 class="yellow">Follow <a href="#">Mindfulqatar.com</a></h6>
-                    <ul>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-  
-            <div class="col col-6 col-sm-6 col-md-5 col-lg-3">
-              <div class="basic-links">
-                <h3 class="white">Reach Us</h3>
-                <ul class="basic-link-item pl-0">
-                  <li class="item"><a href="">Mindful Consulting</a></li>
-                  <li class="item"><a href="">AI Shoumoukh Tower</a></li>
-                  <li class="item"><a href="">C Ring Road</a></li>
-                  <li class="item"><a href="">Doha, Qatar</a></li>
-                  <li class="item"><a href="" class="mb-none">Email:support@mindfulqatar.com</a></li>
-                  <li class="item"><a href="">Call:+974 123 45678</a></li>
-                  <li class="item"><a href="">FAX: 123 456 85</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col col-12 col-sm-6 col-md-4 col-lg-2">
-              <div class="basic-links">
-                <h3 class="white">Drop A Mail</h3>
-                <form action="/action_page.php">
-                  <input type="text" placeholder="Your Name">
-                </form>
-                <form action="/action_page.php">
-                  <input type="email" placeholder="Email">
-                </form>
-                <form action="/action_page.php">
-                  <textarea type="text" placeholder="Message"></textarea>
-                </form>
-                <button class="btn-ftr">Send</button>
-  
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </div>
-      <div class="all-rights mx-auto text-center">
-        <div class="container">
-          <div class="copy-right">
-            © Copyright 2019 Mindfulqatar | Design By <span style="color:#ffc23d;font-weight: 600">THE
-              WAY</span>
-          </div>
-        </div>
-      </div>
-    </footer>
-<!-- Footer end -->
+	<!-- footer section -->
+	<div id="footer"></div>
+
+	<!-- Footer end -->
 	<!-- bootstrap script links -->
-	<script src="./assets/js/jquery.min.js"></script>
-	<script src="./assets/js/popper.min.js"></script>
-	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/popper.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
 
 	<!-- plugin javascript -->
-	<script src="./assets/js/plugin.js"></script>
+	<script src="../../assets/js/plugin.js"></script>
 	<script src="owl.carousel.min.js"></script>
 	<!-- navigation script -->
 
-
+<!-- Header and Footer script -->
+<script>
+		$(function () {
+			$("#header").load("../../components/Header/commonHeader.html");
+			$("#footer").load("../../components/Footer/commonFooter.html");
+		});
+	</script>
 	<!-- Counter number script -->
 	<script type="text/javascript">
 		$('.counter').each(function () {
@@ -1089,7 +871,7 @@
 			$('.banner-seo-img').css('right', ((0 + (xpos / 80)) + "px"));
 
 		});
-	</script>  
+	</script>
 </body>
 
 </html>
