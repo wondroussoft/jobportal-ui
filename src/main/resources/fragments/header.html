@@ -1,133 +1,136 @@
-<!doctype html>
-<html xmlns:th="http://www.thymeleaf.org">
-<div th:fragment="header">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+	<div th:fragment="header">
+
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0,user-scalable=0">
-<meta name="copyright" content="Copyright 2000-2019 mindful.com, Inc." />
-<!-- <link rel="shortcut icon" href="//img0cf.b8cdn.com/images/templates/bayt/favicon_new.ico" type="image/x-icon"/> -->
-<script>
-	/*<![CDATA[*/
-	!function(n) {
-		var a = [], e = setInterval(function() {
-			if (B8.v) {
-				for (var n; n = a.pop();)
-					B8.ready(n);
-				clearInterval(e)
-			}
-		}, 100);
-		n.B8 = n.B8 || {
-			ready : function(n) {
-				a.push(n)
-			}
-		}
-	}(window);
-	/*]]>*/
-</script>
-<title>India's Leading Job Site - MindFul</title>
-<meta name="description"
-	content="Find the latest jobs available in India today on the Middle East&#039;s leading job site." />
-<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-	rel="stylesheet">
-	<link href="/css/style.css" rel="stylesheet">
-	<link href="/css/custom.css" rel="stylesheet">
-	
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" th:href="@{'/assets/css/bootstrap.min.css'}" />
+<link rel="stylesheet" th:href="@{'/assets/css/plugin.css'}" />
+<link rel="stylesheet" th:href="@{'/assets/css/style.css'}" />
+<link rel="stylesheet" th:href="@{'/assets/css/responsive.css'}" />
+
+
+<link rel="stylesheet"
+	th:href="@{'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'}" />
 </head>
+
 <body>
-
-	<nav>
-		<div id="wrap">
-			<div class="navbar navbar-inverse navbar-fixed-top">
-				<div class="container">
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav"
-							style="background-color: #fed90a; height: 50px;">
-							<li><i class="fa fa-envelope" aria-hidden="true"
-								style="margin-left: 28px;"></i><a href="#">support@mindful|qatar.com</a></li>
-							<li class="divider-vertical"></li>
-							<li><i class="fa fa-phone" aria-hidden="true"></i><a
-								href="#about">+974 1234567</a></li>
-							<li class="divider-vertical"></li>
-							<li><a href="#contact"><i class="fa fa-clock-o"></i> Working hours:9:00 am to 5:00 pm</a></li>
-							<li class="is-wide-d"></li>
-
-							<li class="is-group">
-								<ul class="list is-inline is-basic is-spaced t-nowrap"
-									style="width: 231px; background-color: #6b6a73; padding: 12px; margin-right: -20px; font-weight: bold;">
-									<li><i class="fa fa-user" aria-hidden="true"
-										style="color: white;"></i> <a class="is-small is-inverse"
-										href="/login">Log In</a></li>
-									<li class="d"><i class="fa fa-user-plus"
-										aria-hidden="true" style="color: white;"></i> <a
-										class="is-small is-inverse" href="/register">Register</a></li>
-									<li class="m"><i class="fa fa-user-plus"
-										aria-hidden="true" style="color: white;"></i> <a
-										class="is-small is-outline" href="/register">Register</a></li>
-								</ul>
-							</li>
-					</div>
-				</div>
+<!-- navigation section-->
+<header id="navbar" class="nav-down">
+	<div class=" d-flex mb-detail">
+		<div class="contact-details d-flex">
+			<div class="d-flex contact">
+				<span>
+					<a th:href="@{'#'}" class="fa fa-envelope-o"></a>
+					<a th:href="@{'#'}">Support@mindfulqatar.com</a>
+				</span>
 			</div>
-			<ul class="nav data-nav "
-				style="background-color: #f1f2f0; height: 80px;">
-				<li data-bars class="m"><a class="is-toggle" href="#"> <i
-						class="icon is-bars m0"></i></a></li>
-
-				<li class="is-wide-m"><a class="is-logo" href="/"><img src="/logo.png" />
-				</a></li>
-				<li class="is-wide-d" style="margin-left:-207px;">
-					<ul data-toggle-bars="" class="nav is-main can-toggle "
-						data-capture="" id="yw0" style="background-color: #f1f2f0;">
-						<li><a href="/" class="divider">Home</a></li>
-						<ul data-placement="bl"
-							class="popover is-inline dropdown p0y-m t-small-d t-regular-m in-nav divider">
-							<li><a href="mindfulindia/jobs/search/">Search Jobs<span class="caret"></span></a></li>
-							<li><a href="mindfulsearch/job-search-advanced/">Advanced
-									Search</a></li>
-							<li class="is-title t-mute"><span>Browse Jobs</span></li>
-							<li><a href="mindfulindia/jobs/roles/">Jobs by Role</a></li>
-							<li><a href="mindfulindia/jobs/sectors/">Jobs by Sector</a></li>
-							<li><a href="mindfuljobs/locations/">Jobs by Location</a></li>
-						</ul>
-				</li>
-				<li class="d divider"><a href="/employer"><span class="caret"></span>Employers</a></li>
-				<li><a href="services">Services</a></li>
-				<li><a href="/review">Company
-						Reviews</a></li>
-				<li><a href="aboutus">About
-						Us</a></li>
-				<li class="divider"><a href="/contactus">Contact
-						Us <span class="caret"></span></a></li>
-				<ul data-placement="bl"
-					class="popover is-inline dropdown p0y-m t-small-d t-regular-m in-nav">
-					<li class="is-title t-mute"><span>TIPS &amp; RESOURCES</span></li>
-					<li><a href="mindfulblog/category/job-search-tips-1489187/">Job
-							Search Tips</a></li>
-					<li><a href="mindfulblog/category/the-powerful-cv-1489194/">The
-							Powerful CV</a></li>
-					<li><a
-						href="mindfulblog/category/interviews-and-offers-1489195/">Interviews
-							and Offers</a></li>
-					<li><a href="mindfulblog/category/grow-your-career-1489197/">Grow
-							Your Career</a></li>
-					<li><a href="mindfulblog/category/market-knowledge-1739/">Market
-							Knowledge</a></li>
-					<li><a href="mindfulblog/category/employer-corner-1418873/">Employer
-							Corner</a></li>
+			<div class="d-flex contact">
+				<span class="d-flex align-items-baseline">
+					<a th:href="@{'#'}" class="fa fa-volume-control-phone"></a>
+					<a th:href="@{'tel:123-456-7890'}">123-456-7890</a>
+				</span>
+			</div>
+			<div class="contact">
+				<p>Working Hours:9:00 am to 5:00 pm</p>
+			</div>
+			<div class="basic-links ftr">
+				<ul style="padding-top:10px;margin-bottom: 0px">
+					<li><a th:href="@{'https://www.twitter.com'}" target="_blank"><i class="fa fa-twitter"
+								aria-hidden="true"></i></a></li>
+					<li><a th:href="@{'https://www.instagram.com'}" target="_blank"><i class="fa fa-instagram"
+								aria-hidden="true"></i></a></li>
+					<li><a th:href="@{'https://www.linkedin.com'}" target="_blank"><i class="fa fa-linkedin"
+								aria-hidden="true"></i></a></li>
+					<li><a th:href="@{'https://www.facebook.com'}" target="_blank"><i class="fa fa-facebook"
+								aria-hidden="true"></i></a></li>
 				</ul>
-				</li>
-				<li class="popover-owner has-pointer has-inline" data-popover=""
-					data-more="" style="display: none;"><a href="#">More</a>
-					<div class="popover is-inline" data-placement="bl"
-						data-bayt-popover="4">
-						<ul class="dropdown p0-m t-small-d t-regular-m in-nav"></ul>
-					</div></li>
-				<li class="m u-hide"><a data-search class="is-toggle" href="#">
-						<i class="icon is-search m0"></i>
-				</a></li>
-			</ul>
-	</nav>
-</body>
-</html>
+			</div>
+
+			<div class="employers-Option">
+				<li><a th:href="@{'#'}">Employers</a></li>
+			</div>
+		</div>
+		<div class="login-details d-flex float-right">
+			<div class="d-flex pad-right30">
+				<span>
+					<!-- <a th:href="@{''}" class=""></a> -->
+					<a th:href="@{'LOGIN_PATH'}" class=""><i class="fa fa-user-circle-o pr-1"></i>Login</a>
+				</span>
+			</div>
+			<div class="d-flex">
+				<span>
+					<!-- <a th:href="@{''}" class=""></a> -->
+					<a th:href="@{'REGISTRATION_PATH'}" class=""><i
+							class="fa fa-pencil-square-o pr-1"></i>Register</a>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-light">
+			<a class="navbar-brand" th:href="@{'HOME_PATH'}">
+				<img th:src="@{'/assets/image/logos/logo.png'}">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse float-right " id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" th:href="@{'HOME_PATH'}">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link" th:href="@{'#'}" id="navbardrop" data-toggle="dropdown">Search Jobs <i
+								class="fa fa-caret-down"></i></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" th:href="@{'ADVANCE_SEARCH_PATH'}">Advanced
+								Search</a>
+							<a class="dropdown-item" th:href="@{'JOBS_BY_ROLE_PATH'}">Jobs By Role</a>
+							<a class="dropdown-item" th:href="@{'JOBS_BY_SECTOR_PATH'}">Jobs By
+								Sector</a>
+							<a class="dropdown-item" th:href="@{'JOBS_BY_LOCATION_PATH'}">Jobs By
+								Location</a>
+							<a class="dropdown-item" th:href="@{'JOBS_BY_COMPANY_PATH'}">Jobs By
+								Companies</a>
+							<a class="dropdown-item" th:href="@{'EXECUTIVE_JOBS_PATH'}">Executive
+								Jobs</a>
+							<a class="dropdown-item" th:href="@{'SALARIES_PATH'}">Salaries</a>
+						</div>
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link" th:href="@{'#'}" id="navbardrop" data-toggle="dropdown">Services <i
+								class="fa fa-caret-down"></i></a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" th:href="@{'ENERGY_PATH'}">Energy</a>
+							<a class="dropdown-item" th:href="@{'COMMUNICATION_AUTOMATION_PATH'}">Communication &
+								Automation</a>
+							<a class="dropdown-item" th:href="@{'KABEL_HOME_PATH'}">Kabel Home</a>
+							<a class="dropdown-item" th:href="@{'SMART_CITY_PATH'}">Smart City</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{'COMPANY_REVIEWS_PATH'}">Company Reviews</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" th:href="@{'#'}">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link border-contact" th:href="@{'CONTACT_US_PATH'}">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>
+<!-- header end -->

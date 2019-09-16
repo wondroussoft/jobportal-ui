@@ -217,27 +217,27 @@
         }
         
         .accordion-title,
-        .dropdown>li>a,
+        .is-wide .dropdown>li>a,
         a {
             text-decoration: none
         }
         
-        .accordion-toggle:checked+.accordion-title,
-        .btn,
-        .dropdown>li.is-title {
+        .is-wide .accordion-toggle:checked+.accordion-title,
+        .is-wide .btn,
+        .is-wide .dropdown>li.is-title {
             font-weight: 700
         }
         
-        .popover,
-        nav>.nav {
+        .is-wide .popover,
+        .is-wide  nav>.nav {
             text-align: left
         }
         
-        .dropdown,
+        .is-wide .dropdown,
         .list-menu-group,
         .list.is-basic,
-        .media-list,
-        .nav {
+        .is-wide .media-list,
+        .is-wide .nav {
             list-style: none
         }
         
@@ -326,8 +326,8 @@
             color: #3b3b3b
         }
         
-        .btn,
-        .dropdown,
+        .is-wide .btn,
+        .is-wide .dropdown,
         .mobile-logo {
             line-height: 1
         }
@@ -400,7 +400,7 @@
         }
         
         .box.is-wide {
-            max-width: 1440px
+            max-width: 1408px
         }
         
         .row {
@@ -451,8 +451,8 @@
             z-index: 5000
         }
         
-        .dropdown>li,
-        .dropdown>li>a,
+        .is-wide .dropdown>li,
+        .is-wide .dropdown>li>a,
         .has-icon,
         .sticky-sense {
             position: relative
@@ -679,7 +679,7 @@
             margin: 0!important;
         }
         
-        .dropdown {
+        .is-wide .dropdown {
             padding: 10px 0;
             margin: 0;
             font-size: .875rem;
@@ -687,7 +687,7 @@
             overflow: visible
         }
         
-        .dropdown>li>a {
+        .is-wide .dropdown>li>a {
             display: block;
             padding: 10px 20px;
             color: inherit;
@@ -700,7 +700,7 @@
             color: #fff
         }
         
-        .dropdown>li.is-title {
+        .is-wide .dropdown>li.is-title {
             padding: 12px 20px;
             font-size: 14px;
             text-transform: uppercase
@@ -1376,14 +1376,14 @@
             .card.is-compact {
                 padding: 8px
             }
-            .dropdown>li.is-title,
-            .dropdown>li>a {
+            .is-wide .dropdown>li.is-title,
+            .is-wide .dropdown>li>a {
                 padding: 14px 20px
             }
-            .dropdown.in-nav {
+            .is-wide .dropdown.in-nav {
                 color: #3b3b3b
             }
-            .dropdown.in-nav>li>a {
+            .is-wide .dropdown.in-nav>li>a {
                 padding: 7px 20px
             }
             .in-pack,

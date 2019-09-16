@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="../../assets/css/plugin.css" />
+	<link href="../../style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+
+<body>
+	<!-- navigation section-->
+	<div id="header"></div>
+
+	<!-- header end -->
+	<p>Hello, world!</p>
+
+
+	<!-- footer section -->
+	<div id="footer"></div>
+	<!-- Footer end -->
+	
+	<!-- bootstrap script links -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/popper.min.js"></script>
+	<script src="../../assets/js/bootstrap.min.js"></script>
+
+	<!-- plugin javascript -->
+	<script src="../../assets/js/plugin.js"></script>
+	<script src="owl.carousel.min.js"></script>
+	<!-- navigation script -->
+
+<!-- Header and Footer script -->
+<script>
+		$(function () {
+			$("#header").load("../../components/Header/commonHeader.html");
+			$("#footer").load("../../components/Footer/commonFooter.html");
+		});
+	</script>
+	<!-- Counter number script -->
+	<script type="text/javascript">
+		$('.counter').each(function () {
+			var $this = $(this),
+				countTo = $this.attr('data-count');
+
+			$({ countNum: $this.text() }).animate({
+				countNum: countTo
+			},
+				{
+					duration: 1000,
+					easing: 'linear',
+					step: function () {
+						$this.text(Math.floor(this.countNum));
+					},
+					complete: function () {
+						$this.text(this.countNum);
+						//alert('finished');
+					}
+				});
+		});
+
+		$(window).mousemove(function (e) {
+			var change;
+			var xpos = e.clientX; var ypos = e.clientY; var left = change * 50;
+			var xpos = xpos * 2; ypos = ypos * 2;
+			$('.banner-seo-img').css('top', ((0 + (ypos / 50)) + "px"));
+			$('.banner-seo-img').css('right', ((0 + (xpos / 80)) + "px"));
+
+		});
+	</script>
+</body>
+
+</html>

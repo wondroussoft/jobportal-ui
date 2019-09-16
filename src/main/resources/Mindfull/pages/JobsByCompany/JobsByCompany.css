@@ -554,55 +554,55 @@ h6 {
     color: #b16ae7
 }
 
-.btn.is-twitter:focus:not(:disabled),
-.btn.is-twitter:hover:not(:disabled) {
+.is-wide .btn.is-twitter:focus:not(:disabled),
+.is-wide .btn.is-twitter:hover:not(:disabled) {
     background-color: #0678b8;
     border-color: #0678b8
 }
 
-.btn.is-twitter:active:not(:disabled) {
+.is-wide .btn.is-twitter:active:not(:disabled) {
     background-color: #78cfff;
     border-color: #78cfff
 }
 
-.btn.is-twitter.is-outline:focus:not(:disabled),
-.btn.is-twitter.is-outline:hover:not(:disabled) {
+.is-wide .btn.is-twitter.is-outline:focus:not(:disabled),
+.is-wide .btn.is-twitter.is-outline:hover:not(:disabled) {
     color: #0678b8;
     background-color: transparent
 }
 
-.btn.is-twitter.is-outline:active:not(:disabled) {
+.is-wide .btn.is-twitter.is-outline:active:not(:disabled) {
     color: #78cfff
 }
 
-.btn.is-linkedin:focus:not(:disabled),
-.btn.is-linkedin:hover:not(:disabled) {
+.is-wide .btn.is-linkedin:focus:not(:disabled),
+.is-wide .btn.is-linkedin:hover:not(:disabled) {
     background-color: #004b7c;
     border-color: #004b7c
 }
 
-.btn.is-linkedin:active:not(:disabled) {
+.is-wide .btn.is-linkedin:active:not(:disabled) {
     background-color: #025f97;
     border-color: #025f97
 }
 
-.btn.is-linkedin.is-outline:focus:not(:disabled),
-.btn.is-linkedin.is-outline:hover:not(:disabled) {
+.is-wide .btn.is-linkedin.is-outline:focus:not(:disabled),
+.is-wide .btn.is-linkedin.is-outline:hover:not(:disabled) {
     color: #004b7c;
     background-color: transparent
 }
 
-.btn.is-linkedin.is-outline:active:not(:disabled) {
+.is-wide .btn.is-linkedin.is-outline:active:not(:disabled) {
     color: #025f97
 }
 
-.card {
+.is-wide .card {
     background-color: #fff;
     padding: 20px;
     border-radius: 4px
 }
 
-.card:only-child {
+.is-wide .card:only-child {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
@@ -612,7 +612,7 @@ h6 {
     height: 100%
 }
 
-.dropdown {
+.is-wide .dropdown {
     list-style: none;
     padding: 10px 0;
     margin: 0;
