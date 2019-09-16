@@ -9,13 +9,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   	<!-- Main Style Css -->
 	<link rel="stylesheet" href="../../assets/css/bootstrap.min.css" />
-	<!-- Main Style Css -->
 	<link rel="stylesheet" href="../../assets/css/plugin.css" />
-  <link href="../../style.css" rel="stylesheet">
-  <link href="./Executive.css" rel="stylesheet">
-   <!-- <link rel="stylesheet" href="Executivejobs.css"/> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+    <link href="../../style.css" rel="stylesheet">
+    <link href="./Executive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -152,7 +148,7 @@
                         <div class="card-head">
                             <h1 class="h5">Executive Level Jobs in the Gulf and Middle East</h1>
                             <span>283 Jobs Found: Showing 1 - 20</span>
-                            <a id="filter" class="m u-right" href="#"> <i class="fa fa-filter t-large u-left"></i>
+                            <a id="filter" class="m u-right" href="#"> <i class="icon is-filter t-large"></i>
                                 <b class="t-large "> Filter </b> </a>
                         </div>
                         <div class="card-content">
@@ -610,26 +606,26 @@
                                 <li class="card">
                                     <div class="card-content">
                                         <div class="row h-align-between v-align-center is-compact">
-                                            <div class="col">
+                                            <div class="col-8">
                                                 <h5 class="m0-d">Would you like receive more jobs similar to this search?</h5>
                                             </div>
-                                            <div class="col">
+                                            <div class="col-4">
                                                 <button onclick="showRegisterJobAlertPopup();" class="btn is-xsmall is-round d ">Subscribe</button>
                                                 <button class="btn is-xsmall is-round subscribe m">Subscribe</button>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="p0x p40y">
+                                <!-- <li class="p0x p40y">
                                     <div class=" t-center no-print" id="ad_listing_2"></div>
-                                </li>
-                                <li class="p0">
+                                </li> -->
+                                <!-- <li class="p0">
                                     <div class="card">
                                         <div id="adsenseCSA_BTF"></div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
-                            <div class="p20y">
+                            <div class="p20y pag-display">
                                 <ul id="pagination" class="pagination">
                                     <li class="pagination-prev hidden">
                                         <a class="jsAjaxLoad" data-js-params="{&quot;listOnly&quot;:true}" href="#"></a>
@@ -653,24 +649,25 @@
             <div class="sticky-sidebar" data-sticky-sidebar>
                 <div class="sticky-content">
                     <div class="card is-primary-d is-compact p0">
-                        <form onsubmit="return JobSearch.submitSearchForm()" id="clusterFormId" action="/en/international/jobs/q/executive-level/" method="post">
+                        <form onsubmit="return JobSearch.submitSearchForm()" id="clusterFormId" action="" method="post">
                             <input type="hidden" value="06e894b7a38553804e5f915c14ebc355def7636f" name="YII_CSRF_TOKEN" />
                             <div class="card-content">
-                                <div class="can-toggle is-m" data-toggle-sheet="#filter">
+                                <div class="can-toggle is-m has-transition is-active" data-toggle-sheet="#filter">
+                                        <button class="js-tabtrap"></button>
                                     <div class="toggle-head">
                                         <a href="javascript:;" class="b-close m" data-close-sheet></a>
-                                        <div><i class="fa fa-filter t-large"></i><b class="t-large ">Filter</b></div>
+                                        <div><i class="icon is-filter t-large"></i><b class="t-large ">Filter</b></div>
                                         <span class="m"> </span>
                                     </div>
                                     <div class="toggle-content">
                                         <div class="accordion t-small">
                                             <div class="accordion-title">
                                                 <div class="has-icon m10t">
-                                                    <input name="keyword" type="search" class="input is-small u-expanded" placeholder="Search" data-js-search-path="" value="executive level" id="filterSearchInput">
-                                                    <button type="submit" class="btn is-clear icon is-search p10y p10l p0r"></button>
+                                                    <input name="keyword" type="search" class="input is-small u-expanded" placeholder="Search"  value="executive level">
+                                                    <button class="btn is-clear icon is-search p10y p10l p0r"></button>
                                                 </div>
                                             </div>
-                                            <div class="p20x bt">
+                                            <!-- <div class="p20x bt">
                                                 <p>
                                                     <a href="#" class="jsAjaxLoad" data-close-sheet rel="nofollow">
                                                         <b>Recommended Jobs</b>
@@ -685,8 +682,8 @@
                                                     <a href="#" class="jsAjaxLoad" data-close-sheet rel="nofollow">
                                                     </a>
                                                 </p>
-                                            </div>
-                                            <input id="JB_LOCATION_COUNTRY_ISO" class="accordion-toggle" type="checkbox" checked="checked">
+                                            </div> -->
+                                            <!-- <input id="JB_LOCATION_COUNTRY_ISO" class="accordion-toggle" type="checkbox" checked="checked">
                                             <label for="JB_LOCATION_COUNTRY_ISO" class="accordion-title">Country</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -759,7 +756,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                             <input id="JB_LOCATION_PR_ID" class="accordion-toggle" type="checkbox" checked="checked">
                                             <label for="JB_LOCATION_PR_ID" class="accordion-title">City</label>
                                             <div class="accordion-animate">
@@ -877,68 +874,6 @@
                                                             <li class="t-small">
                                                                 <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_PR_ID"}' rel="nofollow">
 																		Sulaymaniyah																	</a> &nbsp;
-                                                                <span class="t-mute">(1)</span> </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <input id="JB_LOCATION_LC_ID" class="accordion-toggle" type="checkbox" checked="checked">
-                                            <label for="JB_LOCATION_LC_ID" class="accordion-title">Area</label>
-                                            <div class="accordion-animate">
-                                                <div class="accordion-content">
-                                                    <ul class="list is-basic is-spaced is-compact t-small m0">
-                                                        <li>
-                                                            <a data-js-filter="" href="#" data-close-sheet class="jsAjaxLoad" rel="nofollow">
-																All															</a>
-                                                        </li>
-                                                        <li class="t-small">
-                                                            <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																	New Cairo																</a> &nbsp;
-                                                            <span class="t-mute">(8)</span> </li>
-                                                        <li class="t-small">
-                                                            <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																	Giza																</a> &nbsp;
-                                                            <span class="t-mute">(4)</span> </li>
-                                                        <li class="t-small">
-                                                            <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																	6th of October																</a> &nbsp;
-                                                            <span class="t-mute">(3)</span> </li>
-                                                        <li class="t-small">
-                                                            <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																	Heliopolis																</a> &nbsp;
-                                                            <span class="t-mute">(3)</span> </li>
-                                                        <li class="t-small">
-                                                            <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																	Mohandessin																</a> &nbsp;
-                                                            <span class="t-mute">(2)</span> </li>
-                                                    </ul>
-                                                    <div class="t-right">
-                                                        <a href="#" class="is-gray t-xsmall toggler-active" data-toggler>
-                                                            <span>Show More</span>
-                                                            <span></span>
-                                                        </a>
-                                                    </div>
-                                                    <div id="hiddenGroupsJB_LOCATION_LC_ID">
-                                                        <ul class="list is-basic is-spaced is-compact t-small m0">
-                                                            <li class="t-small">
-                                                                <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																		Dokki																	</a> &nbsp;
-                                                                <span class="t-mute">(1)</span> </li>
-                                                            <li class="t-small">
-                                                                <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																		Nasr City																	</a> &nbsp;
-                                                                <span class="t-mute">(1)</span> </li>
-                                                            <li class="t-small">
-                                                                <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																		Zamalek																	</a> &nbsp;
-                                                                <span class="t-mute">(1)</span> </li>
-                                                            <li class="t-small">
-                                                                <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																		10th of Ramadan																	</a> &nbsp;
-                                                                <span class="t-mute">(1)</span> </li>
-                                                            <li class="t-small">
-                                                                <a data-js-filter="" href="#" class="jsAjaxLoad" data-close-sheet data-js-params='{"clickedFacet":"JB_LOCATION_LC_ID"}' rel="nofollow">
-																		Boston																	</a> &nbsp;
                                                                 <span class="t-mute">(1)</span> </li>
                                                         </ul>
                                                     </div>
@@ -1362,7 +1297,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <input id="JB_EMPLOYMENT_TYPE" class="accordion-toggle" type="checkbox">
+                                            <!-- <input id="JB_EMPLOYMENT_TYPE" class="accordion-toggle" type="checkbox">
                                             <label for="JB_EMPLOYMENT_TYPE" class="accordion-title">Employment Type</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -1385,8 +1320,8 @@
                                                             <span class="t-mute">(1)</span> </li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <input id="JB_GENDER_INT" class="accordion-toggle" type="checkbox">
+                                            </div> -->
+                                            <!-- <input id="JB_GENDER_INT" class="accordion-toggle" type="checkbox">
                                             <label for="JB_GENDER_INT" class="accordion-title">Gender</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -1405,8 +1340,8 @@
                                                             <span class="t-mute">(216)</span> </li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <input id="EMPLOYER_COMPANY_TYPE" class="accordion-toggle" type="checkbox">
+                                            </div> -->
+                                            <!-- <input id="EMPLOYER_COMPANY_TYPE" class="accordion-toggle" type="checkbox">
                                             <label for="EMPLOYER_COMPANY_TYPE" class="accordion-title">Company Type</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -1433,8 +1368,8 @@
                                                             <span class="t-mute">(1)</span> </li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <input id="JB_LAST_MODIFICATION_DATE_INTERVAL" class="accordion-toggle" type="checkbox">
+                                            </div> -->
+                                            <!-- <input id="JB_LAST_MODIFICATION_DATE_INTERVAL" class="accordion-toggle" type="checkbox">
                                             <label for="JB_LAST_MODIFICATION_DATE_INTERVAL" class="accordion-title">Date Modified</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -1457,8 +1392,8 @@
                                                             <span class="t-mute">(121)</span> </li>
                                                     </ul>
                                                 </div>
-                                            </div>
-                                            <input id="EMPLOYER_GROUP_ID" class="accordion-toggle" type="checkbox">
+                                            </div> -->
+                                            <!-- <input id="EMPLOYER_GROUP_ID" class="accordion-toggle" type="checkbox">
                                             <label for="EMPLOYER_GROUP_ID" class="accordion-title">Company Name</label>
                                             <div class="accordion-animate">
                                                 <div class="accordion-content">
@@ -1579,7 +1514,7 @@
                                                         </ul>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1752,7 +1687,14 @@
 			$('.banner-seo-img').css('right', ((0 + (xpos / 80)) + "px"));
 
 		});
-	</script>  
+    </script>  
+    <script>
+            $(document).ready(function(){
+              $(".js-tabtrap").click(function(){
+                $(".toggle-content").hide();
+              });
+            });
+            </script>
 </body>
 
 </html>
