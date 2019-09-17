@@ -397,7 +397,8 @@
 	background-color: #2784fc;
     overflow: hidden;
     border-radius: 4px;
-    cursor: pointer;
+	cursor: pointer;
+	color: white;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;

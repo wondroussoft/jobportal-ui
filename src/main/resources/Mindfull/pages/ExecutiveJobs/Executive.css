@@ -22,6 +22,17 @@
         .icon {
             min-width: 18px
         }
+        .btn.subscribe-btn{
+            background-color: #2784fc;
+            border: 1px solid #2784fc;
+            display: inline-block;
+            overflow: hidden;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            white-space: nowrap;
+        }
         
         .slider {
             position: relative
