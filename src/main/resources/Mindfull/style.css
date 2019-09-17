@@ -1,7 +1,9 @@
 /*
 Theme Name: Digitax
 */
-
+body {
+    overflow-x: hidden;
+}
 p{
     margin-bottom: 0px;
 }
@@ -420,7 +422,7 @@ text-decoration: none !important;
     background-color: #ffffff !important;
 }
 .navbar-brand{
-width: 100px;
+width: 230px;
 }
 .navbar-expand-lg{
 padding:5px 0px;
