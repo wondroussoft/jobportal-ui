@@ -260,6 +260,9 @@
 	a {
 		text-decoration: none
 	}
+	/* .btn{
+		background-color:#fed90a!important;
+	} */
 	
 	html {
 		box-sizing: border-box;
@@ -375,14 +378,14 @@
 		margin:0 auto;
 	}
 	.btn.is-outline {
-		color: #2784fc;
+		color: #fed90a;
 		background-color: transparent;
 		font-size: 1rem;
 		line-height: 1;
 		font-weight: 700;
 		padding: 13px 27px;
 		/* background-color: #2784fc; */
-		border: 1px solid #2784fc;
+		border: 1px solid #fed90a;
 		display: inline-block;
 		overflow: hidden;
 		border-radius: 4px;
@@ -391,25 +394,30 @@
 		white-space: nowrap;
 		vertical-align: middle;
 	}
+	.btn.is-outline:hover{
+		color:#fff;
+		background-color: #fed90a;
+	}
 	.btn.sal-btn{
-	border: 1px solid #2784fc;
+	border: 1px solid #fed90a;
 	display: inline-block;
-	background-color: #2784fc;
+	background-color: #fed90a;
     overflow: hidden;
     border-radius: 4px;
 	cursor: pointer;
-	color: white;
+	color: #231f20;
     text-align: center;
     white-space: nowrap;
     vertical-align: middle;
 	}
+	.range-chart > tbody > tr > td > span:last-child {background-color: #ffcc00}
 	.btn.postbtn{
 	font-size: 1rem;
     line-height: 1;
     font-weight: 700;
     padding: 13px 27px;
-    background-color: #2784fc;
-    border: 1px solid #2784fc;
+    background-color: #fed90a;
+    border: 1px solid #fed90a;
     display: inline-block;
     overflow: hidden;
     color: #fff;
@@ -418,6 +426,10 @@
     text-align: center;
     white-space: nowrap;
 	vertical-align: middle;
+	}
+	.btn.postbtn:hover{
+		color: #fed90a;
+		background-color: #fff
 	}
 	.btn.is-round {
 		border-radius: 100px;
@@ -519,6 +531,20 @@
 		z-index: 10000;
 		outline: 0
 	}
+	.is-tabular li a{
+		color:#6b6a73;
+	}
+	.is-tabular li a:hover{
+		color:#231f20;
+		text-decoration: none;
+	}
+	.is-inline li a{
+		color:#231f20;
+	}
+	.is-inline li a:hover{
+		color:#ffcc00;
+		text-decoration: none;
+	}
 	
 	/* .dropdown>li, */
 	/* .dropdown>li>a, */
@@ -538,7 +564,7 @@
 	
 	.btn,
 	.mobile-banner {
-		background-color: #2784fc;
+		background-color: #fed90a;
 		color: #fff
 	}
 	
@@ -571,7 +597,7 @@
 		font-size: 1rem;
 		font-weight: 700;
 		padding: 13px 27px;
-		border: 1px solid #2784fc;
+		border: 1px solid #fed90a;
 		display: inline-block;
 		overflow: hidden;
 		border-radius: 4px;
