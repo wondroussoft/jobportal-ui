@@ -64,7 +64,7 @@ public class HomeController {
 
 	@GetMapping("/register")
 	public String GetRegister(Model model) {
-		return "signup2";
+		return "register";
 	}
 
 	/*
@@ -136,6 +136,7 @@ public class HomeController {
 	public String Getjobs(Model model) {
 		return "jobs";
 	}
+	
 
 	@GetMapping("/employers")
 	public String Getemployers(Model model) {
@@ -207,9 +208,9 @@ public class HomeController {
 	public String Getstarthiring(Model model) {
 		return "starthiring";
 	}
-	@GetMapping("/loginemploye")
+	@GetMapping("/loginemployee")
 	public String Getloginemploye(Model model) {
-		return "signup2";
+		return "register";
 	}
 	
 }
