@@ -4,7 +4,7 @@
 }
 .register-account .modal-data{
     background-color: #fff;
-    padding: 40px 15px;
+    padding: 40px 15px 40px 25px;
 }
 .register-account .nav-tabs .nav-item.show .nav-link, .register-account .nav-tabs .nav-link.active {
     background-color: #fed90a;
@@ -26,7 +26,7 @@
     text-align: center;
     border: 1px solid #6b6a73;
     padding: 20px 15px;
-    margin: 13px;
+    margin: 13px 25px 13px 15px;
     border-radius: 5px;
 }
 .register-account .modal-data .nav-tabs .nav-link:focus, .register-account .nav-tabs .nav-link:hover {
@@ -117,7 +117,7 @@
 .register-account .modal-data input{
     border:0px;
     /* height: 15px; */
-    width: 96%;
+    width: 93%;
 }
 .register-account .label-data{
     margin-top: 15px;
@@ -128,11 +128,11 @@
     color: #6b6a73;
 }
 .register-account .modal-data .phone{
-    width: 98%;
+    width: 96.5%;
 }
 .register-account .selector{
-    -webkit-appearance: none;
-    width: 100%;
+    /* -webkit-appearance: none; */
+    width: 98.5%;
     height: 40px;
     padding: 0px 10px;
     margin-top: -10px;
@@ -141,11 +141,11 @@
 .register-account .modal-selector{
     position: relative;
 }
-.modal-selector .fa-caret-down{
+/* .modal-selector .fa-caret-down{
     position: absolute;
     right: 10px;
     bottom: 12px;
-}
+} */
 .register-account .modal-data .empty-check{
     width: 2%;
     margin-right: 6px;
