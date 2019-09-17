@@ -11,11 +11,40 @@
         display: none
     }
 }
-
+.is-tabular a{
+    color:#6b6a73;
+}
+.is-tabular a:hover{
+    color:#231f20;
+}
 .icon {
     min-width: 18px
 }
+.icon {
+    margin: 0 10px 0 10px !important;
+}
+.card .h3{
+    color:#ffcc00;
+}
+.list.is-tabular.of-2-d>li {
+    width: 50%;
+    padding-left: 15px;
+}
+.bg-inverse li a{
+    color:#6b6a73;
+    font-size: 14px;
+}
+.bg-inverse li a:hover{
+    color:#ffcc00;
+}
+.card-content h5{
+    padding-left: 20px;
+    color: #ffcc00;
+}
+.card .h5{
 
+    color: #ffcc00;
+}
 .slider {
     position: relative
 }
@@ -511,9 +540,9 @@ nav {
 
 .dropdown {
     list-style: none;
-    padding: 10px 0;
+    /* padding: 10px 0;
     margin: 0;
-    font-size: .875rem;
+    font-size: .875rem; */
     color: #3b3b3b;
     overflow: visible
 }
