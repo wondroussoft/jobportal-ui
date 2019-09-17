@@ -12,7 +12,11 @@
 		.search-bar:not(.is-compact)>.b-search {
 			display: none
 		}
-    }
+	}
+	.salarybg-clr{
+		background: #f4f4f4;
+	}
+
     .range-chart {
         width: 100%;
         border-collapse: collapse;
@@ -365,11 +369,62 @@
 	.cover>.box>p {
 		margin-bottom: 30px
 	}
-	
-	.row {
+	.salarybg-clr .row{
+		flex-flow: row wrap;
+		flex: 1 0 auto;
+		margin:0 auto;
+	}
+	.btn.is-outline {
+		color: #2784fc;
+		background-color: transparent;
+		font-size: 1rem;
+		line-height: 1;
+		font-weight: 700;
+		padding: 13px 27px;
+		/* background-color: #2784fc; */
+		border: 1px solid #2784fc;
+		display: inline-block;
+		overflow: hidden;
+		border-radius: 4px;
+		cursor: pointer;
+		text-align: center;
+		white-space: nowrap;
+		vertical-align: middle;
+	}
+	.btn.sal-btn{
+	border: 1px solid #2784fc;
+	display: inline-block;
+	background-color: #2784fc;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+	}
+	.btn.postbtn{
+	font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    padding: 13px 27px;
+    background-color: #2784fc;
+    border: 1px solid #2784fc;
+    display: inline-block;
+    overflow: hidden;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+	vertical-align: middle;
+	}
+	.btn.is-round {
+		border-radius: 100px;
+	}
+	/* .row {
 		flex-flow: row wrap;
 		flex: 1 0 auto
-	}
+	} */
 	
 	.row.is-compact>.col {
 		flex-grow: 0;

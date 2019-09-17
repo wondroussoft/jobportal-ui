@@ -1,4 +1,10 @@
-
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.5.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
         
         @media screen {
             .print-only {
@@ -13,7 +19,6 @@
                 display: none
             }
         }
-        
         .icon {
             min-width: 18px
         }
@@ -21,7 +26,15 @@
         .slider {
             position: relative
         }
-        
+        .js-tabtrap {
+            position: absolute!important;
+            display: initial!important;
+            width: 0!important;
+            height: 0!important;
+            opacity: 0!important;
+            -ms-transform: scale(0)!important;
+            transform: scale(0)!important;
+        }
         .slider-arrow {
             color: transparent
         }
@@ -33,7 +46,67 @@
         .t-danger {
             color: #ff3b30
         }
-        
+        .pagination {
+            font-size: 14px;
+            font-size: .875rem;
+            line-height: 1;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            text-align: center;
+            color: #b9bfcb;
+        }
+        .pagination>.pagination-first, .pagination>.pagination-last, .pagination>.pagination-next, .pagination>.pagination-prev {
+            display: inline-block;
+        }
+        .pagination>li {
+          vertical-align: middle;
+        }
+        .pagination>li>a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 0 1px;
+            text-decoration: none;
+            color: inherit;
+            border-radius: 4px;
+        }
+        .accordion-toggle+.accordion-title:after, .b-close, .icon, .modal-close, .modal-next, .modal-prev, .msg-close, .pagination>.pagination-next>a:before, .pagination>.pagination-prev>a:before, input[type="file"].input+label>.file-content>.file-icon {
+            display: inline-block;
+            text-align: center;
+            font-family: icons;
+            font-style: normal;
+            font-weight: 400;
+            line-height: .8125;
+            vertical-align: middle;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .p20y {
+            padding-bottom: 20px!important;
+            padding-top: 20px!important;
+        }
+        .pag-display{
+            justify-content: center;
+            align-content: center;
+            display: flex;
+        }
+        .pagination>.pagination-prev>a:before {
+            content: "\E805";
+        }
+        .pagination>.pagination-next>a:before, .pagination>.pagination-prev>a:before {
+            margin: 0;
+        }
+        .pagination>.pagination-current {
+            display: inline-block;
+        }
+        .pagination>.pagination-current>a, .pagination>.pagination-current>a:hover {
+            color: #fff;
+            background-color: #2784fc;
+        }
+        .pagination>.pagination-next>a:before {
+            content: "\E806";
+        }
         @font-face {
             font-family: icons;
             src: url(//csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c4/css/Simple-Line-Icons-Pro-7b3a1bc7250cc109927aeb9365e3e6f7.eot);
@@ -475,8 +548,9 @@
         }
         
         .accordion-toggle+.accordion-title:after {
-            /*content: "\E804";*/
-            content:"\e800";
+            
+            content: "\E804";
+            /* content:"\e800"; */
             position: absolute;
             top: 50%;
             right: 20px;
@@ -586,6 +660,23 @@
         
         .card-foot {
             padding: 20px 0 0
+        }
+        .row.v-align-center {
+            -ms-flex-align: center;
+            align-items: center;
+        }
+        .row.h-align-between {
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            margin:0!important;
+        }
+        .row.is-compact>.col {
+            -ms-flex-positive: 0;
+            flex-grow: 0;
+            padding: 3px;
+        }
+        .m0-d {
+            margin: 0!important;
         }
         
         .is-wide .dropdown {
@@ -1126,6 +1217,13 @@
             color: #fff;
             text-decoration: underline
         }
+        .toggle-head {
+            padding: 15px 20px;
+        }
+        .b-close:after {
+            content: "\EB0C";
+            color: #a6afb9;
+        }
         
         @media screen and (max-width:1023px) {
             .h5,
@@ -1167,6 +1265,26 @@
             .row.is-m {
                 flex-flow: row wrap
             }
+            .can-toggle.is-m.is-active {
+                transform: translateZ(0);
+            }
+            .can-toggle.is-m.has-transition {
+                transition: transform .2s ease;
+            }
+            .can-toggle.is-m {
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                padding: 0;
+                background-color: #fff;
+                z-index: 5010;
+            }
             .popover-owner.has-pointer:before {
                 content: "";
                 position: absolute;
@@ -1177,6 +1295,23 @@
                 border: 1px solid #3b3b3b;
                 border-width: 0 1px 1px 0;
                 transform: rotate(45deg)
+            }
+            .can-toggle.is-m>.toggle-head {
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                box-shadow: 0 1px 5px rgba(0,0,0,.1);
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: justify;
+                justify-content: space-between;
+                -ms-flex-align: center;
+                align-items: center;
+            }
+            .can-toggle.is-m>.toggle-content {
+                overflow: auto;
+                -webkit-overflow-scrolling: touch;
+                -ms-flex: 1 1 100%;
+                flex: 1 1 100%;
             }
             .popover {
                 overflow: auto;
@@ -1358,6 +1493,10 @@
         }
         
         @media screen and (min-width:1024px) {
+            .media-list.has-hover-d>li:hover {
+                background-color: #f7f8fa;
+                cursor: pointer;
+            }
             .popover.is-pointing:after,
             .popover:before {
                 position: absolute;
