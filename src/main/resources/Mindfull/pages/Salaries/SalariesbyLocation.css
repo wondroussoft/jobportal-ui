@@ -129,7 +129,7 @@ p,
     display: block
 }
 
-ul {
+#content ul {
     margin: 0 0 15px 0;
     padding: 0;
     list-style: none
@@ -3005,7 +3005,7 @@ p.pg {
 
 #frame-fullpage .col-14,
 #frame-fullpage .col-14-mid {
-    width: 224px
+    width: 215px
 }
 
 #frame-fullpage .col-23 {
@@ -5527,22 +5527,22 @@ p.bttns {
     background: #fdf6e7
 }
 
-#footer-wrapper {
+/* #footer-wrapper {
     background-color: #fff;
     border-top: 1px solid #e8e8e8;
     clear: both;
     color: #706f6f;
     padding: 30px 0
-}
-
+} */
+/* 
 #footer {
     clear: both;
     margin: 0 auto;
     padding: 0;
     width: 980px
-}
+} */
 
-#footer .footer-heading {
+/* #footer .footer-heading {
     color: #3c3c3b;
     font-size: 19px;
     font-weight: 400;
@@ -5712,7 +5712,7 @@ p.bttns {
     font-size: 13px;
     line-height: 22px;
     display: inline-block
-}
+} */
 
 #languageSwitch #languages {
     position: inherit;
@@ -12460,12 +12460,12 @@ ul.career-watch-list li b {
     padding-top: 8px
 }
 
-.item {
+/* .item {
     padding: 8px 18px 8px 25px!important;
     position: relative;
     display: inline-block;
     zoom: 1
-}
+} */
 
 #ar .item {
     padding: 8px 20px 8px 18px!important
@@ -15383,12 +15383,12 @@ body.people-home .quick-search {
     padding: 0 0 8px 0;
     font-size: 1.1em
 }
-
+/* 
 .item {
     padding: 0 0 0 20px;
     position: relative;
     display: inline-block
-}
+} */
 
 #ar .item {
     padding: 0 20px 0 0
@@ -30911,7 +30911,36 @@ td .sprite_new.i_vote_down {
     padding: 20px!important;
     margin-bottom: 20px!important;
     width: 960px;
-    margin-top: 0
+    margin-top: 20px;
+}
+#content h1{
+    margin: 0 0 15px;
+    font: 700 1.4em 'Open Sans',arial,sans-serif;
+    line-height: 1.4em;
+    letter-spacing: -1px;
+    color: #ffcc00;
+}
+#content h3{
+    margin: 0;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    color: #000;
+}
+#content a{
+    font-size: 14px;
+    line-height: 1.5em;
+    font-weight: 600;
+    color: #6b6a73;
+}
+#content a:hover{
+    color:#231f20;
+    text-decoration:none;
+}
+#content li a{
+    font-size: 13px;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: #6b6a73;
 }
 
 .specialties-blog.specialties-blog #frame-fullpage #content-frame #content {
@@ -47572,7 +47601,8 @@ p.pt,
 ul.pt li,
 dl.pt dt {
     padding-left: 20px;
-    background: url(https://img1cf.b8cdn.com/images/templates/bayt/3.1/blt-pt.gif) no-repeat 0 0
+    background: url(https://img1cf.b8cdn.com/images/templates/bayt/3.1/blt-pt.gif) no-repeat 0 0;
+    background-position: left;
 }
 
 #ar p.pt,
@@ -47580,7 +47610,8 @@ dl.pt dt {
 #ar dl.pt dt {
     padding-left: 0;
     padding-right: 20px;
-    background: url(https://img3cf.b8cdn.com/images/templates/bayt/3.1/blt-pt-ar.gif) no-repeat 100% 0
+    background: url(https://img3cf.b8cdn.com/images/templates/bayt/3.1/blt-pt-ar.gif) no-repeat 100% 0;
+    background-position: left;
 }
 
 dl.pt dt {
@@ -48420,7 +48451,8 @@ dl.filter_section .filter_newvalue {
 
 .salaries_home_footer_links {
     border: 1px solid #dadada;
-    padding: 10px
+    padding: 10px;
+    font-size: 15px;
 }
 
 .salaries_home_footer_links span {
@@ -48432,6 +48464,9 @@ dl.filter_section .filter_newvalue {
     color: #999;
     text-decoration: underline;
     padding: 8px
+}
+.salaries_home_footer_links a:hover{
+    color:#ffcc00;
 }
 
 .salaries_header_main_links td a {
