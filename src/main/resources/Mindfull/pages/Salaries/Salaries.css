@@ -215,7 +215,7 @@
 	
 	.btn,
 	.btn.is-large,
-	.dropdown,
+	/* .dropdown, */
 	.mobile-logo {
 		line-height: 1
 	}
@@ -244,7 +244,7 @@
     }
 	
 	.btn,
-	.dropdown>li>a,
+	/* .dropdown>li>a, */
 	.nav>li>a,
 	.t-nowrap {
 		white-space: nowrap
@@ -252,7 +252,7 @@
 	
 	.accordion-title,
 	.breadcrumb>li>a,
-	.dropdown>li>a,
+	/* .dropdown>li>a, */
 	a {
 		text-decoration: none
 	}
@@ -464,8 +464,8 @@
 		outline: 0
 	}
 	
-	.dropdown>li,
-	.dropdown>li>a,
+	/* .dropdown>li, */
+	/* .dropdown>li>a, */
 	.has-attachments,
 	.has-icon,
 	.list-menu-group,
@@ -586,28 +586,28 @@
 		padding: 20px 0 0
 	}
 	
-	.dropdown {
+	/* .dropdown {
 		list-style: none;
 		padding: 10px 0;
 		margin: 0;
 		font-size: .875rem;
 		color: #3b3b3b;
 		overflow: visible
-	}
-	
+	} */
+/* 	
 	.dropdown>li>a {
 		display: block;
 		padding: 10px 20px;
 		color: inherit;
 		font-weight: 400
-	}
-	
+	} */
+/* 	
 	.dropdown>li.is-title {
 		padding: 12px 20px;
 		font-size: 14px;
 		font-weight: 700;
 		text-transform: uppercase
-	}
+	} */
 	
 	.form-hint {
 		font-size: .75rem;
@@ -1771,7 +1771,7 @@
 		border-color: #4cd964
 	}
 	
-	.dropdown>li>a:not(:only-child):before {
+	/* .dropdown>li>a:not(:only-child):before {
 		content: "";
 		position: absolute;
 		right: 10px;
@@ -1781,8 +1781,8 @@
 		border: 1px solid #a6afb8;
 		border-width: 0 1px 1px 0;
 		transform: translate(-100%, -50%) rotate(-45deg)
-	}
-	
+	} */
+/* 	
 	.dropdown>li.has-divider {
 		margin-top: 10px;
 		padding-top: 10px
@@ -1801,7 +1801,7 @@
 	
 	.dropdown>li.is-title.has-divider {
 		padding-top: 20px
-	}
+	} */
 	
 	.icon.is-32 {
 		font-size: 32px;
@@ -2534,7 +2534,7 @@
 			padding: 16px;
 			border-radius: 0
 		}
-		.dropdown>li.is-title,
+		/* .dropdown>li.is-title,
 		.dropdown>li>a {
 			padding: 14px 20px
 		}
@@ -2543,7 +2543,7 @@
 		}
 		.dropdown.in-nav>li>a {
 			padding: 7px 20px
-		}
+		} */
 		.in-pack,
 		.input-pack {
 			display: block
@@ -2760,12 +2760,12 @@
 			transform: none;
 			z-index: 10010
 		}
-		.dropdown>li>a:not(:only-child):before {
+		/* .dropdown>li>a:not(:only-child):before {
 			transform: translate(-125%, -90%) rotate(45deg)
 		}
 		.dropdown.is-nested {
 			padding-left: 20px
-		}
+		} */
 		.m20b-m {
 			margin-bottom: 20px!important
 		}
