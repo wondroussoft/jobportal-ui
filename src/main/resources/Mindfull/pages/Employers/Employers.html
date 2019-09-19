@@ -12,7 +12,7 @@
 	<!-- Main Style Css -->
 	<link rel="stylesheet" href="../../assets/css/plugin.css" />
 	<link href="../../style.css" rel="stylesheet">
-	<link href="Employers.css" rel="stylesheet">
+	<link href="./Employers.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
 </head>
@@ -23,9 +23,387 @@
 	<div id="header"></div>
 
 	<!-- header end -->
-	<p>Hello, world!</p>
+	<div class="employersPage">
+	<div class="t-center print-only"><img src="https://img1cf.b8cdn.com/bayt/assets/b8static/svg/bayt-logo.svg" alt="Bayt.com"></div>											<div class="all-content">
+		<section class="cover is-compact from-bottom" style="background-image: url('https://img2cf.b8cdn.com/bayt/assets/employers-130/images/emp-landing-banner-1.jpg');">
+		<div class="row box">
+			<a class="col d" href="# "></a>
+			<div class="col">
+				<div class="t-center">
+					<a href="# ">
+						<h1 class="t-inverse p20b-d h2 candidates-heading">
+							Hire candidates quickly and easily.<br>
+							<span class="u-none-m">Access 37,000,000 CVs</span>
+						</h1>
+						<p class="t-inverse t-large p20t p0b m20b t-large">Try CV search for free </p>
+					</a>
+					<form class="t-left card p10 d" action="#" method="get" target="_self" data-validate-form='{
+						"model":"cvSearch",
+						"attrs": [
+							{
+								"name": "position_keyword",
+								"config": [
+									{ "fn":"required", "msg":"Field is required"}
+								]
+							}
+						],
+						"hooks":{"after":"cvSearchForm"}
+					}'>
+						<input type="hidden" name="position_operator" value="3">
+						<div class="input-pack">
+							<input id="cvSearch_position_keyword" name="position_keyword" type="text" class="input in-pack is-large m0r" placeholder="Enter job title, skills, etc.">
+							<div class="select in-pack m10x">
+								<select name="rescountry"  class="input is-large " id="cvSearchIso" data-searchable>
+									<option value="" disabled="disabled" selected="selected">Select Country</option>
+									<option value="">All Countries</option>
+									<option value="dz,0,0">Algeria</option>
+									<option value="bh,0,0">Bahrain</option>
+									<option value="ae,4,0">Dubai</option>
+									<option value="eg,0,0">Egypt</option>
+									<option value="in,0,0">India</option>
+									<option value="ir,0,0">Iran</option>
+									<option value="iq,0,0">Iraq</option>
+									<option value="jo,0,0">Jordan</option>
+									<option value="kw,0,0">Kuwait</option>
+									<option value="lb,0,0">Lebanon</option>
+									<option value="ly,0,0">Libya</option>
+									<option value="ma,0,0">Morocco</option>
+									<option value="om,0,0">Oman</option>
+									<option value="pk,0,0">Pakistan</option>
+									<option value="qa,0,0">Qatar</option>
+									<option value="sa,0,0">Saudi Arabia</option>
+									<option value="lk,0,0">Sri Lanka</option>
+									<option value="tn,0,0">Tunisia</option>
+									<option value="ae,0,0">United Arab Emirates</option>
+									<option value="ye,0,0">Yemen</option>
+								</select>
+							</div>
+							<button type="submit" class="btn  is-large is-royal" > Search CVs <i class="icon is-search"></i></button>
+						</div>
+						<span id="cvSearch_position_keyword_em_" class="form-hint"></span>
+					</form>
+					<form class="t-left m" action="#" method="get" target="_self" data-validate-form='{
+						"model":"cvSearch",
+						"attrs": [
+							{
+								"name": "position_keyword_m",
+								"config": [
+									{ "fn":"required", "msg":"Field is required"}
+								]
+							}
+						],
+						"hooks":{"after":"cvSearchForm"}
+					}'>
+						<input type="hidden" name="position_operator" value="3">
+						<div class="input-pack">
+							<input id="cvSearch_position_keyword_m" name="position_keyword" type="text" class="input in-pack is-large" placeholder="Enter job title, skills, etc.">
+							<div class="select in-pack">
+								<select name="rescountry"  class="input is-large" id="cvSearchIso_m" data-searchable>
+									<option value="" disabled="disabled" selected="selected">Select Country</option>
+									<option value="">All Countries</option>
+									<option value="dz,0,0">Algeria</option>
+									<option value="bh,0,0">Bahrain</option>
+									<option value="ae,4,0">Dubai</option>
+									<option value="eg,0,0">Egypt</option>
+									<option value="in,0,0">India</option>
+									<option value="ir,0,0">Iran</option>
+									<option value="iq,0,0">Iraq</option>
+									<option value="jo,0,0">Jordan</option>
+									<option value="kw,0,0">Kuwait</option>
+									<option value="lb,0,0">Lebanon</option>
+									<option value="ly,0,0">Libya</option>
+									<option value="ma,0,0">Morocco</option>
+									<option value="om,0,0">Oman</option>
+									<option value="pk,0,0">Pakistan</option>
+									<option value="qa,0,0">Qatar</option>
+									<option value="sa,0,0">Saudi Arabia</option>
+									<option value="lk,0,0">Sri Lanka</option>
+									<option value="tn,0,0">Tunisia</option>
+									<option value="ae,0,0">United Arab Emirates</option>
+									<option value="ye,0,0">Yemen</option>
+								</select>
+							</div>
+							<button type="submit" class="btn in-pack is-large is-royal" > Search CVs <i class="icon is-search"></i></button>
+						</div>
+						<span id="cvSearch_position_keyword_m_em_" class="form-hint"></span>
+					</form>
+					<a href="# ">
+						<p class="t-inverse u-none-d p20t p0b m10b">Try job posting for free</p>
+					</a>
+					<a class="btn is-inverse u-none-d" href="#">
+						Post Your Job				</a>
+				</div>
+			</div>
+			<a class="col d" href="#"></a>
+		</div>
+	</section>
+	<div class="bg-inverse m20b-m">
+		<div class="box">
+			<div class="row m20y p20y t-center">
+				<div class="col is-4-d">
+					<i class="icon is-shop is-32"></i>
+					<h5 class="m20y">Small Business Solutions</h5>
+					<a class="btn is-outline is-round" href="#">
+						Explore Now				</a>
+				</div>
+				
+				<div class="col is-4-d">
+					<i class="icon is-briefcase is-32"></i>
+					<h5 class="m20y">Post Your Job</h5>
+					<a class="btn is-primary is-round"  href="#" >
+						Post Now				</a>
+					
+				</div>
+				<div class="col is-4-d">
+					<i class="icon is-gift is-32"></i>
+					<h5 class="m20y">Get Your Special Offer</h5>
+					<a class="btn is-outline is-round" href="#">
+						Save Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="m t-center p20 bg-inverse">
+		<i class="t-primary icon is-smartphone is-64 "></i>
+		<h2 class="m20t">Download Employer Mobile App</h2>
+		<p>Hire qualified candidates quickly and easily on your mobile now!</p>
+		<a id="DownloadApp" class="btn m20b" href="#">Download Now</a>
+		<div>
+			<img src="https://img3cf.b8cdn.com/bayt/assets/employers-130/images/ios.png"  class="m10r" alt="ios.png"/>
+			<img src="https://img4cf.b8cdn.com/bayt/assets/employers-130/images/android.png" alt="android.png"/>
+		</div>
+	</section>
+	<section class="t-center p20">
+		<a href="#cvSearchPackages"><h2 class="p20y">Select Your Recruitment Plan</h2></a>
+		  <div data-tabs='{
+				"prevent": false
+			}'>
+			<div class="input-group_inline"></div>
+			<div id="cvSearchPackages" class="is-active tab" data-tab="internationalPackge">
+				<div class="box">
+					<div class="row v-align-center">
+						<div class="col is-4-d is-12-m">
+							<div class="card" id="5333">
+								<div class="card-head ">
+									<h3>Premium Job Posting</h3>
+								</div>
+								<div class="card-content">
+									<del class="t-mute p20 t-light h4 u-block">$250</del>
+									
+										<p class="h2 t-light">$225</p>
+											<form name="process_cart5333" id="checkout-form5333" method="post" action="/app/control/byt_payment_manager" class="m20y">
+												<input type="hidden" name="redirect_if_not_owner" value="0" />
+												<input type="hidden" name="action_case" id="actionCase5333" value="16" />
+												<input type="hidden" name="voucher_code" value="" />
+												<input type="hidden"  id="package_5333" name="package_to_purchase" value="5333@xx@225.0@1" />
+												<button type="submit" name="submitBtn5333" data-value="5333@xx@225.0@1" data-package="package_5333" class="btn is-secondary is-round is-outline ">Buy Now</button>
+										</form>
+										<hr class="d ">
+										<ul class="list is-basic t-small">
+											<li><span>•</span> Unlimited application</li>
+											<li><span>•</span> Active for 60 days</li>
+										</ul>
+								</div>
+							</div>
+						</div>
+					<div class="col is-4-d is-12-m">
+						<div class="card" id="6211">
+							<div class="card-head ">
+								<div class="t-center">
+								<p><b class="p t-small t-primary p20">AMAZING OFFER!</b></p>
+								</div>
+								<h3>One Month CV Search <br><b class='t-xlarge t-primary'>+<br></b> Two Job Postings</h3>
+								</div>
+								<div class="card-content">
+									<del class="t-mute p20 t-light h4 u-block">$1,298</del>
+										<p class="h2 t-light p20">$999.90</p>
+										<form name="process_cart6211" id="checkout-form6211" method="post" action="/app/control/byt_ecommerce_manager" class="m20y">
+												<input type="hidden" name="action_case" id="actionCase6211" value="11" />
+												<input type="hidden"  id="package_6211" name="featured_offer_package" value="6211" />
+												<button type="submit" name="submitBtn6211" data-package="package_6211" class="btn is-round ">Buy Now</button>
+										</form>
+								<hr class="d ">
+									<ul class="list is-basic t-small">
+										<li><span>•</span> Post 2 job advertisements for 60 days</li>
+										<li><span>•</span> One Month access to our CV database and contact up to 500 candidates</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col is-4-d is-12-m">
+							<div class="card" id="3988">
+								<div class="card-head ">
+								<h3>1-Month CV Search</h3>
+								</div>
+								<div class="card-content">
+									<del class="t-mute p20 t-light h4 u-block">$1000</del>
+										<p class="h2 t-light">$900</p>
+										<form name="process_cart3988" id="checkout-form3988" method="post" action="#" class="m20y">
+												<input type="hidden" name="redirect_if_not_owner" value="0" />
+												<input type="hidden" name="action_case" id="actionCase3988" value="16" />
+												<input type="hidden" name="voucher_code" value="" />
+												<input type="hidden"  id="package_3988" name="package_to_purchase" value="3988@xx@900.0@1" />
+												<button type="submit" name="submitBtn3988" data-value="3988@xx@900.0@1" data-package="package_3988" class="btn is-secondary is-round is-outline ">Buy Now</button>
+										</form>
+										<hr class="d ">
+										<ul class="list is-basic t-small">
+											<li><span>•</span> Use over 30 filters including nationality, location, and experience</li>
+											<li><span>•</span> 13,000 fresh CVs every day</li>
+										</ul>
+								</div>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+			<p class="t-center t-small">By clicking Buy Now, you agree to the 
+				<a href="#" class="is-black" ><b>Service Agreement.</b></a><br>
+				We do not charge any additional commission fees when you hire through Bayt.com	
+			</p>
+	</div>
+	</section>
+	<section class="bg-inverse t-center p20">
+		<h2 class="p20y">Who's Hiring on Bayt.com</h2>
+		<div class="box">
+			<div class="card-banner">
+				<img src="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" class="u-stretch" alt="Who's Hiring on Bayt.com" usemap="#map" data-remap>
+					<map name="map">
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="0,0,200,200"  href="/en/company/teleperformance-hellas-1800709/">
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="200,0,400,200"  href="/en/company/pepsico-aljomaih-bottling-%26-can-making-plants-241523/">
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="400,0,600,200"  href="/en/company/samsung-electronics-levant-1302498/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="600,0,800,200"  href="/en/company/saudi-telecom-15233/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="800,0,1000,200"  href="/en/company/ibq-international-bank-of-qatar-q-s-c-579200/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="0,200,200,400"  href="/en/company/national-bank-of-kuwait-385404/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="200,200,400,400"  href="/en/company/qatar-foundation-72048/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="400,200,600,400"  href="/en/company/lukoil-mid-east-ltd-2021271/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="600,200,800,400"  href="/en/company/coca-cola-bottling-company-of-egypt-1527808/" >
+						<area shape="rect" alt="https://img0cf.b8cdn.com/images/homepage/xx_who_is_hiring_20190513102241.png" coords="800,200,1000,400"  href="/en/company/emirates-airline-%26-group-9125/" >
+					</map>
+			</div>
+		</div>
+	</section> 
+	<div class="box t-center">
+		<h2 class="m20y p20y">
+			How Bayt.com Can Help You Hire	</h2><!-- emp-section-title -->
+		<div class="row m20y p20y">
+			<div class="col is-4-d">
+				<a href="#"><i class="icon is-briefcase is-64 t-primary"></i></a>
+				<h3 class="m20t">Post a job </h3>
+				<p>Receive applications from interested candidates </p>
+			</div>
+			<div class="col is-4-d">
+				<a href="#"><i class="icon is-search is-64 t-primary"></i></a>
+				<h3 class="m20t">Search CVs </h3>
+				<p class="m0">
+										Search more than 37 million CVs across all industries, career levels, and nationalities							</p>
+			</div>
+			<div class="col is-4-d">
+				<a href="#"><i class="icon is-color-palette is-64 t-primary"></i></a>
+				<h3 class="m20t">Branding Solutions </h3>
+				<p class="m0">Boost your employer brand with a company profile, branding solutions, and your very own career site</p>
+			</div>
+		</div>
+	</div>
+		<section class="t-center bg-inverse p20">
+			<h2>Need Help?</h2>
+			<p class="t-xlarge ">Contact us and we will be happy to assist you</p>
+			<ul class="list is-basic is-spaced">
+				<li><a href="tel:+96265507445" class="h2 contact-num">Call Us: &lrm; +962-6-550-7445</a></li>
+				<li><a class="btn m10y" href="#">Email Us</a></li>
+				<li>
+					<img src="https://img1cf.b8cdn.com/bayt/assets/employers-130/images/need-help-img.png" alt="Need help" data-src="https://img1cf.b8cdn.com/bayt/assets/employers-130/images/need-help-img.png" class="img-120-m img-240-d">
+				</li>
+			</ul>
+		</section>
+	
+	
+	<section class="m40t p20t">
+		<div class="box d u-none jsMobilePromotions">
+		<div class="row is-compact h-align-center bg-inverse m10b">
+			<div class="col is-11 p0 p20t">
+				<div class="media">
+					<img src="https://img4cf.b8cdn.com/bayt/assets/misc-211/images/appStore.png" alt="App Store" class="m10t">
+					<div>
+						<div class="row is-compact v-align-center h-align-between">
+							<div class="col is-8 p10 p40l m40l">
+								<h5>Hire talents easily on your mobile now!</h5>
+								<p class="t-large m0">No matter where you are, access all your favorite Bayt.com features from your mobile device.</p>
+								<a href="#" target="_blank" class="p10t u-iblock"><img class="img-logo is-android" width="20" height="24" src="https://img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Google Play"></a>
+								<a href="#" target="_blank" class="p10t p10x u-iblock"><img class="img-logo is-iOS" width="20" height="24" src="https://img3cf.b8cdn.com/bayt/assets/b8static/png/1.png" alt="Apple Store"></a>
+							</div>
+							<div class="col is-3 t-center">
+								<img src="https://img1cf.b8cdn.com/bayt/assets/misc-211/images/qrCode-emp.png" alt="Hire talents easily on your mobile now!">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+		<div class="box t-center">
+			<h2 class="m20y p20y">What Our 40,000 Clients Say About Us.	</h2><!-- emp-section-title -->
+			<div class="row m20y p20y">
+				<div class="col is-4-d u-spready">
+					<div>
+						<img height="100" alt="Salman Mohammed" src="https://img0cf.b8cdn.com/images/logo/17/1893517_logo_1489505098_n.png" />
+						<p>Bayt.com is one of the best job portals we’ve used until now. We saved so much time find...<a href="#">more </a></p>
+						</div>
+						<div>
+							<p><b>Salman Mohammed</b></p>
+							<p>Chief  Executive Officer</p>
+							<p class="t-mute">India</p>
+						</div>
+					</div>
+					<div class="col is-4-d u-spready">
+						<div>
+							<img height="100" alt="Manoj Jalan" src="https://img0cf.b8cdn.com/images/logo/99/568899_1222585460.gif" />
+							<p>We have been associated with Bayt.com for a long time</p>
+						</div>
+						<div>
+							<p><b>Manoj Jalan</b></p>
+							<p>COO</p>
+							<p class="t-mute">India</p>
+						</div>
+					</div>
+				</div>
+			<div class="m20y">
+				<a class="btn is-inverse" href="#">See More Testimonials </a> 
+			</div>
+		</div>
+		<div class="bg-inverse t-center">
+			<div class="box">
+				<h2 class="m20y">
+					Why Bayt.com?</h2><!-- emp-section-title -->
+				<p class="m0t">Largest community of job seekers. Fast, easy, cost-effective. Customer-first attitude.</p>
+				<div class="row m20y p20y">
+					<div class="col is-4-d">
+							<i class="icon is-text is-64 t-primary" data-text="37M+"></i>
+							<h3 class="m20t">Massive reach</h3>
+						<p>Reach the largest community of job seekers in the Middle East, from across all industries and career levels. Growing at over 12,000 a day. </p>
+					</div>
+					<div class="col is-4-d">
+							<i class="icon is-target is-64 t-primary"></i>
+							<h3 class="m20t">Easy & fast </h3>
+							<p>Hiring couldn't be easier. Our super-charged tools will help you find, shortlist and contact your perfect hire in no time </p>
+					</div>
+					<div class="col is-4-d">
+							<i class="icon is-wallet is-64 t-primary"></i>
+							<h3 class="m20t">Cost-Effective hiring </h3>
+							<p>Hire the best talent while maximizing your ROI. Choose from several solutions that works with your time and budget. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="box t-center">
+			<h2 class="p20y m20y">Free Consultation</h2>
+			<img alt="Consultation" class="is-circular" src="https://img2cf.b8cdn.com/bayt/assets/employers-130/images/free-consultation-img.png">
+			<p class="t-xlarge m20y">Hello, let us help you decide on the best recruitment <br> strategy to use for your business. </p>
+			<a class="btn is-primary m20y" onclick="requestDemo('requestDemo')" >Schedule a Free Consultation</a>
+		</div>
+	</div>
 
-
+</div>
 	<!-- footer section -->
 	<div id="footer"></div>
 	<!-- Footer end -->
@@ -39,14 +417,13 @@
 	<script src="../../assets/js/plugin.js"></script>
 	<script src="owl.carousel.min.js"></script>
 	<!-- navigation script -->
+	<noscript data-deferred-styles>
+	<link rel="stylesheet" type="text/css" href="https://csscf.b8cdn.com/bayt/assets/baytui-1.69.0-c4/css/B8.css" media="all" /></noscript>	
+	<script src="https://jscf.b8cdn.com/bayt/assets/baytui-1.69.0-c4/js/B8com.js" defer="defer" id="1381158303"></script>
 
-	<script>
-			/*<![CDATA[*/
-			!function(n){var a=[],e=setInterval(function(){if(B8.v){for(var n;n=a.pop();)B8.ready(n);clearInterval(e)}},100);n.B8=n.B8||{ready:function(n){a.push(n)}}}(window);
-			/*]]>*/
-			</script>
-<!-- Header and Footer script -->
+	
 <script>
+
 		$(function () {
 			$("#header").load("../../components/Header/commonHeader.html");
 			$("#footer").load("../../components/Footer/commonFooter.html");
